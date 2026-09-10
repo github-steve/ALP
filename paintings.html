@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ALP Design v2.4.1 | Warm Inviting Theme | Paintings Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.4.2 | Warm Inviting Theme | Paintings Page | Generated: 2026-09-10 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -83,7 +83,7 @@
   }
   
   .nav-links a:hover, .nav-links a.active {
-    color: #c88d3d;
+    color: #9a6b2e;
   }
   
   /* ARTIST STATEMENT */
@@ -133,7 +133,7 @@
   
   .page-quote cite {
     font-size: 0.85rem;
-    color: #a09080;
+    color: #7a6e62;
     font-style: normal;
   }
   
@@ -156,14 +156,14 @@
   }
   
   .latest-year {
-    border-bottom-color: #c88d3d;
+    border-bottom-color: #9a6b2e;
   }
   
   .latest-badge {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 0.7rem;
     font-weight: 500;
-    background: #c88d3d;
+    background: #9a6b2e;
     color: #fff;
     padding: 0.25rem 0.75rem;
     border-radius: 50px;
@@ -173,7 +173,7 @@
   
   .year-note {
     font-size: 0.85rem;
-    color: #a09080;
+    color: #7a6e62;
     margin-top: 0.5rem;
     font-style: italic;
   }
@@ -223,7 +223,7 @@
   
   .artwork-meta {
     font-size: 0.78rem;
-    color: #a09080;
+    color: #7a6e62;
     margin-top: 0.2rem;
   }
   
@@ -260,7 +260,7 @@
   
   .coffee-btn {
     display: inline-block;
-    background: #c88d3d;
+    background: #9a6b2e;
     color: #fff;
     text-decoration: none;
     padding: 0.85rem 2.2rem;
@@ -272,19 +272,19 @@
   }
   
   .coffee-btn:hover {
-    background: #b87a2f;
+    background: #7a5525;
   }
   
   /* FOOTER */
   footer {
     padding: 2rem 0;
     text-align: center;
-    color: #a09080;
+    color: #7a6e62;
     font-size: 0.8rem;
   }
   
   footer a {
-    color: #b87a2f;
+    color: #7a5525;
     text-decoration: none;
   }
   
@@ -303,7 +303,7 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background: #c88d3d;
+    background: #9a6b2e;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -316,15 +316,50 @@
   }
   
   .floating-btn:hover {
-    background: #b87a2f;
+    background: #7a5525;
     transform: scale(1.05);
   }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #9a6b2e;
+    outline-offset: 2px;
+  }
+  
+  .floating-btn:focus-visible {
+    outline: 2px solid #4a3f35;
+    outline-offset: 2px;
+  }
+
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #4a3f35;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.2s;
+  }
+  
+  .skip-link:focus {
+    top: 6px;
+  }
+
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 
 <nav>
-  <div class="wrap">
+  <main id="main-content">
     <a href="index.html" class="brand">Mandy Budan Art</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -335,6 +370,8 @@
     </ul>
   </div>
 </nav>
+
+<h1 style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">Studies by Mandy Budan — Small Original Paintings</h1>
 
 <section class="artist-statement">
   <div class="statement-content">
@@ -1721,6 +1758,7 @@
   </div>
 </div>
 
+</main>
 <footer>
   <div class="wrap">
     &copy; 2005-2026 Mandy Budan. All rights reserved. &middot; <a href="http://budanart.com/contact">Contact the Artist</a>

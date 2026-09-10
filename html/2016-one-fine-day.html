@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ALP Design v2.4.1 | Warm Inviting Theme | Generated: 2026-09-10 -->
+<!-- ALP Design v2.4.2 | Warm Inviting Theme | Generated: 2026-09-10 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -56,7 +56,7 @@
   }
 
   .nav-links a:hover, .nav-links a.active {
-    color: #c88d3d;
+    color: #9a6b2e;
   }
   
   .detail { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
@@ -64,19 +64,54 @@
   .detail-image img { width: 100%; height: auto; display: block; }
   .detail-info { padding: 1rem 0; }
   .detail-info h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 500; color: #4a3f35; margin-bottom: 0.5rem; }
-  .detail-meta { font-size: 0.9rem; color: #a09080; margin-bottom: 1.5rem; }
+  .detail-meta { font-size: 0.9rem; color: #7a6e62; margin-bottom: 1.5rem; }
   .detail-desc { color: #5a5048; margin-bottom: 2rem; line-height: 1.8; }
   .sold-badge { display: inline-block; background: #c67a2a; color: #fff; padding: 0.4rem 1rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 1rem; }
-  .back-link { display: inline-block; color: #c88d3d; text-decoration: none; font-size: 0.9rem; margin-top: 1rem; transition: color 0.2s; }
-  .back-link:hover { color: #b87a2f; }
-  footer { padding: 2rem 0; text-align: center; color: #a09080; font-size: 0.8rem; }
+  .back-link { display: inline-block; color: #9a6b2e; text-decoration: none; font-size: 0.9rem; margin-top: 1rem; transition: color 0.2s; }
+  .back-link:hover { color: #7a5525; }
+  footer { padding: 2rem 0; text-align: center; color: #7a6e62; font-size: 0.8rem; }
   @media (max-width: 768px) { .detail { grid-template-columns: 1fr; } }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #9a6b2e;
+    outline-offset: 2px;
+  }
+  
+  .floating-btn:focus-visible {
+    outline: 2px solid #4a3f35;
+    outline-offset: 2px;
+  }
+
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #4a3f35;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.2s;
+  }
+  
+  .skip-link:focus {
+    top: 6px;
+  }
+
 </style>
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 <nav>
-  <div class="wrap">
+  <main id="main-content">
     <a href="../index.html" class="brand">Mandy Budan Art</a>
     <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
@@ -99,6 +134,7 @@
     </div>
   </div>
 </div>
+</main>
 <footer><div class="wrap">&copy; 2005-2026 Mandy Budan. All rights reserved.</div></footer>
 </body>
 </html>

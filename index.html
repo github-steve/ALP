@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ALP Design v2.4.1 | Warm Inviting Theme | Landing Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.4.2 | Warm Inviting Theme | Landing Page | Generated: 2026-09-10 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -81,7 +81,7 @@
   }
   
   .nav-links a:hover, .nav-links a.active {
-    color: #c88d3d;
+    color: #9a6b2e;
   }
   
   /* HERO */
@@ -125,12 +125,12 @@
   }
   
   .btn-primary {
-    background: #c88d3d;
+    background: #9a6b2e;
     color: #fff;
   }
   
   .btn-primary:hover {
-    background: #b87a2f;
+    background: #7a5525;
   }
   
   .btn-secondary {
@@ -140,8 +140,8 @@
   }
   
   .btn-secondary:hover {
-    border-color: #c88d3d;
-    color: #c88d3d;
+    border-color: #9a6b2e;
+    color: #9a6b2e;
   }
   
   /* INTRO */
@@ -217,7 +217,7 @@
   
   .featured-meta {
     font-size: 0.72rem;
-    color: #a09080;
+    color: #7a6e62;
     margin-top: 0.15rem;
   }
   
@@ -247,7 +247,7 @@
   
   .coffee-btn {
     display: inline-block;
-    background: #c88d3d;
+    background: #9a6b2e;
     color: #fff;
     text-decoration: none;
     padding: 0.85rem 2.2rem;
@@ -259,19 +259,19 @@
   }
   
   .coffee-btn:hover {
-    background: #b87a2f;
+    background: #7a5525;
   }
   
   /* FOOTER */
   footer {
     padding: 2rem 0;
     text-align: center;
-    color: #a09080;
+    color: #7a6e62;
     font-size: 0.8rem;
   }
   
   footer a {
-    color: #b87a2f;
+    color: #7a5525;
     text-decoration: none;
   }
   
@@ -290,15 +290,50 @@
   }
   
   .social-links a:hover {
-    color: #c88d3d;
+    color: #9a6b2e;
   }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #9a6b2e;
+    outline-offset: 2px;
+  }
+  
+  .floating-btn:focus-visible {
+    outline: 2px solid #4a3f35;
+    outline-offset: 2px;
+  }
+
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #4a3f35;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.2s;
+  }
+  
+  .skip-link:focus {
+    top: 6px;
+  }
+
 </style>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
 
 <nav>
-  <div class="wrap">
+  <main id="main-content">
     <a href="index.html" class="brand">Mandy Budan Art</a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
@@ -387,6 +422,7 @@
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
     <div class="social-links">
