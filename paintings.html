@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ALP Design v2.2.0 | Warm Inviting Theme | Paintings Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.2.1 | Warm Inviting Theme | Paintings Page | Generated: 2026-09-10 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -44,7 +44,7 @@
     background: #fff;
     box-shadow: 0 1px 0 rgba(0,0,0,0.05);
     padding: 1.25rem 0;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
   }
   
   nav .wrap {
@@ -80,6 +80,35 @@
     color: #c88d3d;
   }
   
+  /* ARTIST STATEMENT */
+  .artist-statement {
+    background: #fff;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #e0d8d0;
+  }
+  
+  .statement-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .artist-statement h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #4a3f35;
+    margin-bottom: 1.5rem;
+  }
+  
+  .artist-statement p {
+    color: #5a5048;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 0.95rem;
+  }
+  
   /* YEAR BREAK */
   .year-break {
     grid-column: 1 / -1;
@@ -93,6 +122,32 @@
     font-size: 1.8rem;
     font-weight: 500;
     color: #4a3f35;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .latest-year {
+    border-bottom-color: #c88d3d;
+  }
+  
+  .latest-badge {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    background: #c88d3d;
+    color: #fff;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .year-note {
+    font-size: 0.85rem;
+    color: #a09080;
+    margin-top: 0.5rem;
+    font-style: italic;
   }
   
   /* GALLERY */
@@ -221,9 +276,18 @@
   </div>
 </nav>
 
+<section class="artist-statement">
+  <div class="statement-content">
+    <h2>About the Work</h2>
+    <p>These paintings are my love letter to the Canadian landscape — the rugged shores of Georgian Bay, the quiet forests of Muskoka, the rolling hills of the Ottawa Valley. Each piece begins with a memory, a feeling, a moment of wonder in nature that I want to hold onto and share.</p>
+    <p>I work in acrylic on wood, building up layers of color and texture through an intuitive process that balances spontaneity with intention. The result is a body of work that is both energetic and meditative — abstract enough to invite your own interpretation, grounded enough to feel like home.</p>
+    <p>Every painting here is an original, created by my hands in my studio in Toronto. Thank you for being here, and I hope you find something that speaks to you.</p>
+  </div>
+</section>
+
 <div class="wrap">
   <div class="gallery">
-<div class="year-break"><h2>2026</h2></div>
+<div class="year-break latest-year"><h2>2026 <span class="latest-badge">Latest</span></h2><p class="year-note">My most recent work. More coming soon…</p></div>
     <div class="artwork" id="2026-rhythm-and-hues" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
       <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
       <a href="html/2026-rhythm-and-hues.html"><img itemprop="image" src="images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues"></a>
