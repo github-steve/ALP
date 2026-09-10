@@ -1,609 +1,294 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<!-- ALP Design v2.4.7 | Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.4.8 | Landing Page | Generated: 2026-09-10 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Studies - Mandy Budan</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Source+Sans+3:wght@300;400;500&amp;display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Studies by Mandy Budan",
-  "description": "Original abstract landscape studies by Canadian artist Mandy Budan. Acrylic on wood and canvas.",
-  "url": "https://github-steve.github.io/ALP/mandy-budan-small-original-paintings.html",
-  "author": {
-    "@type": "Person",
-    "name": "Mandy Budan"
-  },
-  "numItems": 28,
-  "image": "https://github-steve.github.io/ALP/images/studies2/2025-215.jpg"
-}
-</script>
+<title>Studies - Mandy Budan Art</title>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    overflow-y: scroll; font-family: 'Source Sans 3', -apple-system, sans-serif; font-weight: 300; color: #2c2c2c; background: #fdf8f3; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-  nav { background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,0.05); padding: 1.25rem 0; margin-bottom: 3rem; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: #2c2c2c; background: #fff; line-height: 1.6; }
+  
+  /* NAV */
+  nav { padding: 1.5rem 3rem; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: hsl(211,29%,19%); }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; }
-  .brand { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 500; color: #4a3f35; text-decoration: none; }
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
+  .brand { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 500; color: #fff; text-decoration: none; letter-spacing: 0.05em; position: relative; }
+  .brand::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #fff; transition: width 0.3s; }
+  .brand:hover::after { width: 100%; }
+  .brand:hover { color: #4caf50; }
+  .nav-links { display: flex; list-style: none; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: #fff; }
+
   
-  .nav-links li {
-    width: 5rem;
-    text-align: center;
-  }
+  /* GALLERY */
+  .gallery { padding: 6rem 3rem; }
+  .year-section { margin-bottom: 6rem; }
+  .year-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 2.5rem; }
+  .year-header h2 { font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 300; color: #2c2c2c; }
+  .year-count { font-size: 0.85rem; color: #7a6e62; text-transform: uppercase; letter-spacing: 0.05em; }
   
-  .nav-links a {
-    color: #4a3f35;
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-  
-  .nav-links a:hover, .nav-links a.active {
-    color: #9a6b2e;
-  }
-  .year-break { grid-column: 1 / -1; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0d8d0; }
-  .year-break h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 500; color: #4a3f35; }
-  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
-  .artwork { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; }
-  .artwork:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-  .artwork img { width: 100%; height: auto; display: block; }
-  .artwork-info { padding: 1rem; margin-top: auto; }
-  .artwork-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 500; color: #4a3f35; }
-  .artwork-meta { font-size: 0.78rem; color: #7a6e62; margin-top: 0.2rem; }
+  .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; }
+  .artwork img { width: 100%; height: auto; display: block; border-radius: 4px; }
+  .artwork-info { margin-top: 1rem; }
+  .artwork-title { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 400; color: #2c2c2c; }
+  .artwork-meta { font-size: 0.8rem; color: #7a6e62; margin-top: 0.25rem; }
   .sold { color: #c67a2a; font-size: 0.75rem; font-weight: 500; margin-top: 0.3rem; }
-  footer { padding: 2rem 0; text-align: center; color: #7a6e62; font-size: 0.8rem; }
-
-  /* ARTIST STATEMENT */
-  .artist-statement {
-    background: #fff;
-    padding: 1.5rem 0;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid #e0d8d0;
-  }
   
-  .statement-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .artist-statement h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #4a3f35;
-    margin-bottom: 1.5rem;
-  }
-  
-  .artist-statement p {
-    color: #5a5048;
-    margin-bottom: 0.75rem;
-    line-height: 1.5;
-    font-size: 0.95rem;
-  }
-
-
-  /* FLOATING BUTTONS */
-  .floating-buttons {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    z-index: 1000;
-  }
-  
-  .floating-btn {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    background: #9a6b2e;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: background 0.2s, transform 0.2s;
-  }
-  
-  .floating-btn:hover {
-    background: #7a5525;
-    transform: scale(1.05);
-  }
-
-
-  .page-quote {
-    text-align: center;
-    padding: 1rem 0 2rem;
-    border-bottom: 1px solid #e0d8d0;
-    margin-bottom: 2rem;
-  }
-  
-  .page-quote blockquote {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.15rem;
-    font-style: italic;
-    color: #4a3f35;
-    margin-bottom: 0.5rem;
-  }
-  
-  .page-quote cite {
-    font-size: 0.85rem;
-    color: #7a6e62;
-    font-style: normal;
-  }
-
-
-  a:focus-visible,
-  button:focus-visible,
-  input:focus-visible,
-  textarea:focus-visible,
-  [tabindex]:focus-visible {
-    outline: 2px solid #9a6b2e;
-    outline-offset: 2px;
-  }
-  
-  .floating-btn:focus-visible {
-    outline: 2px solid #4a3f35;
-    outline-offset: 2px;
-  }
-
-
-  .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 6px;
-    background: #4a3f35;
-    color: #fff;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 4px;
-    z-index: 10000;
-    transition: top 0.2s;
-  }
-  
-  .skip-link:focus {
-    top: 6px;
-  }
-
+  footer { padding: 3rem; text-align: center; color: #7a6e62; font-size: 0.8rem; border-top: 1px solid #e0d8d0; }
 </style>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
-
 <nav>
-    <div class="wrap">
-      <a href="index.html" class="brand">Mandy Budan Art</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="paintings.html" class="active">Paintings</a></li>
-        <li><a href="mandy-budan-small-original-paintings.html">Studies</a></li>
-        <li><a href="mandy-budan-about.html">About</a></li>
-        <li><a href="mandy-budan-store.html">Store</a></li>
-      </ul>
-    </div>
-  </nav>
-
-<main id="main-content">
-
-<h1 style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">Studies by Mandy Budan — Small Original Paintings</h1>
-
-<section class="artist-statement">
-  <div class="statement-content">
-    <h2>About the Studies</h2>
-    <p>These small works are where I experiment, play, and take risks. Each study is a quick exploration of color, composition, or a fleeting moment in nature — a way to test ideas without the pressure of a larger canvas.</p>
-    <p>Studies are the seeds of my larger paintings. Sometimes a small piece stands on its own; other times, it sparks a whole new direction. They're intimate, spontaneous, and often the most honest work I create.</p>
-    <p>These pieces are all originals, created in my studio in Toronto. I hope you enjoy them as much as I enjoyed making them.</p>
+  <div class="wrap">
+    <a href="index.html" class="brand">MANDY BUDAN ART</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="paintings.html">Paintings</a></li>
+      <li><a href="mandy-budan-small-original-paintings.html" class="active">Studies</a></li>
+      <li><a href="mandy-budan-about.html">About</a></li>
+      <li><a href="mandy-budan-store.html">Store</a></li>
+    </ul>
   </div>
+</nav>
+
+<section class="gallery">
+  <div class="year-section">
+  <div class="year-header">
+    <h2>2025</h2>
+    <span class="year-count">1 works</span>
+  </div>
+  <div class="grid">
+    <div class="artwork" style="grid-column: span 7;">
+      <a href="html/studies2/2025-215.html"><img src="images/studies2/2025-215.jpg" alt="Landscape Study 215"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 215</div>
+        <div class="artwork-meta">2025 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="year-section">
+  <div class="year-header">
+    <h2>2024</h2>
+    <span class="year-count">7 works</span>
+  </div>
+  <div class="grid">
+    <div class="artwork" style="grid-column: span 7;">
+      <a href="html/studies2/2024-204.html"><img src="images/studies2/2024-204.jpg" alt="Landscape Study 204"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 204</div>
+        <div class="artwork-meta">2024 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 5;">
+      <a href="html/studies2/2024-205.html"><img src="images/studies2/2024-205.jpg" alt="Landscape Study 205"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 205</div>
+        <div class="artwork-meta">2024 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-206.html"><img src="images/studies2/2024-206.jpg" alt="Landscape Study 206"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 206</div>
+        <div class="artwork-meta">2024 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-207.html"><img src="images/studies2/2024-207.jpg" alt="Landscape Study 207"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 207</div>
+        <div class="artwork-meta">2024 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-208.html"><img src="images/studies2/2024-208.jpg" alt="Landscape Study 208"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 208</div>
+        <div class="artwork-meta">2024 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-209.html"><img src="images/studies2/2024-209.jpg" alt="Landscape Study 209"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 209</div>
+        <div class="artwork-meta">2024 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-210.html"><img src="images/studies2/2024-210.jpg" alt="Landscape Study 210"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 210</div>
+        <div class="artwork-meta">2024 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="year-section">
+  <div class="year-header">
+    <h2>2023</h2>
+    <span class="year-count">16 works</span>
+  </div>
+  <div class="grid">
+    <div class="artwork" style="grid-column: span 7;">
+      <a href="html/studies2/2023-188.html"><img src="images/studies2/2023-188.jpg" alt="Landscape Study 188"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 188</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 5;">
+      <a href="html/studies2/2023-189.html"><img src="images/studies2/2023-189.jpg" alt="Landscape Study 189"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 189</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-190.html"><img src="images/studies2/2023-190.jpg" alt="Landscape Study 190"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 190</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-191.html"><img src="images/studies2/2023-191.jpg" alt="Landscape Study 191"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 191</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-192.html"><img src="images/studies2/2023-192.jpg" alt="Landscape Study 192"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 192</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-193.html"><img src="images/studies2/2023-193.jpg" alt="Landscape Study 193"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 193</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-194.html"><img src="images/studies2/2023-194.jpg" alt="Landscape Study 194"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 194</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-195.html"><img src="images/studies2/2023-195.jpg" alt="Landscape Study 195"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 195</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-196.html"><img src="images/studies2/2023-196.jpg" alt="Landscape Study 196"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 196</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-197.html"><img src="images/studies2/2023-197.jpg" alt="Landscape Study 197"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 197</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-198.html"><img src="images/studies2/2023-198.jpg" alt="Landscape Study 198"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 198</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2023-199.html"><img src="images/studies2/2023-199.jpg" alt="Landscape Study 199"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 199</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-200.html"><img src="images/studies2/2024-200.jpg" alt="Landscape Study 200"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 200</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-201.html"><img src="images/studies2/2024-201.jpg" alt="Landscape Study 201"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 201</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-202.html"><img src="images/studies2/2024-202.jpg" alt="Landscape Study 202"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 202</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2024-203.html"><img src="images/studies2/2024-203.jpg" alt="Landscape Study 203"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 203</div>
+        <div class="artwork-meta">2023 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="year-section">
+  <div class="year-header">
+    <h2>2022</h2>
+    <span class="year-count">4 works</span>
+  </div>
+  <div class="grid">
+    <div class="artwork" style="grid-column: span 7;">
+      <a href="html/studies2/2022-184.html"><img src="images/studies2/2022-184.jpg" alt="Landscape Study 184"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 184</div>
+        <div class="artwork-meta">2022 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 5;">
+      <a href="html/studies2/2022-185.html"><img src="images/studies2/2022-185.jpg" alt="Landscape Study 185"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 185</div>
+        <div class="artwork-meta">2022 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2022-186.html"><img src="images/studies2/2022-186.jpg" alt="Landscape Study 186"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 186</div>
+        <div class="artwork-meta">2022 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+    <div class="artwork" style="grid-column: span 4;">
+      <a href="html/studies2/2022-187.html"><img src="images/studies2/2022-187.jpg" alt="Landscape Study 187"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Landscape Study 187</div>
+        <div class="artwork-meta">2022 - 5 x 7 - acrylic on wood</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </section>
 
-
-<div class="wrap">
-  <div class="page-quote">
-    <blockquote>"Feet, what do I need you for when I have wings to fly?"</blockquote>
-    <cite>— Frida Kahlo</cite>
-  </div>
-
-  <div class="gallery">
-<div class="year-break"><h2>2025</h2></div>
-    <div class="artwork" id="2025-215" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2025-215.html"><img itemprop="image" src="images/studies2/2025-215.jpg" alt="Landscape Study 215"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 215</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2025</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-<div class="year-break"><h2>2024</h2></div>
-    <div class="artwork" id="2024-204" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-204.html"><img itemprop="image" src="images/studies2/2024-204.jpg" alt="Landscape Study 204"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 204</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2024</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-205" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-205.html"><img itemprop="image" src="images/studies2/2024-205.jpg" alt="Landscape Study 205"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 205</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2024</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-206" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-206.html"><img itemprop="image" src="images/studies2/2024-206.jpg" alt="Landscape Study 206"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 206</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2024</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-207" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-207.html"><img itemprop="image" src="images/studies2/2024-207.jpg" alt="Landscape Study 207"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 207</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2024</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-208" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-208.html"><img itemprop="image" src="images/studies2/2024-208.jpg" alt="Landscape Study 208"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 208</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2024</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-209" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-209.html"><img itemprop="image" src="images/studies2/2024-209.jpg" alt="Landscape Study 209"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 209</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2024</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-210" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-210.html"><img itemprop="image" src="images/studies2/2024-210.jpg" alt="Landscape Study 210"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 210</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2024</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-<div class="year-break"><h2>2023</h2></div>
-    <div class="artwork" id="2023-188" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-188.html"><img itemprop="image" src="images/studies2/2023-188.jpg" alt="Landscape Study 188"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 188</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-189" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-189.html"><img itemprop="image" src="images/studies2/2023-189.jpg" alt="Landscape Study 189"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 189</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-190" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-190.html"><img itemprop="image" src="images/studies2/2023-190.jpg" alt="Landscape Study 190"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 190</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-191" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-191.html"><img itemprop="image" src="images/studies2/2023-191.jpg" alt="Landscape Study 191"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 191</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-192" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-192.html"><img itemprop="image" src="images/studies2/2023-192.jpg" alt="Landscape Study 192"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 192</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-193" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-193.html"><img itemprop="image" src="images/studies2/2023-193.jpg" alt="Landscape Study 193"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 193</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-194" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-194.html"><img itemprop="image" src="images/studies2/2023-194.jpg" alt="Landscape Study 194"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 194</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-195" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-195.html"><img itemprop="image" src="images/studies2/2023-195.jpg" alt="Landscape Study 195"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 195</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-196" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-196.html"><img itemprop="image" src="images/studies2/2023-196.jpg" alt="Landscape Study 196"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 196</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-197" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-197.html"><img itemprop="image" src="images/studies2/2023-197.jpg" alt="Landscape Study 197"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 197</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-198" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-198.html"><img itemprop="image" src="images/studies2/2023-198.jpg" alt="Landscape Study 198"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 198</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2023-199" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2023-199.html"><img itemprop="image" src="images/studies2/2023-199.jpg" alt="Landscape Study 199"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 199</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-200" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-200.html"><img itemprop="image" src="images/studies2/2024-200.jpg" alt="Landscape Study 200"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 200</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-201" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-201.html"><img itemprop="image" src="images/studies2/2024-201.jpg" alt="Landscape Study 201"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 201</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-202" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-202.html"><img itemprop="image" src="images/studies2/2024-202.jpg" alt="Landscape Study 202"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 202</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2024-203" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2024-203.html"><img itemprop="image" src="images/studies2/2024-203.jpg" alt="Landscape Study 203"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 203</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2023</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-<div class="year-break"><h2>2022</h2></div>
-    <div class="artwork" id="2022-184" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2022-184.html"><img itemprop="image" src="images/studies2/2022-184.jpg" alt="Landscape Study 184"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 184</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2022</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2022-185" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2022-185.html"><img itemprop="image" src="images/studies2/2022-185.jpg" alt="Landscape Study 185"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 185</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2022</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2022-186" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2022-186.html"><img itemprop="image" src="images/studies2/2022-186.jpg" alt="Landscape Study 186"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 186</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2022</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-    <div class="artwork" id="2022-187" itemscope itemtype="https://schema.org/VisualArtwork" itemprop="about">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <a href="html/studies2/2022-187.html"><img itemprop="image" src="images/studies2/2022-187.jpg" alt="Landscape Study 187"></a>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">Landscape Study 187</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">2022</span>
-          <span itemprop="size">5 x 7</span>
-          <span itemprop="artMedium">acrylic on wood</span>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-
-
-</div>
-</main>
 <footer>
-  <div class="wrap">
-    &copy; 2005-2026 Mandy Budan. All rights reserved. &middot; <a href="http://budanart.com/contact">Contact the Artist</a>
-  </div>
+  &copy; 2005-2026 Mandy Budan. All rights reserved.
 </footer>
-
-<div class="floating-buttons">
-  <button class="floating-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">↑</button>
-  <button class="floating-btn" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})" aria-label="Go to bottom">↓</button>
-</div>
-
 </body>
 </html>
