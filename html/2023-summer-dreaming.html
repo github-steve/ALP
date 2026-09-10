@@ -1,143 +1,78 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<!-- ALP Design v2.5.0 | Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.5.1 | Detail Page | Generated: 2026-09-10 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Summer Dreaming - Mandy Budan</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Source+Sans+3:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<title>Summer Dreaming - Mandy Budan Art</title>
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
+
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    overflow-y: scroll; font-family: 'Source Sans 3', -apple-system, sans-serif; font-weight: 300; color: #2c2c2c; background: #fdf8f3; line-height: 1.6; -webkit-font-smoothing: antialiased; }
-  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
-  nav { background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,0.05); padding: 1.25rem 0; margin-bottom: 3rem; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: #2c2c2c; background: #fff; line-height: 1.6; }
+  
+  /* NAV */
+  nav { padding: 1.5rem 3rem; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: hsl(211,29%,19%); }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; }
-  .brand { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 500; color: #4a3f35; text-decoration: none; }
-    /* NAV */
-  nav {
-    background: #fff;
-    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
-    padding: 1.25rem 0;
-    margin-bottom: 0;
-  }
+  .brand { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 500; color: #fff; text-decoration: none; letter-spacing: 0.05em; position: relative; }
+  .brand::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #fff; transition: width 0.3s; }
+  .brand:hover::after { width: 100%; }
+  .brand:hover { color: #4caf50; }
+  .nav-links { display: flex; list-style: none; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: #a8d8a8; text-decoration: underline; text-underline-offset: 4px; }
 
-  nav .wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .brand {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: #4a3f35;
-    text-decoration: none;
-  }
-
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
-
-  .nav-links li {
-    width: 5rem;
-    text-align: center;
-  }
-
-  .nav-links a {
-    color: #4a3f35;
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-  }
-
-  .nav-links a:hover, .nav-links a.active {
-    color: #9a6b2e;
-  }
   
-  .detail { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
-  .detail-image { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  /* DETAIL */
+  .detail { padding: 6rem 3rem 4rem; }
+  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .detail-image { border-radius: 4px; overflow: hidden; }
   .detail-image img { width: 100%; height: auto; display: block; }
-  .detail-info { padding: 1rem 0; }
-  .detail-info h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 500; color: #4a3f35; margin-bottom: 0.5rem; }
+  .detail-info { padding: 2rem 0; }
+  .detail-info h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 400; color: #2c2c2c; margin-bottom: 1rem; }
   .detail-meta { font-size: 0.9rem; color: #7a6e62; margin-bottom: 1.5rem; }
-  .detail-desc { color: #5a5048; margin-bottom: 2rem; line-height: 1.8; }
   .sold-badge { display: inline-block; background: #c67a2a; color: #fff; padding: 0.4rem 1rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 1rem; }
-  .back-link { display: inline-block; color: #9a6b2e; text-decoration: none; font-size: 0.9rem; margin-top: 1rem; transition: color 0.2s; }
-  .back-link:hover { color: #7a5525; }
-  footer { padding: 2rem 0; text-align: center; color: #7a6e62; font-size: 0.8rem; }
-  @media (max-width: 768px) { .detail { grid-template-columns: 1fr; } }
-
-  a:focus-visible,
-  button:focus-visible,
-  input:focus-visible,
-  textarea:focus-visible,
-  [tabindex]:focus-visible {
-    outline: 2px solid #9a6b2e;
-    outline-offset: 2px;
-  }
+  .detail-desc { color: #5a5048; margin-bottom: 2rem; line-height: 1.8; }
+  .back-link { display: inline-block; color: hsl(211,29%,19%); text-decoration: none; font-size: 0.9rem; margin-top: 1rem; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+  .back-link:hover { border-color: hsl(211,29%,19%); }
   
-  .floating-btn:focus-visible {
-    outline: 2px solid #4a3f35;
-    outline-offset: 2px;
-  }
-
-
-  .skip-link {
-    position: absolute;
-    top: -40px;
-    left: 6px;
-    background: #4a3f35;
-    color: #fff;
-    padding: 8px 16px;
-    text-decoration: none;
-    border-radius: 4px;
-    z-index: 10000;
-    transition: top 0.2s;
-  }
+  footer { padding: 3rem; text-align: center; color: #7a6e62; font-size: 0.8rem; border-top: 1px solid #e0d8d0; }
   
-  .skip-link:focus {
-    top: 6px;
-  }
-
+  @media (max-width: 768px) { .detail-grid { grid-template-columns: 1fr; } }
 </style>
-  <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
-<a href="#main-content" class="skip-link">Skip to main content</a>
-
 <nav>
-    <div class="wrap">
-      <a href="index.html" class="brand">Mandy Budan Art</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="paintings.html" class="active">Paintings</a></li>
-        <li><a href="mandy-budan-small-original-paintings.html">Studies</a></li>
-        <li><a href="mandy-budan-about.html">About</a></li>
-        <li><a href="mandy-budan-store.html">Store</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="wrap">
+    <a href="../index.html" class="brand">MANDY BUDAN ART</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../paintings.html" class="active">Paintings</a></li>
+      <li><a href="../mandy-budan-small-original-paintings.html">Studies</a></li>
+      <li><a href="../mandy-budan-about.html">About</a></li>
+      <li><a href="../mandy-budan-store.html">Store</a></li>
+    </ul>
+  </div>
+</nav>
 
-<main id="main-content">
-<div class="wrap">
-  <div class="detail" style="margin-top: 2rem;">
+<section class="detail">
+  <div class="detail-grid">
     <div class="detail-image"><img src="../images/2023-summer-dreaming.jpg" alt="Summer Dreaming by Mandy Budan"></div>
     <div class="detail-info">
       <h1>Summer Dreaming</h1>
       <div class="detail-meta">2023 - 8 x 10 - acrylic on wood</div>
-      <div class="sold-badge">SOLD</div>
+      <span class="sold-badge">SOLD</span>
       <p class="detail-desc">A summer day by the lake inspires quiet daydreams.</p>
-      <a href="../paintings.html#2023-summer-dreaming" class="back-link">← Back to Paintings</a>
+      <a href="../../index.html#summer-dreaming" class="back-link">← Back to Paintings</a>
     </div>
   </div>
-</div>
-</main>
-<footer><div class="wrap">&copy; 2005-2026 Mandy Budan. All rights reserved.</div></footer>
+</section>
+
+<footer>
+  <div class="wrap">
+    &copy; 2005-2026 Mandy Budan. All rights reserved.
+  </div>
+</footer>
 </body>
 </html>
