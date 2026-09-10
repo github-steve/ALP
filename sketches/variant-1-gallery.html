@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALP - Gallery Refinement</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Inter', sans-serif; font-weight: 300; color: #2c2c2c; background: #fdf8f3; line-height: 1.6; }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 0 3rem; }
+  
+  /* NAV */
+  nav { background: #fff; padding: 1.5rem 0; margin-bottom: 0; border-bottom: 1px solid #e0d8d0; }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-family: 'Cormorant Garamond', serif; font-size: 1.8rem; font-weight: 500; color: #4a3f35; text-decoration: none; }
+  .nav-links { display: flex; list-style: none; gap: 2rem; }
+  .nav-links a { color: #4a3f35; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; }
+  
+  /* HERO */
+  .hero { padding: 4rem 0; }
+  .hero-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 4rem; align-items: center; }
+  .hero-img { border-radius: 8px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.1); }
+  .hero-img img { width: 100%; height: auto; display: block; }
+  .hero h1 { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 500; color: #4a3f35; margin-bottom: 1rem; line-height: 1.1; }
+  .hero p { color: #5a5048; font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.8; }
+  
+  /* GALLERY */
+  .gallery { padding: 3rem 0 5rem; }
+  .year-break { margin: 3rem 0 1.5rem; padding-bottom: 0.75rem; border-bottom: 2px solid #4a3f35; }
+  .year-break h2 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 500; color: #4a3f35; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
+  .artwork { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; }
+  .artwork:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12); }
+  .artwork img { width: 100%; height: auto; display: block; }
+  .artwork-info { padding: 1.25rem; }
+  .artwork-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 500; color: #4a3f35; }
+  .artwork-meta { font-size: 0.8rem; color: #7a6e62; margin-top: 0.25rem; }
+  
+  footer { padding: 3rem 0; text-align: center; color: #7a6e62; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a href="#" class="brand">Mandy Budan Art</a>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Paintings</a></li>
+      <li><a href="#">Studies</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Store</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-img">
+        <img src="https://github-steve.github.io/ALP/images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues">
+      </div>
+      <div>
+        <h1>Abstract Landscapes That Feel Like Home</h1>
+        <p>Original paintings by Mandy Budan — capturing the essence of the Canadian landscape through bold color and expressive brushwork. Each piece is created by hand in my Toronto studio.</p>
+        <a href="#" style="display: inline-block; padding: 0.85rem 2rem; background: #4a3f35; color: #fff; text-decoration: none; border-radius: 4px; font-size: 0.9rem;">View Collection</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="year-break"><h2>2026</h2></div>
+    <div class="grid">
+      <div class="artwork">
+        <img src="https://github-steve.github.io/ALP/images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues">
+        <div class="artwork-info">
+          <div class="artwork-title">Rhythm and Hues</div>
+          <div class="artwork-meta">2026 - 18 × 24 - acrylic on wood</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="year-break"><h2>2025</h2></div>
+    <div class="grid">
+      <div class="artwork">
+        <img src="https://github-steve.github.io/ALP/images/2025-chasing-summer.jpg" alt="Chasing Summer">
+        <div class="artwork-info">
+          <div class="artwork-title">Chasing Summer</div>
+          <div class="artwork-meta">2025 - 12 × 16 - acrylic on wood</div>
+        </div>
+      </div>
+      <div class="artwork">
+        <img src="https://github-steve.github.io/ALP/images/2025-going-places.jpg" alt="Going Places">
+        <div class="artwork-info">
+          <div class="artwork-title">Going Places</div>
+          <div class="artwork-meta">2025 - 18 × 24 - acrylic on wood</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    &copy; 2005-2026 Mandy Budan. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
