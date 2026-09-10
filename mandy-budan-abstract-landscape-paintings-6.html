@@ -4,33 +4,202 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paintings Page 6 - Mandy Budan</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Source+Sans+3:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: #2c2c2c; background: #fefaf5; line-height: 1.6; }
-  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-  nav { background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,0.05); padding: 1.25rem 0; margin-bottom: 3rem; }
-  nav .wrap { display: flex; justify-content: space-between; align-items: center; }
-  .brand { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 500; color: #4a3f35; text-decoration: none; }
-  .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a { color: #7a6e62; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; }
-  .nav-links a:hover, .nav-links a.active { color: #c88d3d; }
-  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2.5rem; margin-bottom: 4rem; }
-  .artwork { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.04); transition: transform 0.2s, box-shadow 0.2s; }
-  .artwork:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.12), 0 2px 6px rgba(0,0,0,0.06); }
-  .artwork img { width: 100%; height: auto; display: block; }
-  .artwork-info { padding: 1.25rem; }
-  .artwork-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 500; color: #4a3f35; }
-  .artwork-meta { font-size: 0.78rem; color: #a09080; margin-top: 0.2rem; }
-  .sold { color: #c67a2a; font-size: 0.75rem; font-weight: 500; margin-top: 0.3rem; }
-  .pagination { text-align: center; padding: 2rem 0; }
-  .pagination a { display: inline-block; margin: 0 0.5rem; padding: 0.5rem 1rem; color: #7a6e62; text-decoration: none; border-radius: 4px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-  .pagination a.active { background: #c88d3d; color: #fff; }
-  .pagination a:hover { color: #c88d3d; }
-  footer { padding: 2rem 0; text-align: center; color: #a09080; font-size: 0.8rem; }
+  
+  body {
+    font-family: 'Source Sans 3', -apple-system, sans-serif;
+    font-weight: 300;
+    color: #2c2c2c;
+    background: #fefaf5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  /* NAV */
+  nav {
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    padding: 1.25rem 0;
+    margin-bottom: 3rem;
+  }
+  
+  nav .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #4a3f35;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    color: #7a6e62;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover, .nav-links a.active {
+    color: #c88d3d;
+  }
+  
+  /* GALLERY */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .artwork {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  
+  .artwork:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  
+  .artwork img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .artwork-info {
+    padding: 1rem;
+  }
+  
+  .artwork-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #4a3f35;
+  }
+  
+  .artwork-meta {
+    font-size: 0.78rem;
+    color: #a09080;
+    margin-top: 0.2rem;
+  }
+  
+  .sold {
+    color: #c67a2a;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+  }
+  
+  /* COFFEE */
+  .coffee-section {
+    text-align: center;
+    padding: 4rem 0;
+    background: #fff;
+    border-radius: 12px;
+    margin: 3rem 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  
+  .coffee-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #4a3f35;
+    margin-bottom: 0.5rem;
+  }
+  
+  .coffee-section p {
+    color: #7a6e62;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .coffee-btn {
+    display: inline-block;
+    background: #c88d3d;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.85rem 2.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+  }
+  
+  .coffee-btn:hover {
+    background: #b87a2f;
+  }
+  
+  /* FOOTER */
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: #a09080;
+    font-size: 0.8rem;
+  }
+  
+  footer a {
+    color: #b87a2f;
+    text-decoration: none;
+  }
+  
+  /* PAGINATION */
+  .pagination {
+    text-align: center;
+    padding: 2rem 0 4rem;
+  }
+  
+  .pagination a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #7a6e62;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: color 0.2s;
+  }
+  
+  .pagination a.active {
+    background: #c88d3d;
+    color: #fff;
+  }
+  
+  .pagination a:hover {
+    color: #c88d3d;
+  }
 </style>
 </head>
 <body>
+
 <nav>
   <div class="wrap">
     <a href="index.html" class="brand">Mandy Budan Art</a>
@@ -42,34 +211,42 @@
     </ul>
   </div>
 </nav>
+
 <div class="wrap">
-  <div class="gallery"><div class="artwork">
+  <div class="gallery">
+    <div class="artwork">
       <a href="html/2006-forest-winter.html"><img src="images/2006-forest-winter.jpg" alt="Forest Winter by Mandy Budan"></a>
       <div class="artwork-info">
         <div class="artwork-title">Forest Winter</div>
-        <div class="artwork-meta">2006 - 16 x 20 - acrylic on panel</div>
+        <div class="artwork-meta">2006 · 16 × 20 · acrylic on panel</div>
         <div class="sold">SOLD</div>
       </div>
     </div>
-<div class="artwork">
+    <div class="artwork">
       <a href="html/2006-one-pine.html"><img src="images/2006-one-pine.jpg" alt="One Pine by Mandy Budan"></a>
       <div class="artwork-info">
         <div class="artwork-title">One Pine</div>
-        <div class="artwork-meta">2006 - 9 x 12 - acrylic on panel</div>
+        <div class="artwork-meta">2006 · 9 × 12 · acrylic on panel</div>
         <div class="sold">SOLD</div>
       </div>
     </div>
-<div class="artwork">
+    <div class="artwork">
       <a href="html/2006-rocky-shore.html"><img src="images/2006-rocky-shore.jpg" alt="Rocky Shore by Mandy Budan"></a>
       <div class="artwork-info">
         <div class="artwork-title">Rocky Shore</div>
-        <div class="artwork-meta">2006 - 11 x 14 - acrylic on panel</div>
+        <div class="artwork-meta">2006 · 11 × 14 · acrylic on panel</div>
         <div class="sold">SOLD</div>
       </div>
     </div>
-</div>
+  </div>
   <div class="pagination"><a href="mandy-budan-abstract-landscape-paintings-5.html">5</a><a href="#" class="active">6</a></div>
 </div>
-<footer><div class="wrap">All artwork and images &copy; Mandy Budan 2025</div></footer>
+
+<footer>
+  <div class="wrap">
+    All artwork and images &copy; Mandy Budan 2025 &middot; <a href="http://budanart.com/contact">Contact the Artist</a>
+  </div>
+</footer>
+
 </body>
 </html>

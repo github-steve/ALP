@@ -4,26 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Passing Storm - Mandy Budan</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Source+Sans+3:wght@300;400;500&amp;display=swap" rel="stylesheet">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: #2c2c2c; background: #fefaf5; line-height: 1.6; }
+  body { font-family: 'Source Sans 3', -apple-system, sans-serif; font-weight: 300; color: #2c2c2c; background: #fefaf5; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 1000px; margin: 0 auto; padding: 0 2rem; }
   nav { background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,0.05); padding: 1.25rem 0; margin-bottom: 3rem; }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; }
   .brand { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 500; color: #4a3f35; text-decoration: none; }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
-  .nav-links a { color: #7a6e62; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; }
+  .nav-links a { color: #7a6e62; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: #c88d3d; }
   .detail { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 4rem; }
-  .detail-image { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.04); }
+  .detail-image { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
   .detail-image img { width: 100%; height: auto; display: block; }
   .detail-info { padding: 1rem 0; }
   .detail-info h1 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 500; color: #4a3f35; margin-bottom: 0.5rem; }
   .detail-meta { font-size: 0.9rem; color: #a09080; margin-bottom: 1.5rem; }
   .detail-desc { color: #5a5048; margin-bottom: 2rem; line-height: 1.8; }
   .sold-badge { display: inline-block; background: #c67a2a; color: #fff; padding: 0.4rem 1rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 1rem; }
-  .back-link { display: inline-block; color: #c88d3d; text-decoration: none; font-size: 0.9rem; margin-top: 1rem; }
+  .back-link { display: inline-block; color: #c88d3d; text-decoration: none; font-size: 0.9rem; margin-top: 1rem; transition: color 0.2s; }
   .back-link:hover { color: #b87a2f; }
   footer { padding: 2rem 0; text-align: center; color: #a09080; font-size: 0.8rem; }
   @media (max-width: 768px) { .detail { grid-template-columns: 1fr; } }
