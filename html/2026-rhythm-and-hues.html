@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <link rel="stylesheet" href="../css/styles.css">
-<!-- ALP Design v2.6.6 | Detail Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.6.7 | Detail Page | Generated: 2026-09-10 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Rhythm and Hues - Mandy Budan Art</title>
@@ -35,15 +35,39 @@
   .back-link:hover { border-color: hsl(211,29%,19%); }
   
   @media (max-width: 768px) { .detail-grid { grid-template-columns: 1fr; } }
+  
+  /* FOCUS & SKIP */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #f39c12;
+    outline-offset: 2px;
+  }
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #f39c12;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.2s;
+  }
+  .skip-link:focus {
+    top: 6px;
+  }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 <nav>
   <div class="wrap">
     <a href="../index.html" class="brand">MANDY BUDAN ART</a>
     <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
-      <li><a href="../paintings.html" class="active">Paintings</a></li>
+      <li><a href="../paintings.html" class="active" aria-current="page">Paintings</a></li>
       <li><a href="../mandy-budan-small-original-paintings.html">Studies</a></li>
       <li><a href="../mandy-budan-about.html">About</a></li>
       <li><a href="../mandy-budan-store.html">Store</a></li>
@@ -51,6 +75,7 @@
   </div>
 </nav>
 
+<main id="main">
 <section class="detail">
   <div class="detail-grid">
     <div class="detail-image"><img src="../images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues by Mandy Budan"></div>
@@ -63,6 +88,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">

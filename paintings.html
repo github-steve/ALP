@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- ALP Design v2.6.6 | Paintings Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.6.7 | Paintings Page | Generated: 2026-09-10 -->
 <link rel="stylesheet" href="css/styles.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,15 +33,39 @@
   .artwork-title { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 400; color: #2c2c2c; }
   .artwork-meta { font-size: 0.8rem; color: #7a6e62; margin-top: 0.25rem; }
   .sold { color: #c67a2a; font-size: 0.75rem; font-weight: 500; margin-top: 0.3rem; }
+
+  /* FOCUS & SKIP */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #f39c12;
+    outline-offset: 2px;
+  }
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #f39c12;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.2s;
+  }
+  .skip-link:focus {
+    top: 6px;
+  }
 </style>
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 <nav>
   <div class="wrap">
     <a href="index.html" class="brand">MANDY BUDAN ART</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="paintings.html" class="active">Paintings</a></li>
+      <li><a href="paintings.html" class="active" aria-current="page">Paintings</a></li>
       <li><a href="mandy-budan-small-original-paintings.html">Studies</a></li>
       <li><a href="mandy-budan-about.html">About</a></li>
       <li><a href="mandy-budan-store.html">Store</a></li>
@@ -49,6 +73,7 @@
   </div>
 </nav>
 
+<main id="main">
 <section class="gallery">
   <div class="year-section">
   <div class="year-header">
@@ -1023,6 +1048,7 @@
 </div>
 
 </section>
+</main>
 
 <footer>
   &copy; 2005-2026 Mandy Budan. All rights reserved.
