@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paintings Page 6 - Mandy Budan</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Source Sans 3', sans-serif; font-weight: 300; color: #2c2c2c; background: #fefaf5; line-height: 1.6; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+  nav { background: #fff; box-shadow: 0 1px 0 rgba(0,0,0,0.05); padding: 1.25rem 0; margin-bottom: 3rem; }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; }
+  .brand { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 500; color: #4a3f35; text-decoration: none; }
+  .nav-links { display: flex; gap: 2rem; list-style: none; }
+  .nav-links a { color: #7a6e62; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; }
+  .nav-links a:hover, .nav-links a.active { color: #c88d3d; }
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
+  .artwork { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; }
+  .artwork:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
+  .artwork img { width: 100%; height: auto; display: block; }
+  .artwork-info { padding: 1rem; }
+  .artwork-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 500; color: #4a3f35; }
+  .artwork-meta { font-size: 0.78rem; color: #a09080; margin-top: 0.2rem; }
+  .sold { color: #c67a2a; font-size: 0.75rem; font-weight: 500; margin-top: 0.3rem; }
+  .pagination { text-align: center; padding: 2rem 0; }
+  .pagination a { display: inline-block; margin: 0 0.5rem; padding: 0.5rem 1rem; color: #7a6e62; text-decoration: none; border-radius: 4px; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+  .pagination a.active { background: #c88d3d; color: #fff; }
+  .pagination a:hover { color: #c88d3d; }
+  footer { padding: 2rem 0; text-align: center; color: #a09080; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a href="index.html" class="brand">MANDY BUDAN</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Paintings</a></li>
+      <li><a href="mandy-budan-small-original-paintings.html">Studies</a></li>
+      <li><a href="mandy-budan-about.html">About</a></li>
+      <li><a href="mandy-budan-store.html">Store</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="wrap">
+  <div class="gallery"><div class="artwork">
+      <a href="html/2006-forest-winter.html"><img src="images/2006-forest-winter.jpg" alt="Forest Winter by Mandy Budan"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Forest Winter</div>
+        <div class="artwork-meta">2006 - 16 x 20 - acrylic on panel</div>
+        <div class="sold">SOLD</div>
+      </div>
+    </div>
+<div class="artwork">
+      <a href="html/2006-one-pine.html"><img src="images/2006-one-pine.jpg" alt="One Pine by Mandy Budan"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">One Pine</div>
+        <div class="artwork-meta">2006 - 9 x 12 - acrylic on panel</div>
+        <div class="sold">SOLD</div>
+      </div>
+    </div>
+<div class="artwork">
+      <a href="html/2006-rocky-shore.html"><img src="images/2006-rocky-shore.jpg" alt="Rocky Shore by Mandy Budan"></a>
+      <div class="artwork-info">
+        <div class="artwork-title">Rocky Shore</div>
+        <div class="artwork-meta">2006 - 11 x 14 - acrylic on panel</div>
+        <div class="sold">SOLD</div>
+      </div>
+    </div>
+</div>
+  <div class="pagination"><a href="mandy-budan-abstract-landscape-paintings-5.html">5</a><a href="#" class="active">6</a></div>
+</div>
+<footer><div class="wrap">All artwork and images &copy; Mandy Budan 2025</div></footer>
+</body>
+</html>
