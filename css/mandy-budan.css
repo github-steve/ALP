@@ -1,0 +1,167 @@
+/*!
+ * Start Bootstrap - 4 Col Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    color: #627589;
+}
+
+.portfolio-item {
+    margin: auto;
+    max-width: 70%;
+    margin-bottom: 25px;
+}
+
+
+
+h1,
+.h1 {
+    font-size: 42px;
+    font-weight: normal;
+    margin: .37em 0;
+    line-height: .9;
+}
+
+h2,
+.h3 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: .37em 0;
+    line-height: .9;
+}
+
+h4,
+.h4 {
+    font-size: 20px;
+    margin: .37em 0;
+    line-height: 1.2;
+}
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: none;
+}
+
+
+.section-divider {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.about-list {
+    list-style: none; 
+}
+
+.about-list-spacing {
+    padding-bottom: 20px; 
+}
+
+.strong {
+    font-weight: bold;
+}
+
+
+/* 
+navbar
+*/
+
+.navbar-inverse {
+  background-color: #233140;
+  border-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #344353;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.img-responsive {
+    max-width: 85%;   
+}
+
+.img-responsive-item {
+    max-width: 100%; 
+}
+
+.painting-sold {
+    color: #d15a10;
+    
+}
+
+
+
+/*
+pagination
+*/
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #344353;
+  text-decoration: none;
+  background-color: #ddd;
+  border: 1px solid #344353;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  color: #fff;
+  background-color: #627589;
+  border-color: #627589;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #23527c;
+  background-color: #fff;
+  border-color: #627589;
+}
+
+
+
+
+/*
+footer
+*/
+
+a.footer-text-link:link {color: #919191; text-decoration: none; font-weight: normal; }
+a.footer-text-link:visited {color: #919191; text-decoration: none; font-weight: normal;}
+a.footer-text-link:hover {color: #7b7ca5; text-decoration: underline; font-weight: normal;}
+a.footer-text-link:active {color: #919191; text-decoration: none; font-weight: normal;}
+
+
+footer {
+  color: #7b7ca5;
+}
+footer h3 {
+  margin-bottom: 10px;
+}
+footer .footer-above {
+  padding-top: 0px;
+  background-color: #ffffff;
+  margin-bottom: 0px;
+}
+footer .footer-col {
+  margin-bottom: 10px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: #ffffff;
+}
