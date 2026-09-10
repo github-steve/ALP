@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- ALP Design v2.5.1 | Landing Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.5.4 | Paintings Page | Generated: 2026-09-10 -->
+<link rel="stylesheet" href="css/styles.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paintings - Mandy Budan Art</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Inter', sans-serif; font-weight: 300; color: #2c2c2c; background: #fff; line-height: 1.6; }
   
   /* NAV */
   nav { padding: 1.5rem 3rem; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: hsl(211,29%,19%); }
@@ -18,18 +16,16 @@
   .brand { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 500; color: #fff; text-decoration: none; letter-spacing: 0.05em; position: relative; }
   .brand::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #fff; transition: width 0.3s; }
   .brand:hover::after { width: 100%; }
-  .brand:hover { color: #4caf50; }
+  .brand:hover { color: #fff; }
   .nav-links { display: flex; list-style: none; gap: 2.5rem; }
   .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
-  .nav-links a:hover { color: #a8d8a8; text-decoration: underline; text-underline-offset: 4px; }
+  .nav-links a:hover { color: #8bc68a; text-decoration: underline; text-underline-offset: 4px; }
 
-  
   /* GALLERY */
   .gallery { padding: 6rem 3rem; }
   .year-section { margin-bottom: 6rem; }
   .year-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 2.5rem; }
   .year-header h2 { font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 300; color: #2c2c2c; }
-  .year-count { font-size: 0.85rem; color: #7a6e62; text-transform: uppercase; letter-spacing: 0.05em; }
   
   .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; }
   .artwork img { width: 100%; height: auto; display: block; border-radius: 4px; }
@@ -37,8 +33,6 @@
   .artwork-title { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 400; color: #2c2c2c; }
   .artwork-meta { font-size: 0.8rem; color: #7a6e62; margin-top: 0.25rem; }
   .sold { color: #c67a2a; font-size: 0.75rem; font-weight: 500; margin-top: 0.3rem; }
-  
-  footer { padding: 3rem; text-align: center; color: #7a6e62; font-size: 0.8rem; border-top: 1px solid #e0d8d0; }
 </style>
 </head>
 <body>
@@ -59,10 +53,9 @@
   <div class="year-section">
   <div class="year-header">
     <h2>2026</h2>
-    <span class="year-count" style="display: none;">1 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2026-rhythm-and-hues" style="grid-column: span 7;">
       <a href="html/2026-rhythm-and-hues.html"><img src="images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues"></a>
       <div class="artwork-info">
         <div class="artwork-title">Rhythm and Hues</div>
@@ -75,10 +68,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2025</h2>
-    <span class="year-count" style="display: none;">2 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2025-chasing-summer" style="grid-column: span 7;">
       <a href="html/2025-chasing-summer.html"><img src="images/2025-chasing-summer.jpg" alt="Chasing Summer"></a>
       <div class="artwork-info">
         <div class="artwork-title">Chasing Summer</div>
@@ -86,7 +78,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2025-going-places" style="grid-column: span 5;">
       <a href="html/2025-going-places.html"><img src="images/2025-going-places.jpg" alt="Going Places"></a>
       <div class="artwork-info">
         <div class="artwork-title">Going Places</div>
@@ -99,10 +91,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2024</h2>
-    <span class="year-count" style="display: none;">3 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2024-running-wild" style="grid-column: span 7;">
       <a href="html/2024-running-wild.html"><img src="images/2024-running-wild.jpg" alt="Running Wild"></a>
       <div class="artwork-info">
         <div class="artwork-title">Running Wild</div>
@@ -110,7 +101,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2024-waterloo-fall" style="grid-column: span 5;">
       <a href="html/2024-waterloo-fall.html"><img src="images/2024-waterloo-fall.jpg" alt="Waterloo Fall"></a>
       <div class="artwork-info">
         <div class="artwork-title">Waterloo Fall</div>
@@ -118,7 +109,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2024-watershed-moment" style="grid-column: span 4;">
       <a href="html/2024-watershed-moment.html"><img src="images/2024-watershed-moment.jpg" alt="Watershed Moment"></a>
       <div class="artwork-info">
         <div class="artwork-title">Watershed Moment</div>
@@ -131,10 +122,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2023</h2>
-    <span class="year-count" style="display: none;">4 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2023-above-the-trees" style="grid-column: span 7;">
       <a href="html/2023-above-the-trees.html"><img src="images/2023-above-the-trees.jpg" alt="Above the Trees"></a>
       <div class="artwork-info">
         <div class="artwork-title">Above the Trees</div>
@@ -142,7 +132,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2023-firefall" style="grid-column: span 5;">
       <a href="html/2023-firefall.html"><img src="images/2023-firefall.jpg" alt="Firefall"></a>
       <div class="artwork-info">
         <div class="artwork-title">Firefall</div>
@@ -150,7 +140,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2023-out-of-the-blue" style="grid-column: span 4;">
       <a href="html/2023-out-of-the-blue.html"><img src="images/2023-out-of-the-blue.jpg" alt="Out of the Blue"></a>
       <div class="artwork-info">
         <div class="artwork-title">Out of the Blue</div>
@@ -158,7 +148,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2023-summer-dreaming" style="grid-column: span 4;">
       <a href="html/2023-summer-dreaming.html"><img src="images/2023-summer-dreaming.jpg" alt="Summer Dreaming"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer Dreaming</div>
@@ -171,10 +161,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2022</h2>
-    <span class="year-count" style="display: none;">4 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2022-lady-in-red" style="grid-column: span 7;">
       <a href="html/2022-lady-in-red.html"><img src="images/2022-lady-in-red.jpg" alt="Lady in Red"></a>
       <div class="artwork-info">
         <div class="artwork-title">Lady in Red</div>
@@ -182,7 +171,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2022-promenade" style="grid-column: span 5;">
       <a href="html/2022-promenade.html"><img src="images/2022-promenade.jpg" alt="Promenade"></a>
       <div class="artwork-info">
         <div class="artwork-title">Promenade</div>
@@ -190,7 +179,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2022-summer-duet" style="grid-column: span 4;">
       <a href="html/2022-summer-duet.html"><img src="images/2022-summer-duet.jpg" alt="Summer Duet"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer Duet</div>
@@ -198,7 +187,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2022-verdigris" style="grid-column: span 4;">
       <a href="html/2022-verdigris.html"><img src="images/2022-verdigris.jpg" alt="Verdigris"></a>
       <div class="artwork-info">
         <div class="artwork-title">Verdigris</div>
@@ -211,10 +200,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2021</h2>
-    <span class="year-count" style="display: none;">2 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2021-forest-tapestry" style="grid-column: span 7;">
       <a href="html/2021-forest-tapestry.html"><img src="images/2021-forest-tapestry.jpg" alt="Forest Tapestry"></a>
       <div class="artwork-info">
         <div class="artwork-title">Forest Tapestry</div>
@@ -222,7 +210,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2021-standing-tall" style="grid-column: span 5;">
       <a href="html/2021-standing-tall.html"><img src="images/2021-standing-tall.jpg" alt="Standing Tall"></a>
       <div class="artwork-info">
         <div class="artwork-title">Standing Tall</div>
@@ -235,10 +223,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2020</h2>
-    <span class="year-count" style="display: none;">3 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2020-birchlight" style="grid-column: span 7;">
       <a href="html/2020-birchlight.html"><img src="images/2020-birchlight.jpg" alt="Birch Light"></a>
       <div class="artwork-info">
         <div class="artwork-title">Birch Light</div>
@@ -246,7 +233,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2020-living-on-the-edge" style="grid-column: span 5;">
       <a href="html/2020-living-on-the-edge.html"><img src="images/2020-living-on-the-edge.jpg" alt="Living on the Edge"></a>
       <div class="artwork-info">
         <div class="artwork-title">Living on the Edge</div>
@@ -254,7 +241,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2020-winter-warmth" style="grid-column: span 4;">
       <a href="html/2020-winter-warmth.html"><img src="images/2020-winter-warmth.jpg" alt="Winter Warmth"></a>
       <div class="artwork-info">
         <div class="artwork-title">Winter Warmth</div>
@@ -267,10 +254,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2019</h2>
-    <span class="year-count" style="display: none;">3 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2019-falling" style="grid-column: span 7;">
       <a href="html/2019-falling.html"><img src="images/2019-falling.jpg" alt="Falling"></a>
       <div class="artwork-info">
         <div class="artwork-title">Falling</div>
@@ -278,7 +264,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2019-heart-of-gold" style="grid-column: span 5;">
       <a href="html/2019-heart-of-gold.html"><img src="images/2019-heart-of-gold.jpg" alt="Heart of Gold"></a>
       <div class="artwork-info">
         <div class="artwork-title">Heart of Gold</div>
@@ -286,7 +272,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2019-the-emperor" style="grid-column: span 4;">
       <a href="html/2019-the-emperor.html"><img src="images/2019-the-emperor.jpg" alt="The Emperor"></a>
       <div class="artwork-info">
         <div class="artwork-title">The Emperor</div>
@@ -299,10 +285,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2018</h2>
-    <span class="year-count" style="display: none;">3 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2018-beaming" style="grid-column: span 7;">
       <a href="html/2018-beaming.html"><img src="images/2018-beaming.jpg" alt="Beaming"></a>
       <div class="artwork-info">
         <div class="artwork-title">Beaming</div>
@@ -310,7 +295,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2018-poolside" style="grid-column: span 5;">
       <a href="html/2018-poolside.html"><img src="images/2018-poolside.jpg" alt="Poolside"></a>
       <div class="artwork-info">
         <div class="artwork-title">Poolside</div>
@@ -318,7 +303,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2018-the-deep" style="grid-column: span 4;">
       <a href="html/2018-the-deep.html"><img src="images/2018-the-deep.jpg" alt="The Deep"></a>
       <div class="artwork-info">
         <div class="artwork-title">The Deep</div>
@@ -331,10 +316,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2017</h2>
-    <span class="year-count" style="display: none;">5 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2017-almost-autumn" style="grid-column: span 7;">
       <a href="html/2017-almost-autumn.html"><img src="images/2017-almost-autumn.jpg" alt="Almost Autumn"></a>
       <div class="artwork-info">
         <div class="artwork-title">Almost Autumn</div>
@@ -342,7 +326,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2017-along-the-river" style="grid-column: span 5;">
       <a href="html/2017-along-the-river.html"><img src="images/2017-along-the-river.jpg" alt="Along the River"></a>
       <div class="artwork-info">
         <div class="artwork-title">Along the River</div>
@@ -350,7 +334,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2017-awakening" style="grid-column: span 4;">
       <a href="html/2017-awakening.html"><img src="images/2017-awakening.jpg" alt="Awakening"></a>
       <div class="artwork-info">
         <div class="artwork-title">Awakening</div>
@@ -358,7 +342,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2017-celadon-morning" style="grid-column: span 4;">
       <a href="html/2017-celadon-morning.html"><img src="images/2017-celadon-morning.jpg" alt="Celadon Morning"></a>
       <div class="artwork-info">
         <div class="artwork-title">Celadon Morning</div>
@@ -366,7 +350,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2017-the-beacon" style="grid-column: span 4;">
       <a href="html/2017-the-beacon.html"><img src="images/2017-the-beacon.jpg" alt="The Beacon"></a>
       <div class="artwork-info">
         <div class="artwork-title">The Beacon</div>
@@ -379,10 +363,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2016</h2>
-    <span class="year-count" style="display: none;">3 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2016-lakeside" style="grid-column: span 7;">
       <a href="html/2016-lakeside.html"><img src="images/2016-lakeside.jpg" alt="Lakeside"></a>
       <div class="artwork-info">
         <div class="artwork-title">Lakeside</div>
@@ -390,7 +373,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2016-one-fine-day" style="grid-column: span 5;">
       <a href="html/2016-one-fine-day.html"><img src="images/2016-one-fine-day.jpg" alt="One Fine Day"></a>
       <div class="artwork-info">
         <div class="artwork-title">One Fine Day</div>
@@ -398,7 +381,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2016-triumvirate" style="grid-column: span 4;">
       <a href="html/2016-triumvirate.html"><img src="images/2016-triumvirate.jpg" alt="Triumvirate"></a>
       <div class="artwork-info">
         <div class="artwork-title">Triumvirate</div>
@@ -411,10 +394,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2015</h2>
-    <span class="year-count" style="display: none;">5 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2015-ebb-and-flow" style="grid-column: span 7;">
       <a href="html/2015-ebb-and-flow.html"><img src="images/2015-ebb-and-flow.jpg" alt="Ebb and Flow"></a>
       <div class="artwork-info">
         <div class="artwork-title">Ebb and Flow</div>
@@ -422,7 +404,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2015-july-progression" style="grid-column: span 5;">
       <a href="html/2015-july-progression.html"><img src="images/2015-july-progression.jpg" alt="July Progression"></a>
       <div class="artwork-info">
         <div class="artwork-title">July Progression</div>
@@ -430,7 +412,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2015-last-call" style="grid-column: span 4;">
       <a href="html/2015-last-call.html"><img src="images/2015-last-call.jpg" alt="Last Call"></a>
       <div class="artwork-info">
         <div class="artwork-title">Last Call</div>
@@ -438,7 +420,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2015-salmon-ridge" style="grid-column: span 4;">
       <a href="html/2015-salmon-ridge.html"><img src="images/2015-salmon-ridge.jpg" alt="Salmon Ridge"></a>
       <div class="artwork-info">
         <div class="artwork-title">Salmon Ridge</div>
@@ -446,7 +428,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2015-summer-medley" style="grid-column: span 4;">
       <a href="html/2015-summer-medley.html"><img src="images/2015-summer-medley.jpg" alt="Summer Medley"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer Medley</div>
@@ -459,10 +441,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2014</h2>
-    <span class="year-count" style="display: none;">4 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2014-after-the-rain" style="grid-column: span 7;">
       <a href="html/2014-after-the-rain.html"><img src="images/2014-after-the-rain.jpg" alt="After the Rain"></a>
       <div class="artwork-info">
         <div class="artwork-title">After the Rain</div>
@@ -470,7 +451,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2014-early-riser" style="grid-column: span 5;">
       <a href="html/2014-early-riser.html"><img src="images/2014-early-riser.jpg" alt="Early Riser"></a>
       <div class="artwork-info">
         <div class="artwork-title">Early Riser</div>
@@ -478,7 +459,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2014-emerald-moments" style="grid-column: span 4;">
       <a href="html/2014-emerald-moments.html"><img src="images/2014-emerald-moments.jpg" alt="Emerald Moments"></a>
       <div class="artwork-info">
         <div class="artwork-title">Emerald Moments</div>
@@ -486,7 +467,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2014-the-jester" style="grid-column: span 4;">
       <a href="html/2014-the-jester.html"><img src="images/2014-the-jester.jpg" alt="The Jester"></a>
       <div class="artwork-info">
         <div class="artwork-title">The Jester</div>
@@ -499,10 +480,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2013</h2>
-    <span class="year-count" style="display: none;">6 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2013-carnelian-morning" style="grid-column: span 7;">
       <a href="html/2013-carnelian-morning.html"><img src="images/2013-carnelian-morning.jpg" alt="Carnelian Morning"></a>
       <div class="artwork-info">
         <div class="artwork-title">Carnelian Morning</div>
@@ -510,7 +490,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2013-crescendo" style="grid-column: span 5;">
       <a href="html/2013-crescendo.html"><img src="images/2013-crescendo.jpg" alt="Crescendo"></a>
       <div class="artwork-info">
         <div class="artwork-title">Crescendo</div>
@@ -518,7 +498,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2013-iris-squared" style="grid-column: span 4;">
       <a href="html/2013-iris-squared.html"><img src="images/2013-iris-squared.jpg" alt="Iris Squared"></a>
       <div class="artwork-info">
         <div class="artwork-title">Iris Squared</div>
@@ -526,7 +506,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2013-october-gold" style="grid-column: span 4;">
       <a href="html/2013-october-gold.html"><img src="images/2013-october-gold.jpg" alt="October Gold"></a>
       <div class="artwork-info">
         <div class="artwork-title">October Gold</div>
@@ -534,7 +514,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2013-summer-in-the-garden" style="grid-column: span 4;">
       <a href="html/2013-summer-in-the-garden.html"><img src="images/2013-summer-in-the-garden.jpg" alt="Summer in the Garden"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer in the Garden</div>
@@ -542,7 +522,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2013-tangled-shore" style="grid-column: span 4;">
       <a href="html/2013-tangled-shore.html"><img src="images/2013-tangled-shore.jpg" alt="The Tangled Shore"></a>
       <div class="artwork-info">
         <div class="artwork-title">The Tangled Shore</div>
@@ -555,10 +535,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2012</h2>
-    <span class="year-count" style="display: none;">7 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2012-cascade" style="grid-column: span 7;">
       <a href="html/2012-cascade.html"><img src="images/2012-cascade.jpg" alt="Cascade"></a>
       <div class="artwork-info">
         <div class="artwork-title">Cascade</div>
@@ -566,7 +545,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2012-hide-and-seek" style="grid-column: span 5;">
       <a href="html/2012-hide-and-seek.html"><img src="images/2012-hide-and-seek.jpg" alt="Hide and Seek"></a>
       <div class="artwork-info">
         <div class="artwork-title">Hide and Seek</div>
@@ -574,7 +553,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2012-hockley-valley" style="grid-column: span 4;">
       <a href="html/2012-hockley-valley.html"><img src="images/2012-hockley-valley.jpg" alt="Hockley Valley"></a>
       <div class="artwork-info">
         <div class="artwork-title">Hockley Valley</div>
@@ -582,7 +561,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2012-ribbons-and-pearls" style="grid-column: span 4;">
       <a href="html/2012-ribbons-and-pearls.html"><img src="images/2012-ribbons-and-pearls.jpg" alt="Ribbons and Pearls"></a>
       <div class="artwork-info">
         <div class="artwork-title">Ribbons and Pearls</div>
@@ -590,7 +569,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2012-standing-room-only" style="grid-column: span 4;">
       <a href="html/2012-standing-room-only.html"><img src="images/2012-standing-room-only.jpg" alt="Standing Room Only"></a>
       <div class="artwork-info">
         <div class="artwork-title">Standing Room Only</div>
@@ -598,7 +577,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2012-thaw" style="grid-column: span 4;">
       <a href="html/2012-thaw.html"><img src="images/2012-thaw.jpg" alt="Thaw"></a>
       <div class="artwork-info">
         <div class="artwork-title">Thaw</div>
@@ -606,7 +585,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2012-the-buddha-tree" style="grid-column: span 4;">
       <a href="html/2012-the-buddha-tree.html"><img src="images/2012-the-buddha-tree.jpg" alt="The Buddha Tree"></a>
       <div class="artwork-info">
         <div class="artwork-title">The Buddha Tree</div>
@@ -619,10 +598,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2011</h2>
-    <span class="year-count" style="display: none;">4 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2011-irises" style="grid-column: span 7;">
       <a href="html/2011-irises.html"><img src="images/2011-irises.jpg" alt="Irises"></a>
       <div class="artwork-info">
         <div class="artwork-title">Irises</div>
@@ -630,7 +608,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2011-panoply" style="grid-column: span 5;">
       <a href="html/2011-panoply.html"><img src="images/2011-panoply.jpg" alt="Panoply"></a>
       <div class="artwork-info">
         <div class="artwork-title">Panoply</div>
@@ -638,7 +616,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2011-pine-sprites" style="grid-column: span 4;">
       <a href="html/2011-pine-sprites.html"><img src="images/2011-pine-sprites.jpg" alt="Pine Sprites"></a>
       <div class="artwork-info">
         <div class="artwork-title">Pine Sprites</div>
@@ -646,7 +624,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2011-the-river" style="grid-column: span 4;">
       <a href="html/2011-the-river.html"><img src="images/2011-the-river.jpg" alt="The River"></a>
       <div class="artwork-info">
         <div class="artwork-title">The River</div>
@@ -659,10 +637,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2010</h2>
-    <span class="year-count" style="display: none;">7 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2010-haliburton-morning" style="grid-column: span 7;">
       <a href="html/2010-haliburton-morning.html"><img src="images/2010-haliburton-morning.jpg" alt="Haliburton Morning"></a>
       <div class="artwork-info">
         <div class="artwork-title">Haliburton Morning</div>
@@ -670,7 +647,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2010-incandescence" style="grid-column: span 5;">
       <a href="html/2010-incandescence.html"><img src="images/2010-incandescence.jpg" alt="Incandescence"></a>
       <div class="artwork-info">
         <div class="artwork-title">Incandescence</div>
@@ -678,7 +655,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2010-secrets" style="grid-column: span 4;">
       <a href="html/2010-secrets.html"><img src="images/2010-secrets.jpg" alt="Secrets"></a>
       <div class="artwork-info">
         <div class="artwork-title">Secrets</div>
@@ -686,7 +663,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2010-solitaire" style="grid-column: span 4;">
       <a href="html/2010-solitaire.html"><img src="images/2010-solitaire.jpg" alt="Solitaire"></a>
       <div class="artwork-info">
         <div class="artwork-title">Solitaire</div>
@@ -694,7 +671,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2010-stormlight" style="grid-column: span 4;">
       <a href="html/2010-stormlight.html"><img src="images/2010-stormlight.jpg" alt="Stormlight"></a>
       <div class="artwork-info">
         <div class="artwork-title">Stormlight</div>
@@ -702,7 +679,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2010-summers-end" style="grid-column: span 4;">
       <a href="html/2010-summers-end.html"><img src="images/2010-summers-end.jpg" alt="Summer's End"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer's End</div>
@@ -710,7 +687,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2010-view-from-mazengah" style="grid-column: span 4;">
       <a href="html/2010-view-from-mazengah.html"><img src="images/2010-view-from-mazengah.jpg" alt="View From Mazengah"></a>
       <div class="artwork-info">
         <div class="artwork-title">View From Mazengah</div>
@@ -723,10 +700,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2009</h2>
-    <span class="year-count" style="display: none;">10 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2009-cleome" style="grid-column: span 7;">
       <a href="html/2009-cleome.html"><img src="images/2009-cleome.jpg" alt="Cleome"></a>
       <div class="artwork-info">
         <div class="artwork-title">Cleome</div>
@@ -734,7 +710,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2009-four-sunflowers" style="grid-column: span 5;">
       <a href="html/2009-four-sunflowers.html"><img src="images/2009-four-sunflowers.jpg" alt="Four Sunflowers"></a>
       <div class="artwork-info">
         <div class="artwork-title">Four Sunflowers</div>
@@ -742,7 +718,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2009-in-a-pine-forest" style="grid-column: span 4;">
       <a href="html/2009-in-a-pine-forest.html"><img src="images/2009-in-a-pine-forest.jpg" alt="In a Pine Forest"></a>
       <div class="artwork-info">
         <div class="artwork-title">In a Pine Forest</div>
@@ -750,7 +726,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2009-kaleidoscope" style="grid-column: span 4;">
       <a href="html/2009-kaleidoscope.html"><img src="images/2009-kaleidoscope.jpg" alt="Kaleidoscope"></a>
       <div class="artwork-info">
         <div class="artwork-title">Kaleidoscope</div>
@@ -758,7 +734,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2009-passing-storm" style="grid-column: span 4;">
       <a href="html/2009-passing-storm.html"><img src="images/2009-passing-storm.jpg" alt="Passing Storm"></a>
       <div class="artwork-info">
         <div class="artwork-title">Passing Storm</div>
@@ -766,7 +742,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2009-reflections" style="grid-column: span 4;">
       <a href="html/2009-reflections.html"><img src="images/2009-reflections.jpg" alt="Reflections"></a>
       <div class="artwork-info">
         <div class="artwork-title">Reflections</div>
@@ -774,7 +750,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2009-scarlet-interior" style="grid-column: span 4;">
       <a href="html/2009-scarlet-interior.html"><img src="images/2009-scarlet-interior.jpg" alt="Scarlet Interior"></a>
       <div class="artwork-info">
         <div class="artwork-title">Scarlet Interior</div>
@@ -782,7 +758,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2009-summer-lake-of-bays" style="grid-column: span 4;">
       <a href="html/2009-summer-lake-of-bays.html"><img src="images/2009-summer-lake-of-bays.jpg" alt="Summer, Lake of Bays"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer, Lake of Bays</div>
@@ -790,7 +766,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2009-sunrise" style="grid-column: span 4;">
       <a href="html/2009-sunrise.html"><img src="images/2009-sunrise.jpg" alt="Sunrise"></a>
       <div class="artwork-info">
         <div class="artwork-title">Sunrise</div>
@@ -798,7 +774,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2009-sylvan-interlude" style="grid-column: span 4;">
       <a href="html/2009-sylvan-interlude.html"><img src="images/2009-sylvan-interlude.jpg" alt="Sylvan Interlude"></a>
       <div class="artwork-info">
         <div class="artwork-title">Sylvan Interlude</div>
@@ -811,10 +787,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2008</h2>
-    <span class="year-count" style="display: none;">9 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2008-among-friends" style="grid-column: span 7;">
       <a href="html/2008-among-friends.html"><img src="images/2008-among-friends.jpg" alt="Among Friends"></a>
       <div class="artwork-info">
         <div class="artwork-title">Among Friends</div>
@@ -822,7 +797,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2008-fiesta" style="grid-column: span 5;">
       <a href="html/2008-fiesta.html"><img src="images/2008-fiesta.jpg" alt="Fiesta"></a>
       <div class="artwork-info">
         <div class="artwork-title">Fiesta</div>
@@ -830,7 +805,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2008-last-rose-of-summer" style="grid-column: span 4;">
       <a href="html/2008-last-rose-of-summer.html"><img src="images/2008-last-rose-of-summer.jpg" alt="Last Rose of Summer"></a>
       <div class="artwork-info">
         <div class="artwork-title">Last Rose of Summer</div>
@@ -838,7 +813,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2008-old-woman-bay" style="grid-column: span 4;">
       <a href="html/2008-old-woman-bay.html"><img src="images/2008-old-woman-bay.jpg" alt="Old Woman Bay"></a>
       <div class="artwork-info">
         <div class="artwork-title">Old Woman Bay</div>
@@ -846,7 +821,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2008-spring-light" style="grid-column: span 4;">
       <a href="html/2008-spring-light.html"><img src="images/2008-spring-light.jpg" alt="Spring Light"></a>
       <div class="artwork-info">
         <div class="artwork-title">Spring Light</div>
@@ -854,7 +829,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2008-summer-morning" style="grid-column: span 4;">
       <a href="html/2008-summer-morning.html"><img src="images/2008-summer-morning.jpg" alt="Summer Morning"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer Morning</div>
@@ -862,7 +837,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2008-tapestry-of-poppies" style="grid-column: span 4;">
       <a href="html/2008-tapestry-of-poppies.html"><img src="images/2008-tapestry-of-poppies.jpg" alt="Tapestry of Poppies"></a>
       <div class="artwork-info">
         <div class="artwork-title">Tapestry of Poppies</div>
@@ -870,7 +845,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2008-towards-autumn" style="grid-column: span 4;">
       <a href="html/2008-towards-autumn.html"><img src="images/2008-towards-autumn.jpg" alt="Towards Autumn"></a>
       <div class="artwork-info">
         <div class="artwork-title">Towards Autumn</div>
@@ -878,7 +853,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2008-winter-light" style="grid-column: span 4;">
       <a href="html/2008-winter-light.html"><img src="images/2008-winter-light.jpg" alt="Winter Light"></a>
       <div class="artwork-info">
         <div class="artwork-title">Winter Light</div>
@@ -891,10 +866,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2007</h2>
-    <span class="year-count" style="display: none;">8 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2007-forest-patterns" style="grid-column: span 7;">
       <a href="html/2007-forest-patterns.html"><img src="images/2007-forest-patterns.jpg" alt="Forest Patterns"></a>
       <div class="artwork-info">
         <div class="artwork-title">Forest Patterns</div>
@@ -902,7 +876,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2007-maple-lake" style="grid-column: span 5;">
       <a href="html/2007-maple-lake.html"><img src="images/2007-maple-lake.jpg" alt="Maple Lake"></a>
       <div class="artwork-info">
         <div class="artwork-title">Maple Lake</div>
@@ -910,7 +884,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2007-november-sun" style="grid-column: span 4;">
       <a href="html/2007-november-sun.html"><img src="images/2007-november-sun.jpg" alt="November Sun"></a>
       <div class="artwork-info">
         <div class="artwork-title">November Sun</div>
@@ -918,7 +892,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2007-october-heights" style="grid-column: span 4;">
       <a href="html/2007-october-heights.html"><img src="images/2007-october-heights.jpg" alt="October Heights"></a>
       <div class="artwork-info">
         <div class="artwork-title">October Heights</div>
@@ -926,7 +900,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2007-pattys-montana" style="grid-column: span 4;">
       <a href="html/2007-pattys-montana.html"><img src="images/2007-pattys-montana.jpg" alt="Patty's Montana"></a>
       <div class="artwork-info">
         <div class="artwork-title">Patty's Montana</div>
@@ -934,7 +908,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2007-spring-shadows" style="grid-column: span 4;">
       <a href="html/2007-spring-shadows.html"><img src="images/2007-spring-shadows.jpg" alt="Spring Shadows"></a>
       <div class="artwork-info">
         <div class="artwork-title">Spring Shadows</div>
@@ -942,7 +916,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2007-storm" style="grid-column: span 4;">
       <a href="html/2007-storm.html"><img src="images/2007-storm.jpg" alt="Storm"></a>
       <div class="artwork-info">
         <div class="artwork-title">Storm</div>
@@ -950,7 +924,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2007-winter-hill" style="grid-column: span 4;">
       <a href="html/2007-winter-hill.html"><img src="images/2007-winter-hill.jpg" alt="Winter Hill"></a>
       <div class="artwork-info">
         <div class="artwork-title">Winter Hill</div>
@@ -963,10 +937,9 @@
 <div class="year-section">
   <div class="year-header">
     <h2>2006</h2>
-    <span class="year-count" style="display: none;">10 works</span>
   </div>
   <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
+    <div class="artwork" id="2006-cloud-shadows" style="grid-column: span 7;">
       <a href="html/2006-cloud-shadows.html"><img src="images/2006-cloud-shadows.jpg" alt="Cloud Shadows"></a>
       <div class="artwork-info">
         <div class="artwork-title">Cloud Shadows</div>
@@ -974,7 +947,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 5;">
+    <div class="artwork" id="2006-early-hay" style="grid-column: span 5;">
       <a href="html/2006-early-hay.html"><img src="images/2006-early-hay.jpg" alt="Early Hay"></a>
       <div class="artwork-info">
         <div class="artwork-title">Early Hay</div>
@@ -982,7 +955,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2006-forest-winter" style="grid-column: span 4;">
       <a href="html/2006-forest-winter.html"><img src="images/2006-forest-winter.jpg" alt="Forest Winter"></a>
       <div class="artwork-info">
         <div class="artwork-title">Forest Winter</div>
@@ -990,7 +963,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2006-muskoka-evening" style="grid-column: span 4;">
       <a href="html/2006-muskoka-evening.html"><img src="images/2006-muskoka-evening.jpg" alt="Muskoka Evening"></a>
       <div class="artwork-info">
         <div class="artwork-title">Muskoka Evening</div>
@@ -998,7 +971,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2006-one-pine" style="grid-column: span 4;">
       <a href="html/2006-one-pine.html"><img src="images/2006-one-pine.jpg" alt="One Pine"></a>
       <div class="artwork-info">
         <div class="artwork-title">One Pine</div>
@@ -1006,7 +979,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2006-rocky-shore" style="grid-column: span 4;">
       <a href="html/2006-rocky-shore.html"><img src="images/2006-rocky-shore.jpg" alt="Rocky Shore"></a>
       <div class="artwork-info">
         <div class="artwork-title">Rocky Shore</div>
@@ -1014,7 +987,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2006-september-pattern" style="grid-column: span 4;">
       <a href="html/2006-september-pattern.html"><img src="images/2006-september-pattern.jpg" alt="September Pattern"></a>
       <div class="artwork-info">
         <div class="artwork-title">September Pattern</div>
@@ -1022,7 +995,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2006-summer-birches" style="grid-column: span 4;">
       <a href="html/2006-summer-birches.html"><img src="images/2006-summer-birches.jpg" alt="Summer Birches"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer Birches</div>
@@ -1030,7 +1003,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2006-summer-tree" style="grid-column: span 4;">
       <a href="html/2006-summer-tree.html"><img src="images/2006-summer-tree.jpg" alt="Summer Tree"></a>
       <div class="artwork-info">
         <div class="artwork-title">Summer Tree</div>
@@ -1038,7 +1011,7 @@
         <div><span class="sold">SOLD</span></div>
       </div>
     </div>
-    <div class="artwork" style="grid-column: span 4;">
+    <div class="artwork" id="2006-totem-lake" style="grid-column: span 4;">
       <a href="html/2006-totem-lake.html"><img src="images/2006-totem-lake.jpg" alt="Totem Lake"></a>
       <div class="artwork-info">
         <div class="artwork-title">Totem Lake</div>
