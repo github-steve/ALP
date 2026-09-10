@@ -1,0 +1,39 @@
+/* ALP Design v2.6.7 | Studies Page Styles | Generated: 2026-09-10 */
+
+/* GALLERY */
+.gallery { padding: 6rem 3rem; }
+.gallery-header { margin-bottom: 3rem; }
+.gallery-header h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 400; color: #2c2c2c; }
+.year-section { margin-bottom: 6rem; }
+.year-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 2.5rem; }
+.year-header h2 { font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 300; color: #2c2c2c; }
+
+.grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; }
+.artwork img { width: 100%; height: auto; display: block; border-radius: 4px; }
+.artwork-info { margin-top: 1rem; }
+.artwork-title { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 400; color: #2c2c2c; }
+.artwork-meta { font-size: 0.8rem; color: #7a6e62; margin-top: 0.25rem; }
+.sold { color: #c67a2a; font-size: 0.75rem; font-weight: 500; margin-top: 0.3rem; }
+
+/* FOCUS & SKIP */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #f39c12;
+  outline-offset: 2px;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  background: #f39c12;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  z-index: 10000;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 6px;
+}
