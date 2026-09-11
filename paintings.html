@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<!-- ALP Design v2.4.1 | Warm Inviting Theme | Paintings Page | Generated: 2026-09-10 -->
+<!-- ALP Design v2.7.0 | Warm Inviting Theme | Paintings Page | Generated: 2026-09-10 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paintings - Mandy Budan Art</title>
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&amp;family=Source+Sans+3:wght@300;400;500&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,8 +27,8 @@
   
   body {
     overflow-y: scroll;
-    font-family: 'Source Sans 3', -apple-system, sans-serif;
-    font-weight: 300;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
     color: #2c2c2c;
     background: #fdf8f3;
     line-height: 1.6;
@@ -160,7 +160,7 @@
   }
   
   .latest-badge {
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 0.7rem;
     font-weight: 500;
     background: #c88d3d;
@@ -320,15 +320,39 @@
     transform: scale(1.05);
   }
 </style>
+
+  /* FOCUS & SKIP */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #c88d3d;
+    outline-offset: 2px;
+  }
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #c88d3d;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.2s;
+  }
+  .skip-link:focus {
+    top: 6px;
+  }
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <nav>
   <div class="wrap">
     <a href="index.html" class="brand">Mandy Budan Art</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="paintings.html" class="active">Paintings</a></li>
+      <li><a href="paintings.html" class="active" aria-current="page">Paintings</a></li>
       <li><a href="mandy-budan-small-original-paintings.html">Studies</a></li>
       <li><a href="mandy-budan-about.html">About</a></li>
       <li><a href="mandy-budan-store.html">Store</a></li>
@@ -1721,6 +1745,7 @@
   </div>
 </div>
 
+</main>
 <footer>
   <div class="wrap">
     &copy; 2005-2026 Mandy Budan. All rights reserved. &middot; <a href="http://budanart.com/contact">Contact the Artist</a>
