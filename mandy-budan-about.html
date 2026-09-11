@@ -11,9 +11,10 @@
   body {
     overflow-y: scroll; font-family: 'Playfair Display', serif; font-weight: 300; color: #2c2c2c; background: #fdf8f3; line-height: 1.6; }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-  nav { background: hsl(211, 29%, 19%); box-shadow: 0 1px 0 rgba(0,0,0,0.05); padding: 1.25rem 0; margin-bottom: 3rem; }
+  nav { background: hsl(211, 29%, 19%);  padding: 1.25rem 0; margin-bottom: 3rem; }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; }
-  .brand { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 500; color: #fff; text-decoration: none; }
+  .brand {
+    transition: color 0.2s; font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 500; color: #fff; text-decoration: none; }
   .nav-links {
     display: flex;
     list-style: none;
@@ -23,6 +24,10 @@
     width: 5rem;
     text-align: center;
   }
+  
+  .brand:hover {
+    color: #f39c12;
+}
   
   .nav-links a {
     color: #fff;

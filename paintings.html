@@ -44,7 +44,6 @@
   /* NAV */
   nav {
     background: hsl(211, 29%, 19%);
-    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
     padding: 1.25rem 0;
     margin-bottom: 0;
   }
@@ -56,6 +55,7 @@
   }
   
   .brand {
+    transition: color 0.2s;
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
     font-weight: 500;
@@ -72,6 +72,10 @@
     width: 5rem;
     text-align: center;
   }
+  
+  .brand:hover {
+    color: #f39c12;
+}
   
   .nav-links a {
     color: #fff;
