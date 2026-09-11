@@ -40,13 +40,9 @@
   .store-links { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
   .store-links a { display: inline-block; color: #c88d3d; text-decoration: none; font-size: 1rem; padding: 0.5rem 0; border-bottom: 1px solid #e0d8d0; }
   .store-links a[href^="http"]::after {
-    content: "";
-    display: inline-block;
-    width: 0.75em;
-    height: 0.75em;
-    margin-left: 0.25em;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23c88d3d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/><polyline points='15 3 21 3 21 9'/><line x1='10' y1='14' x2='21' y2='3'/></svg>") no-repeat center / contain;
-    vertical-align: -1px;
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 24 24' fill='none' stroke='%23c88d3d' stroke-width='2'><path d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/><polyline points='15 3 21 3 21 9'/><line x1='10' y1='14' x2='21' y2='3'/></svg>");
+    margin-left: 4px;
+    vertical-align: middle;
   }
   .store-links a:hover { color: #b87a2f; }
   footer { padding: 2rem 0; text-align: center; color: #a09080; font-size: 0.8rem; }
