@@ -1,50 +1,246 @@
 <!DOCTYPE html>
+<!-- ALP Design v2.7.0 | Warm Inviting Theme | Landing Page | Generated: 2026-09-10 -->
 <html lang="en">
 <head>
-<!-- ALP Design v2.6.7 | Landing Page | Generated: 2026-09-10 -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mandy Budan Art — Abstract Landscape Paintings</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="css/styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  body {
+    overflow-y: scroll;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: #2c2c2c;
+    background: #fdf8f3;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  .wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  /* NAV */
+  nav {
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    padding: 1.25rem 0;
+    margin-bottom: 0;
+  }
+  
+  nav .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #4a3f35;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    width: 5rem;
+    text-align: center;
+  }
+  
+  .nav-links a {
+    color: #4a3f35;
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  
+  .nav-links a:hover, .nav-links a.active {
+    color: #c88d3d;
+  }
+  
   /* HERO */
   .hero { min-height: 100vh; display: flex; align-items: flex-end; padding: 0 3rem 4rem; position: relative; }
   .hero-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.9; }
   .hero-bg img { width: 100%; height: 100%; object-fit: cover; }
   .hero-content { position: relative; z-index: 2; max-width: 800px; background: rgba(0,0,0,0.5); padding: 2rem 2rem 0; border-radius: 8px; }
-  .hero h1 { font-family: 'Space Grotesk', sans-serif; font-size: 5rem; font-weight: 400; color: #fff; line-height: 1; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
+  .hero h1 { font-family: 'Playfair Display', serif; font-size: 5rem; font-weight: 400; color: #fff; line-height: 1; margin-bottom: 1.5rem; letter-spacing: -0.02em; }
   .hero p { color: rgba(255,255,255,0.9); font-size: 1.1rem; max-width: 500px; line-height: 1.8; }
   
-  /* GALLERY */
-  .gallery { padding: 6rem 3rem; }
-  .year-section { margin-bottom: 6rem; }
-  .year-header { display: flex; align-items: baseline; gap: 1.5rem; margin-bottom: 2.5rem; }
-  .year-header h2 { font-family: 'Space Grotesk', sans-serif; font-size: 3rem; font-weight: 300; color: #2c2c2c; }
-  .year-count { font-size: 0.85rem; color: #7a6e62; text-transform: uppercase; letter-spacing: 0.05em; }
+  /* INTRO */
+  .intro {
+    padding: 4rem 0;
+    text-align: center;
+  }
   
-  .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 1.5rem; }
-  .artwork img { width: 100%; height: auto; display: block; border-radius: 4px; }
-  .artwork-info { margin-top: 1rem; }
-  .artwork-title { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 400; color: #2c2c2c; }
-  .artwork-meta { font-size: 0.8rem; color: #7a6e62; margin-top: 0.25rem; }
-  .sold { color: #c67a2a; font-size: 0.75rem; font-weight: 500; margin-top: 0.3rem; }
-
+  .intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #4a3f35;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    color: #5a5048;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.8;
+  }
+  
+  /* FEATURED */
+  .featured {
+    padding: 3rem 0 4rem;
+  }
+  
+  .featured h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #4a3f35;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .featured-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .featured-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  
+  .featured-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .featured-info {
+    padding: 0.75rem;
+  }
+  
+  .featured-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4a3f35;
+  }
+  
+  .featured-meta {
+    font-size: 0.72rem;
+    color: #a09080;
+    margin-top: 0.15rem;
+  }
+  
+  /* COFFEE */
+  .coffee-section {
+    text-align: center;
+    padding: 4rem 0;
+    background: #fff;
+    border-radius: 12px;
+    margin: 3rem 0;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  
+  .coffee-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #4a3f35;
+    margin-bottom: 0.5rem;
+  }
+  
+  .coffee-section p {
+    color: #7a6e62;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .coffee-btn {
+    display: inline-block;
+    background: #c88d3d;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.85rem 2.2rem;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: background 0.2s;
+  }
+  
+  .coffee-btn:hover {
+    background: #b87a2f;
+  }
+  
+  /* FOOTER */
+  footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: #a09080;
+    font-size: 0.8rem;
+  }
+  
+  footer a {
+    color: #b87a2f;
+    text-decoration: none;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links a {
+    color: #7a6e62;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+  }
+  
+  .social-links a:hover {
+    color: #c88d3d;
+  }
+  
   /* FOCUS & SKIP */
   a:focus-visible,
   button:focus-visible,
   [tabindex]:focus-visible {
-    outline: 2px solid #f39c12;
+    outline: 2px solid #c88d3d;
     outline-offset: 2px;
   }
   .skip-link {
     position: absolute;
     top: -40px;
     left: 6px;
-    background: #f39c12;
-    color: #000;
+    background: #c88d3d;
+    color: #fff;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 4px;
@@ -58,9 +254,10 @@
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to main content</a>
+
 <nav>
   <div class="wrap">
-    <a href="index.html" class="brand">MANDY BUDAN ART</a>
+    <a href="index.html" class="brand">Mandy Budan Art</a>
     <ul class="nav-links">
       <li><a href="index.html" class="active" aria-current="page">Home</a></li>
       <li><a href="paintings.html">Paintings</a></li>
@@ -70,6 +267,8 @@
     </ul>
   </div>
 </nav>
+
+<main id="main">
 
 <section class="hero">
   <div class="hero-bg">
@@ -81,1006 +280,85 @@
   </div>
 </section>
 
-<main id="main">
-<section class="gallery">
-  <div class="year-section">
-  <div class="year-header">
-    <h2>2026</h2>
-    <span class="year-count" style="display: none;">1 works</span>
+<section class="intro">
+  <div class="wrap">
+    <h2>Welcome to my studio</h2>
+    <p>Every painting starts with a feeling — a memory of a place, a moment in nature, the way light hits the water on a quiet morning. My work explores the intersection of memory, emotion, and the natural world.</p>
+    <p>I work primarily in acrylic on wood, building up layers of color and texture to create pieces that are both energetic and meditative. I hope my art brings a sense of calm and joy to your space.</p>
   </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2026-rhythm-and-hues.html"><img src="images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Rhythm and Hues</div>
-        <div class="artwork-meta">2026 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2025</h2>
-    <span class="year-count" style="display: none;">2 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2025-chasing-summer.html"><img src="images/2025-chasing-summer.jpg" alt="Chasing Summer"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Chasing Summer</div>
-        <div class="artwork-meta">2025 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2025-going-places.html"><img src="images/2025-going-places.jpg" alt="Going Places"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Going Places</div>
-        <div class="artwork-meta">2025 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2024</h2>
-    <span class="year-count" style="display: none;">3 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2024-running-wild.html"><img src="images/2024-running-wild.jpg" alt="Running Wild"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Running Wild</div>
-        <div class="artwork-meta">2024 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2024-waterloo-fall.html"><img src="images/2024-waterloo-fall.jpg" alt="Waterloo Fall"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Waterloo Fall</div>
-        <div class="artwork-meta">2024 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2024-watershed-moment.html"><img src="images/2024-watershed-moment.jpg" alt="Watershed Moment"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Watershed Moment</div>
-        <div class="artwork-meta">2024 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2023</h2>
-    <span class="year-count" style="display: none;">4 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2023-above-the-trees.html"><img src="images/2023-above-the-trees.jpg" alt="Above the Trees"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Above the Trees</div>
-        <div class="artwork-meta">2023 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2023-firefall.html"><img src="images/2023-firefall.jpg" alt="Firefall"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Firefall</div>
-        <div class="artwork-meta">2023 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2023-out-of-the-blue.html"><img src="images/2023-out-of-the-blue.jpg" alt="Out of the Blue"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Out of the Blue</div>
-        <div class="artwork-meta">2023 - 16 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2023-summer-dreaming.html"><img src="images/2023-summer-dreaming.jpg" alt="Summer Dreaming"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer Dreaming</div>
-        <div class="artwork-meta">2023 - 8 x 10 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2022</h2>
-    <span class="year-count" style="display: none;">4 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2022-lady-in-red.html"><img src="images/2022-lady-in-red.jpg" alt="Lady in Red"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Lady in Red</div>
-        <div class="artwork-meta">2022 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2022-promenade.html"><img src="images/2022-promenade.jpg" alt="Promenade"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Promenade</div>
-        <div class="artwork-meta">2022 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2022-summer-duet.html"><img src="images/2022-summer-duet.jpg" alt="Summer Duet"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer Duet</div>
-        <div class="artwork-meta">2022 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2022-verdigris.html"><img src="images/2022-verdigris.jpg" alt="Verdigris"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Verdigris</div>
-        <div class="artwork-meta">2022 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2021</h2>
-    <span class="year-count" style="display: none;">2 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2021-forest-tapestry.html"><img src="images/2021-forest-tapestry.jpg" alt="Forest Tapestry"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Forest Tapestry</div>
-        <div class="artwork-meta">2021 - 24 x 36 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2021-standing-tall.html"><img src="images/2021-standing-tall.jpg" alt="Standing Tall"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Standing Tall</div>
-        <div class="artwork-meta">2021 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2020</h2>
-    <span class="year-count" style="display: none;">3 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2020-birchlight.html"><img src="images/2020-birchlight.jpg" alt="Birch Light"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Birch Light</div>
-        <div class="artwork-meta">2020 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2020-living-on-the-edge.html"><img src="images/2020-living-on-the-edge.jpg" alt="Living on the Edge"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Living on the Edge</div>
-        <div class="artwork-meta">2020 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2020-winter-warmth.html"><img src="images/2020-winter-warmth.jpg" alt="Winter Warmth"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Winter Warmth</div>
-        <div class="artwork-meta">2020 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2019</h2>
-    <span class="year-count" style="display: none;">3 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2019-falling.html"><img src="images/2019-falling.jpg" alt="Falling"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Falling</div>
-        <div class="artwork-meta">2019 - 30 x 40 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2019-heart-of-gold.html"><img src="images/2019-heart-of-gold.jpg" alt="Heart of Gold"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Heart of Gold</div>
-        <div class="artwork-meta">2019 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2019-the-emperor.html"><img src="images/2019-the-emperor.jpg" alt="The Emperor"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">The Emperor</div>
-        <div class="artwork-meta">2019 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2018</h2>
-    <span class="year-count" style="display: none;">3 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2018-beaming.html"><img src="images/2018-beaming.jpg" alt="Beaming"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Beaming</div>
-        <div class="artwork-meta">2018 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2018-poolside.html"><img src="images/2018-poolside.jpg" alt="Poolside"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Poolside</div>
-        <div class="artwork-meta">2018 - 36 x 48 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2018-the-deep.html"><img src="images/2018-the-deep.jpg" alt="The Deep"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">The Deep</div>
-        <div class="artwork-meta">2018 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2017</h2>
-    <span class="year-count" style="display: none;">5 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2017-almost-autumn.html"><img src="images/2017-almost-autumn.jpg" alt="Almost Autumn"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Almost Autumn</div>
-        <div class="artwork-meta">2017 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2017-along-the-river.html"><img src="images/2017-along-the-river.jpg" alt="Along the River"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Along the River</div>
-        <div class="artwork-meta">2017 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2017-awakening.html"><img src="images/2017-awakening.jpg" alt="Awakening"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Awakening</div>
-        <div class="artwork-meta">2017 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2017-celadon-morning.html"><img src="images/2017-celadon-morning.jpg" alt="Celadon Morning"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Celadon Morning</div>
-        <div class="artwork-meta">2017 - 9 x 12 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2017-the-beacon.html"><img src="images/2017-the-beacon.jpg" alt="The Beacon"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">The Beacon</div>
-        <div class="artwork-meta">2017 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2016</h2>
-    <span class="year-count" style="display: none;">3 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2016-lakeside.html"><img src="images/2016-lakeside.jpg" alt="Lakeside"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Lakeside</div>
-        <div class="artwork-meta">2016 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2016-one-fine-day.html"><img src="images/2016-one-fine-day.jpg" alt="One Fine Day"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">One Fine Day</div>
-        <div class="artwork-meta">2016 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2016-triumvirate.html"><img src="images/2016-triumvirate.jpg" alt="Triumvirate"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Triumvirate</div>
-        <div class="artwork-meta">2016 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2015</h2>
-    <span class="year-count" style="display: none;">5 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2015-ebb-and-flow.html"><img src="images/2015-ebb-and-flow.jpg" alt="Ebb and Flow"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Ebb and Flow</div>
-        <div class="artwork-meta">2015 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2015-july-progression.html"><img src="images/2015-july-progression.jpg" alt="July Progression"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">July Progression</div>
-        <div class="artwork-meta">2015 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2015-last-call.html"><img src="images/2015-last-call.jpg" alt="Last Call"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Last Call</div>
-        <div class="artwork-meta">2015 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2015-salmon-ridge.html"><img src="images/2015-salmon-ridge.jpg" alt="Salmon Ridge"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Salmon Ridge</div>
-        <div class="artwork-meta">2015 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2015-summer-medley.html"><img src="images/2015-summer-medley.jpg" alt="Summer Medley"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer Medley</div>
-        <div class="artwork-meta">2015 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2014</h2>
-    <span class="year-count" style="display: none;">4 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2014-after-the-rain.html"><img src="images/2014-after-the-rain.jpg" alt="After the Rain"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">After the Rain</div>
-        <div class="artwork-meta">2014 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2014-early-riser.html"><img src="images/2014-early-riser.jpg" alt="Early Riser"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Early Riser</div>
-        <div class="artwork-meta">2014 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2014-emerald-moments.html"><img src="images/2014-emerald-moments.jpg" alt="Emerald Moments"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Emerald Moments</div>
-        <div class="artwork-meta">2014 - 120 x 40 - acrylic on canvas</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2014-the-jester.html"><img src="images/2014-the-jester.jpg" alt="The Jester"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">The Jester</div>
-        <div class="artwork-meta">2014 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2013</h2>
-    <span class="year-count" style="display: none;">6 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2013-carnelian-morning.html"><img src="images/2013-carnelian-morning.jpg" alt="Carnelian Morning"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Carnelian Morning</div>
-        <div class="artwork-meta">2013 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2013-crescendo.html"><img src="images/2013-crescendo.jpg" alt="Crescendo"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Crescendo</div>
-        <div class="artwork-meta">2013 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2013-iris-squared.html"><img src="images/2013-iris-squared.jpg" alt="Iris Squared"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Iris Squared</div>
-        <div class="artwork-meta">2013 - 8 x 8 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2013-october-gold.html"><img src="images/2013-october-gold.jpg" alt="October Gold"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">October Gold</div>
-        <div class="artwork-meta">2013 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2013-summer-in-the-garden.html"><img src="images/2013-summer-in-the-garden.jpg" alt="Summer in the Garden"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer in the Garden</div>
-        <div class="artwork-meta">2013 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2013-tangled-shore.html"><img src="images/2013-tangled-shore.jpg" alt="The Tangled Shore"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">The Tangled Shore</div>
-        <div class="artwork-meta">2013 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2012</h2>
-    <span class="year-count" style="display: none;">7 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2012-cascade.html"><img src="images/2012-cascade.jpg" alt="Cascade"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Cascade</div>
-        <div class="artwork-meta">2012 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2012-hide-and-seek.html"><img src="images/2012-hide-and-seek.jpg" alt="Hide and Seek"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Hide and Seek</div>
-        <div class="artwork-meta">2012 - 18 x 36 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2012-hockley-valley.html"><img src="images/2012-hockley-valley.jpg" alt="Hockley Valley"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Hockley Valley</div>
-        <div class="artwork-meta">2012 - 12 x 2160 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2012-ribbons-and-pearls.html"><img src="images/2012-ribbons-and-pearls.jpg" alt="Ribbons and Pearls"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Ribbons and Pearls</div>
-        <div class="artwork-meta">2012 - 16 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2012-standing-room-only.html"><img src="images/2012-standing-room-only.jpg" alt="Standing Room Only"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Standing Room Only</div>
-        <div class="artwork-meta">2012 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2012-thaw.html"><img src="images/2012-thaw.jpg" alt="Thaw"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Thaw</div>
-        <div class="artwork-meta">2012 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2012-the-buddha-tree.html"><img src="images/2012-the-buddha-tree.jpg" alt="The Buddha Tree"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">The Buddha Tree</div>
-        <div class="artwork-meta">2012 - 30 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2011</h2>
-    <span class="year-count" style="display: none;">4 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2011-irises.html"><img src="images/2011-irises.jpg" alt="Irises"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Irises</div>
-        <div class="artwork-meta">2011 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2011-panoply.html"><img src="images/2011-panoply.jpg" alt="Panoply"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Panoply</div>
-        <div class="artwork-meta">2011 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2011-pine-sprites.html"><img src="images/2011-pine-sprites.jpg" alt="Pine Sprites"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Pine Sprites</div>
-        <div class="artwork-meta">2011 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2011-the-river.html"><img src="images/2011-the-river.jpg" alt="The River"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">The River</div>
-        <div class="artwork-meta">2011 - 36 x 48 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2010</h2>
-    <span class="year-count" style="display: none;">7 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2010-haliburton-morning.html"><img src="images/2010-haliburton-morning.jpg" alt="Haliburton Morning"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Haliburton Morning</div>
-        <div class="artwork-meta">2010 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2010-incandescence.html"><img src="images/2010-incandescence.jpg" alt="Incandescence"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Incandescence</div>
-        <div class="artwork-meta">2010 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2010-secrets.html"><img src="images/2010-secrets.jpg" alt="Secrets"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Secrets</div>
-        <div class="artwork-meta">2010 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2010-solitaire.html"><img src="images/2010-solitaire.jpg" alt="Solitaire"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Solitaire</div>
-        <div class="artwork-meta">2010 - 20 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2010-stormlight.html"><img src="images/2010-stormlight.jpg" alt="Stormlight"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Stormlight</div>
-        <div class="artwork-meta">2010 - 30 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2010-summers-end.html"><img src="images/2010-summers-end.jpg" alt="Summer's End"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer's End</div>
-        <div class="artwork-meta">2010 - 36 x 48 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2010-view-from-mazengah.html"><img src="images/2010-view-from-mazengah.jpg" alt="View From Mazengah"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">View From Mazengah</div>
-        <div class="artwork-meta">2010 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2009</h2>
-    <span class="year-count" style="display: none;">10 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2009-cleome.html"><img src="images/2009-cleome.jpg" alt="Cleome"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Cleome</div>
-        <div class="artwork-meta">2009 - 9 x 12 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2009-four-sunflowers.html"><img src="images/2009-four-sunflowers.jpg" alt="Four Sunflowers"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Four Sunflowers</div>
-        <div class="artwork-meta">2009 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2009-in-a-pine-forest.html"><img src="images/2009-in-a-pine-forest.jpg" alt="In a Pine Forest"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">In a Pine Forest</div>
-        <div class="artwork-meta">2009 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2009-kaleidoscope.html"><img src="images/2009-kaleidoscope.jpg" alt="Kaleidoscope"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Kaleidoscope</div>
-        <div class="artwork-meta">2009 - 30 x 60 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2009-passing-storm.html"><img src="images/2009-passing-storm.jpg" alt="Passing Storm"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Passing Storm</div>
-        <div class="artwork-meta">2009 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2009-reflections.html"><img src="images/2009-reflections.jpg" alt="Reflections"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Reflections</div>
-        <div class="artwork-meta">2009 - 24 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2009-scarlet-interior.html"><img src="images/2009-scarlet-interior.jpg" alt="Scarlet Interior"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Scarlet Interior</div>
-        <div class="artwork-meta">2009 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2009-summer-lake-of-bays.html"><img src="images/2009-summer-lake-of-bays.jpg" alt="Summer, Lake of Bays"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer, Lake of Bays</div>
-        <div class="artwork-meta">2009 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2009-sunrise.html"><img src="images/2009-sunrise.jpg" alt="Sunrise"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Sunrise</div>
-        <div class="artwork-meta">2009 - 16 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2009-sylvan-interlude.html"><img src="images/2009-sylvan-interlude.jpg" alt="Sylvan Interlude"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Sylvan Interlude</div>
-        <div class="artwork-meta">2009 - 9 x 12 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2008</h2>
-    <span class="year-count" style="display: none;">9 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2008-among-friends.html"><img src="images/2008-among-friends.jpg" alt="Among Friends"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Among Friends</div>
-        <div class="artwork-meta">2008 - 30 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2008-fiesta.html"><img src="images/2008-fiesta.jpg" alt="Fiesta"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Fiesta</div>
-        <div class="artwork-meta">2008 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2008-last-rose-of-summer.html"><img src="images/2008-last-rose-of-summer.jpg" alt="Last Rose of Summer"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Last Rose of Summer</div>
-        <div class="artwork-meta">2008 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2008-old-woman-bay.html"><img src="images/2008-old-woman-bay.jpg" alt="Old Woman Bay"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Old Woman Bay</div>
-        <div class="artwork-meta">2008 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2008-spring-light.html"><img src="images/2008-spring-light.jpg" alt="Spring Light"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Spring Light</div>
-        <div class="artwork-meta">2008 - 11 x 14 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2008-summer-morning.html"><img src="images/2008-summer-morning.jpg" alt="Summer Morning"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer Morning</div>
-        <div class="artwork-meta">2008 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2008-tapestry-of-poppies.html"><img src="images/2008-tapestry-of-poppies.jpg" alt="Tapestry of Poppies"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Tapestry of Poppies</div>
-        <div class="artwork-meta">2008 - 9 x 12 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2008-towards-autumn.html"><img src="images/2008-towards-autumn.jpg" alt="Towards Autumn"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Towards Autumn</div>
-        <div class="artwork-meta">2008 - 24 x 30 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2008-winter-light.html"><img src="images/2008-winter-light.jpg" alt="Winter Light"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Winter Light</div>
-        <div class="artwork-meta">2008 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2007</h2>
-    <span class="year-count" style="display: none;">8 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2007-forest-patterns.html"><img src="images/2007-forest-patterns.jpg" alt="Forest Patterns"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Forest Patterns</div>
-        <div class="artwork-meta">2007 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2007-maple-lake.html"><img src="images/2007-maple-lake.jpg" alt="Maple Lake"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Maple Lake</div>
-        <div class="artwork-meta">2007 - 18 x 24 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2007-november-sun.html"><img src="images/2007-november-sun.jpg" alt="November Sun"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">November Sun</div>
-        <div class="artwork-meta">2007 - 16 x 20 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2007-october-heights.html"><img src="images/2007-october-heights.jpg" alt="October Heights"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">October Heights</div>
-        <div class="artwork-meta">2007 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2007-pattys-montana.html"><img src="images/2007-pattys-montana.jpg" alt="Patty's Montana"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Patty's Montana</div>
-        <div class="artwork-meta">2007 - 9 x 12 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2007-spring-shadows.html"><img src="images/2007-spring-shadows.jpg" alt="Spring Shadows"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Spring Shadows</div>
-        <div class="artwork-meta">2007 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2007-storm.html"><img src="images/2007-storm.jpg" alt="Storm"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Storm</div>
-        <div class="artwork-meta">2007 - 9 x 12 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2007-winter-hill.html"><img src="images/2007-winter-hill.jpg" alt="Winter Hill"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Winter Hill</div>
-        <div class="artwork-meta">2007 - 12 x 16 - acrylic on wood</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="year-section">
-  <div class="year-header">
-    <h2>2006</h2>
-    <span class="year-count" style="display: none;">10 works</span>
-  </div>
-  <div class="grid">
-    <div class="artwork" style="grid-column: span 7;">
-      <a href="html/2006-cloud-shadows.html"><img src="images/2006-cloud-shadows.jpg" alt="Cloud Shadows"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Cloud Shadows</div>
-        <div class="artwork-meta">2006 - 11 x 14 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 5;">
-      <a href="html/2006-early-hay.html"><img src="images/2006-early-hay.jpg" alt="Early Hay"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Early Hay</div>
-        <div class="artwork-meta">2006 - 12 x 16 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2006-forest-winter.html"><img src="images/2006-forest-winter.jpg" alt="Forest Winter"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Forest Winter</div>
-        <div class="artwork-meta">2006 - 16 x 20 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2006-muskoka-evening.html"><img src="images/2006-muskoka-evening.jpg" alt="Muskoka Evening"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Muskoka Evening</div>
-        <div class="artwork-meta">2006 - 16 x 20 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2006-one-pine.html"><img src="images/2006-one-pine.jpg" alt="One Pine"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">One Pine</div>
-        <div class="artwork-meta">2006 - 9 x 12 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2006-rocky-shore.html"><img src="images/2006-rocky-shore.jpg" alt="Rocky Shore"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Rocky Shore</div>
-        <div class="artwork-meta">2006 - 11 x 14 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2006-september-pattern.html"><img src="images/2006-september-pattern.jpg" alt="September Pattern"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">September Pattern</div>
-        <div class="artwork-meta">2006 - 16 x 20 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2006-summer-birches.html"><img src="images/2006-summer-birches.jpg" alt="Summer Birches"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer Birches</div>
-        <div class="artwork-meta">2006 - 12 x 16 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2006-summer-tree.html"><img src="images/2006-summer-tree.jpg" alt="Summer Tree"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Summer Tree</div>
-        <div class="artwork-meta">2006 - 12 x 16 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-    <div class="artwork" style="grid-column: span 4;">
-      <a href="html/2006-totem-lake.html"><img src="images/2006-totem-lake.jpg" alt="Totem Lake"></a>
-      <div class="artwork-info">
-        <div class="artwork-title">Totem Lake</div>
-        <div class="artwork-meta">2006 - 9 x 12 - acrylic on panel</div>
-        <div><span class="sold">SOLD</span></div>
-      </div>
-    </div>
-  </div>
-</div>
-
 </section>
+
+<section class="featured">
+  <div class="wrap">
+    <h2>Recent Work</h2>
+    <div class="featured-grid">
+        <div class="featured-item">
+          <a href="html/2026-rhythm-and-hues.html"><img src="images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues by Mandy Budan"></a>
+          <div class="featured-info">
+            <div class="featured-title">Rhythm and Hues</div>
+            <div class="featured-meta">2026</div>
+          </div>
+        </div>
+        <div class="featured-item">
+          <a href="html/2025-chasing-summer.html"><img src="images/2025-chasing-summer.jpg" alt="Chasing Summer by Mandy Budan"></a>
+          <div class="featured-info">
+            <div class="featured-title">Chasing Summer</div>
+            <div class="featured-meta">2025</div>
+          </div>
+        </div>
+        <div class="featured-item">
+          <a href="html/2025-going-places.html"><img src="images/2025-going-places.jpg" alt="Going Places by Mandy Budan"></a>
+          <div class="featured-info">
+            <div class="featured-title">Going Places</div>
+            <div class="featured-meta">2025</div>
+          </div>
+        </div>
+        <div class="featured-item">
+          <a href="html/2024-running-wild.html"><img src="images/2024-running-wild.jpg" alt="Running Wild by Mandy Budan"></a>
+          <div class="featured-info">
+            <div class="featured-title">Running Wild</div>
+            <div class="featured-meta">2024</div>
+          </div>
+        </div>
+        <div class="featured-item">
+          <a href="html/2024-waterloo-fall.html"><img src="images/2024-waterloo-fall.jpg" alt="Waterloo Fall by Mandy Budan"></a>
+          <div class="featured-info">
+            <div class="featured-title">Waterloo Fall</div>
+            <div class="featured-meta">2024</div>
+          </div>
+        </div>
+        <div class="featured-item">
+          <a href="html/2024-watershed-moment.html"><img src="images/2024-watershed-moment.jpg" alt="Watershed Moment by Mandy Budan"></a>
+          <div class="featured-info">
+            <div class="featured-title">Watershed Moment</div>
+            <div class="featured-meta">2024</div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="coffee-section">
+  <div class="wrap">
+    <h3>Enjoying the art?</h3>
+    <p>Buy me a coffee to support my work</p>
+    <a href="#" class="coffee-btn">☕ Buy Me a Coffee</a>
+  </div>
+</section>
+
 </main>
 
 <footer>
-  &copy; 2005-2026 Mandy Budan. All rights reserved.
+  <div class="wrap">
+    <div class="social-links">
+      <a href="https://www.etsy.com/ca/shop/BudanArt">Etsy</a>
+      <a href="https://fineartamerica.com/profiles/mandy-budan">Fine Art America</a>
+      <a href="https://www.saatchiart.com/mandybudan">Saatchi Art</a>
+      <a href="http://budanart.com/contact">Contact</a>
+    </div>
+    &copy; 2005-2026 Mandy Budan. All rights reserved.
+  </div>
 </footer>
+
 </body>
 </html>
