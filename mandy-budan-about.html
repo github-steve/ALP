@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ALP Design v2.7.2 | Warm Inviting Theme | Generated: 2026-09-10 -->
+<!-- ALP Design v2.7.4 | Warm Inviting Theme | Generated: 2026-09-10 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -25,7 +25,7 @@
   }
   
   .nav-links a {
-    color: #4a3f35;
+    color: #fff;
     text-decoration: none;
     font-size: 0.85rem;
     letter-spacing: 0.04em;
@@ -44,10 +44,33 @@
   .about-section ul { color: #5a5048; padding-left: 1.5rem; margin-bottom: 0.75rem; }
   .about-section li { margin-bottom: 0.4rem; }
   footer { padding: 2rem 0; text-align: center; color: #a09080; font-size: 0.8rem; }
+  /* FOCUS & SKIP */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #f39c12;
+    outline-offset: 2px;
+  }
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #f39c12;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.2s;
+  }
+  .skip-link:focus {
+    top: 6px;
+  }
 </style>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to main content</a>
 <nav>
   <div class="wrap">
     <a href="index.html" class="brand">Mandy Budan Art</a>

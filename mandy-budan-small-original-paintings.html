@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- ALP Design v2.7.2 | Warm Inviting Theme | Generated: 2026-09-10 -->
+<!-- ALP Design v2.7.4 | Warm Inviting Theme | Generated: 2026-09-10 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -40,7 +40,7 @@
   }
   
   .nav-links a {
-    color: #4a3f35;
+    color: #fff;
     text-decoration: none;
     font-size: 0.85rem;
     letter-spacing: 0.04em;
@@ -108,8 +108,8 @@
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    background: #c88d3d;
-    color: #fff;
+    background: #f39c12;
+    color: #000;
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
@@ -147,6 +147,28 @@
     font-style: normal;
   }
 
+  /* FOCUS & SKIP */
+  a:focus-visible,
+  button:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid #f39c12;
+    outline-offset: 2px;
+  }
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #f39c12;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 10000;
+    transition: top 0.2s;
+  }
+  .skip-link:focus {
+    top: 6px;
+  }
 </style>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
