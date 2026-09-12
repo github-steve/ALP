@@ -45,6 +45,37 @@
   .artwork-meta { font-size: 0.78rem; color: #a09080; margin-top: 0.2rem; }
   .sold-badge { display: inline-block; background: #ff0000; color: #fff; padding: 0.35rem 0.75rem 0.25rem; border-radius: 50px; font-size: 0.7rem; font-weight: 700; margin-bottom: 1rem; }
   footer { padding: 2rem 0; color: #a09080; font-size: 0.8rem; white-space: nowrap; display: flex; justify-content: center; }
+
+  .floating-btns {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 1000;
+  }
+
+  .floating-btn {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #ff6b35;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: background 0.2s, transform 0.2s;
+  }
+
+  .floating-btn:hover {
+    background: #e55a2b;
+    transform: scale(1.05);
+  }
   .artist-statement {
     background: #e9eaec;
     padding: 1.5rem 0;
@@ -526,6 +557,11 @@
       </div>
     </div>
 
+
+  <div class="floating-btns">
+    <button class="floating-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" aria-label="Back to top">↑</button>
+    <button class="floating-btn" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})" aria-label="Go to bottom">↓</button>
+  </div>
 
 <footer><div class="wrap">All artwork and images copyright &copy; Mandy Budan 2005-2026</div></footer>
 </body>
