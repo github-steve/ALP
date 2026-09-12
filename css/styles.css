@@ -11,7 +11,7 @@ nav .wrap { display: flex; justify-content: space-between; align-items: center; 
 .brand:hover { color: #fff; }
 .nav-links { display: flex; list-style: none; gap: 2.5rem; }
 .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; padding: 0.5rem 0; }
-.nav-links a:hover { color: #f39c12; text-decoration: underline; text-underline-offset: 4px; }
+.nav-links a:hover { color: #7fff00; text-decoration: underline; text-underline-offset: 4px; }
 
 /* FOOTER */
 footer { padding: 3rem; text-align: center; color: #7a6e62; font-size: 0.8rem; border-top: 1px solid #e0d8d0; }
