@@ -7,13 +7,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Heart of Gold - Mandy Budan Art</title>
 <link rel="icon" type="image/x-icon" href="../favicon.ico">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   
   /* NAV */
   nav { padding: 1.5rem 3rem; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: hsl(211,29%,19%); }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; }
-  .brand { font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 500; color: #fff; text-decoration: none; letter-spacing: 0.05em; position: relative; }
+  .brand {
+    font-size: 1.2rem; font-weight: 500; color: #fff; text-decoration: none; letter-spacing: 0.05em; position: relative; }
   .brand::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #ff6b35; transition: width 0.3s; }
   .brand:hover::after { width: 100%; }
   .brand:hover { color: #ff6b35; }
@@ -27,7 +27,8 @@
   .detail-image { border-radius: 4px; overflow: hidden; }
   .detail-image img { width: 100%; height: auto; display: block; }
   .detail-info { padding: 2rem 0; }
-  .detail-info h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 400; color: #2c2c2c; margin-bottom: 1rem; }
+  .detail-info h1 {
+    font-size: 2.5rem; font-weight: 400; color: #2c2c2c; margin-bottom: 1rem; }
   .detail-meta { font-size: 0.9rem; color: #7a6e62; margin-bottom: 1.5rem; }
   .sold-badge { display: inline-block; background: #fff; color: #ff0000; padding: 0.35rem 0.75rem 0.25rem; border-radius: 50px; border: 2px solid #ff0000; font-size: 0.7rem; font-weight: 700; margin-bottom: 1rem; }
   .detail-desc { color: #5a5048; margin-bottom: 2rem; line-height: 1.8; }

@@ -5,17 +5,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Studies - Mandy Budan</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    overflow-y: scroll; font-family: 'Space Grotesk', sans-serif; font-weight: 300; color: #fff; background: #e9eaec; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  body {  overflow-y: scroll; font-weight: 300; color: #fff; background: #e9eaec; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   footer .wrap { max-width: 100%; padding: 0; width: 100%; text-align: center; }
   nav { background: hsl(211, 29%, 19%); padding: 1.25rem 0; margin-bottom: 3rem; }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; }
   .brand {
-    transition: color 0.2s; font-family: 'Space Grotesk', sans-serif; font-size: 1.6rem; font-weight: 500; color: #fff; text-decoration: none; }
+    transition: color 0.2s;
+    font-size: 1.6rem; font-weight: 500; color: #fff; text-decoration: none; }
   .nav-links {
     display: flex;
     list-style: none;
@@ -34,14 +34,16 @@
   }
   .nav-links a:hover, .nav-links a.active { color: #ff6b35; }
   .year-break { grid-column: 1 / -1; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0d8d0; }
-  .year-break h2 { font-family: 'Space Grotesk', sans-serif; font-size: 1.8rem; font-weight: 500; color: #4a3f35; }
+  .year-break h2 {
+    font-size: 1.8rem; font-weight: 500; color: #4a3f35; }
   h1 { color: #2c2c2c; }
   .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 2rem; margin-bottom: 4rem; }
   .artwork { background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); transition: transform 0.2s, box-shadow 0.2s; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; }
   .artwork:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
   .artwork img { width: 100%; height: auto; display: block; }
   .artwork-info { padding: 1rem; margin-top: auto; display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start; }
-  .artwork-title { font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; font-weight: 500; color: #4a3f35; }
+  .artwork-title {
+    font-size: 1.1rem; font-weight: 500; color: #4a3f35; }
   .artwork-meta { font-size: 0.78rem; color: #a09080; }
   .sold-badge { display: inline-block; background: #fff; color: #ff0000; padding: 0.35rem 0.75rem 0.25rem; border-radius: 50px; border: 2px solid #ff0000; font-size: 0.7rem; font-weight: 700; margin-bottom: 0; }
   footer { padding: 2rem 0; color: #a09080; font-size: 0.8rem; white-space: nowrap; display: flex; justify-content: center; text-align: center; }
@@ -88,7 +90,6 @@
     text-align: center;
   }
   .artist-statement h2 {
-    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.8rem;
     font-weight: 500;
     color: #4a3f35;
@@ -107,7 +108,6 @@
     margin-bottom: 2rem;
   }
   .page-quote blockquote {
-    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.15rem;
     font-style: italic;
     color: #4a3f35;
