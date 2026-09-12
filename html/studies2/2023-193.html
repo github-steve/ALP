@@ -26,6 +26,42 @@
   .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
   .detail-image { border-radius: 4px; overflow: hidden; }
   .detail-image img { width: 100%; height: auto; display: block; }
+  .circle-container {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .circle-inner {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff0000;
+  }
+  .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    margin-right: 8px;
+    background: #fff;
+    color: #ff0000;
+    padding: 4px 5px 5px 4px;
+    border-radius: 50px;
+    border: 2px solid #ff0000;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+  }
   .detail-info { padding: 2rem 0; }
   .detail-info h1 { font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 400; color: #2c2c2c; margin-bottom: 1rem; }
   .detail-meta { font-size: 0.9rem; color: #7a6e62; margin-bottom: 1.5rem; }
@@ -53,7 +89,7 @@
 
 <section class="detail">
   <div class="detail-grid">
-    <div class="detail-image"><img src="../../images/studies2/2023-193.jpg" alt="Landscape Study 193 by Mandy Budan"></div>
+    <div class="detail-image"><img src="../../images/studies2/2023-193.jpg" alt="Landscape Study 193 by Mandy Budan"><div class="circle-container"><div class="circle-inner"></div><span class="tooltip">Sold</span></div></div>
     <div class="detail-info">
       <h1>Landscape Study 193</h1>
       <div class="detail-meta">
