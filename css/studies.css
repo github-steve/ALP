@@ -13,7 +13,7 @@
 .artwork-info { margin-top: 1rem; }
 .artwork-title { font-family: 'Space Grotesk', sans-serif; font-size: 1rem; font-weight: 400; color: #2c2c2c; }
 .artwork-meta { font-size: 0.8rem; color: #7a6e62; margin-top: 0.25rem; }
-.sold-badge { display: inline-block; background: #dc3545; color: #fff; padding: 0.4rem 1rem; border-radius: 4px; font-size: 0.8rem; font-weight: 500; margin-bottom: 1rem; }
+.sold-badge { display: inline-block; background: #dc3545; color: #fff; padding: 0.25rem 0.75rem; border-radius: 50px; font-size: 0.7rem; font-weight: 500; margin-bottom: 1rem; }
 
 /* FOCUS & SKIP */
 a:focus-visible,
