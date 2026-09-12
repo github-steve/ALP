@@ -1,5 +1,5 @@
-/* Playfair Display Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+/* Inter Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 /* Base Reset & Typography */
 *, *::before, *::after {
@@ -10,8 +10,8 @@
 
 body {
   overflow-y: scroll;
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
   color: #fff;
   background: #e9eaec;
   line-height: 1.6;
