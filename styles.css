@@ -8,13 +8,13 @@
   padding: 0;
 }
 
-html { background: #d9dadc; }
+html { background: #e9eaec; }
 body {
   overflow-y: scroll;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   color: #fff;
-  background: #d9dadc;
+  background: #e9eaec;
   min-height: 100vh;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -38,7 +38,7 @@ img {
     overflow-y: scroll;
     font-weight: 400;
     color: #fff;
-    background: #d9dadc;
+    background: #e9eaec;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
@@ -239,7 +239,7 @@ img {
     border-radius: 4px;
   }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { overflow-y: scroll; font-weight: 300; color: #fff; background: #d9dadc; line-height: 1.6; }
+  body { overflow-y: scroll; font-weight: 300; color: #fff; background: #e9eaec; line-height: 1.6; }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   nav { background: hsl(211, 29%, 19%); padding: 1.25rem 0; margin-bottom: 3rem;
     position: fixed; top: 0; left: 0; right: 0; z-index: 100; }
@@ -302,7 +302,7 @@ img {
   .skip-link:focus { width: auto; height: auto; padding: 8px 16px; margin: 0; overflow: visible; clip: auto; white-space: normal; top: 6px; left: 6px; background: #FFDD00; color: #000; text-decoration: none; border-radius: 4px; }
 
   /* COFFEE */
-  .coffee-section { text-align: center; padding: 4rem 0; background: #d9dadc; border-radius: 12px; margin: 3rem 0; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+  .coffee-section { text-align: center; padding: 4rem 0; background: #e9eaec; border-radius: 12px; margin: 3rem 0; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
   .coffee-section h3 { font-size: 1.5rem; font-weight: 400; color: #2c2c2c; margin-bottom: 0.5rem; }
   .coffee-section p { color: #5a5048; margin-bottom: 1.5rem; }
   .coffee-btn { display: inline-block; background: #FFDD00; color: #000; text-decoration: none; padding: 0.85rem 2.2rem; border-radius: 50px; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.03em; transition: background 0.2s; }
@@ -313,7 +313,7 @@ img {
     .about-photo { max-width: 280px; margin: 0 auto; }
   }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {  overflow-y: scroll; font-weight: 300; color: #fff; background: #d9dadc; line-height: 1.6; }
+  body {  overflow-y: scroll; font-weight: 300; color: #fff; background: #e9eaec; line-height: 1.6; }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   nav { background: hsl(211, 29%, 19%); padding: 1.25rem 0; margin-bottom: 3rem;
     position: fixed;
@@ -429,7 +429,7 @@ img {
     overflow-y: scroll;
     font-weight: 400;
     color: #fff;
-    background: #d9dadc;
+    background: #e9eaec;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
@@ -496,7 +496,7 @@ img {
   
   /* ARTIST STATEMENT */
   .artist-statement {
-    background: #d9dadc;
+    background: #e9eaec;
     padding: 1.5rem 0;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #e0d8d0;
@@ -806,7 +806,7 @@ img {
     opacity: 1;
   }
 * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {  overflow-y: scroll; font-weight: 300; color: #fff; background: #d9dadc; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+  body {  overflow-y: scroll; font-weight: 300; color: #fff; background: #e9eaec; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   footer .wrap { max-width: 100%; padding: 0; width: 100%; text-align: center; }
   nav { background: hsl(211, 29%, 19%); padding: 1.25rem 0; margin-bottom: 3rem;
@@ -882,7 +882,7 @@ img {
     transform: scale(1.05);
   }
   .artist-statement {
-    background: #d9dadc;
+    background: #e9eaec;
     padding: 1.5rem 0;
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #e0d8d0;

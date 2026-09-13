@@ -1,6 +1,6 @@
 /* ALP Modern Design System */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-html { background: #d9dadc; }
+html { background: #e9eaec; }
 body { font-family: 'Inter', sans-serif; font-weight: 300; color: #2c2c2c; line-height: 1.6; min-height: 100vh; }
 
 /* NAV */
@@ -30,7 +30,7 @@ footer { padding: 3rem; text-align: center; color: #7a6e62; font-size: 0.8rem; b
   .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; }
   .nav-links a:hover { color: #ff6b35; text-decoration: underline; text-underline-offset: 4px; }
 
-  body { background: #d9dadc; }
+  body { background: #e9eaec; }
 
 /* DETAIL */
   .detail { padding: 6rem 3rem 4rem; }
@@ -121,7 +121,7 @@ nav .wrap {
 }
 
 body {
- background: #d9dadc; 
+ background: #e9eaec; 
 }
 
 /* DETAIL */
