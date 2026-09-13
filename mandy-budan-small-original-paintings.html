@@ -10,7 +10,12 @@
   body {  overflow-y: scroll; font-weight: 300; color: #fff; background: #e9eaec; line-height: 1.6; -webkit-font-smoothing: antialiased; }
   .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
   footer .wrap { max-width: 100%; padding: 0; width: 100%; text-align: center; }
-  nav { background: hsl(211, 29%, 19%); padding: 1.25rem 0; margin-bottom: 3rem; }
+  nav { background: hsl(211, 29%, 19%); padding: 1.25rem 0; margin-bottom: 3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; }
   nav .wrap { display: flex; justify-content: space-between; align-items: center; }
   .brand {
     transition: color 0.2s;
@@ -216,6 +221,7 @@
 </nav>
 
 <main id="main">
+  <div style="height: 4.5rem;"></div>
 
 <section class="artist-statement">
   <div class="statement-content">
