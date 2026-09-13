@@ -51,7 +51,7 @@ footer { padding: 3rem; text-align: center; color: #7a6e62; font-size: 0.8rem; b
   .coffee-section {
     text-align: center;
     padding: 4rem 0;
-    background: #d9dadc;
+    background: #fff;
     border-radius: 12px;
     margin: 3rem 0;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
@@ -231,7 +231,7 @@ body {
 
     text-align: center;
     padding: 4rem 0;
-    background: #d9dadc;
+    background: #fff;
     border-radius: 12px;
     margin: 3rem 0;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
