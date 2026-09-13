@@ -7,10 +7,10 @@
 <meta name="description" content="Landscape Study 2022-186 () - Small original study by Mandy Budan. Acrylic on wood, . Perfect for collectors.">
 <meta property="og:title" content="Landscape Study 186 - Mandy Budan Art">
 <meta property="og:description" content="Landscape Study 2022-186 () - Small original study by Mandy Budan. Acrylic on wood, . Perfect for collectors.">
-<meta property="og:image" content="https://github-steve.github.io/ALP/images/studies2/2022-186.jpg">
+<meta property="og:image" content="" data-img="/images/studies2/2022-186.jpg">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://github-steve.github.io/ALP/html/studies2/2022-186.html">
-<link rel="canonical" href="https://github-steve.github.io/ALP/html/studies2/2022-186.html">
+<meta property="og:url" content="">
+<link rel="canonical" href="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
@@ -124,6 +124,30 @@
   }
 
 </style>
+<script>
+(function(){
+  var loc=window.location;
+  var path=loc.pathname.replace(/\/[^\/]*$/,"/");
+  var base=loc.origin+path;
+  var ogUrl=document.querySelector('meta[property="og:url"]');
+  var ogImg=document.querySelector('meta[property="og:image"]');
+  var canonical=document.querySelector('link[rel="canonical"]');
+  if(ogUrl) ogUrl.setAttribute("content", loc.href);
+  if(ogImg){
+    var p = ogImg.getAttribute("data-img") || "";
+    ogImg.setAttribute("content", loc.origin + p);
+  }
+  if(canonical) canonical.setAttribute("href", loc.href);
+  var ld = document.querySelector('script[type="application/ld+json"]');
+  if(ld){
+    try {
+      var d = JSON.parse(ld.textContent);
+      if(d.url) d.url = loc.origin + "/";
+      ld.textContent = JSON.stringify(d, null, 2);
+    } catch(e) {}
+  }
+})();
+</script>
 </head>
 <body>
 <nav>
@@ -169,6 +193,6 @@
     All artwork and images copyright &copy; Mandy Budan 2005-2026
   </div>
 </footer>
-<script data-goatcounter="https://budanart.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://budanart.goatcounter.com/count" async src="/gc.zgo.at/count.js"></script>
 </body>
 </html>

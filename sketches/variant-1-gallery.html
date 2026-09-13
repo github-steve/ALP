@@ -74,6 +74,30 @@
   }
 
 </style>
+<script>
+(function(){
+  var loc=window.location;
+  var path=loc.pathname.replace(/\/[^\/]*$/,"/");
+  var base=loc.origin+path;
+  var ogUrl=document.querySelector('meta[property="og:url"]');
+  var ogImg=document.querySelector('meta[property="og:image"]');
+  var canonical=document.querySelector('link[rel="canonical"]');
+  if(ogUrl) ogUrl.setAttribute("content", loc.href);
+  if(ogImg){
+    var p = ogImg.getAttribute("data-img") || "";
+    ogImg.setAttribute("content", loc.origin + p);
+  }
+  if(canonical) canonical.setAttribute("href", loc.href);
+  var ld = document.querySelector('script[type="application/ld+json"]');
+  if(ld){
+    try {
+      var d = JSON.parse(ld.textContent);
+      if(d.url) d.url = loc.origin + "/";
+      ld.textContent = JSON.stringify(d, null, 2);
+    } catch(e) {}
+  }
+})();
+</script>
 </head>
 <body>
 <nav>
@@ -93,7 +117,7 @@
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-img">
-        <img src="https://github-steve.github.io/ALP/images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues">
+        <img src="/images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues">
       </div>
       <div>
         <h1>Abstract Landscapes That Feel Like Home</h1>
@@ -109,7 +133,7 @@
     <div class="year-break"><h2>2026</h2></div>
     <div class="grid">
       <div class="artwork">
-        <img src="https://github-steve.github.io/ALP/images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues">
+        <img src="/images/2026-rhythm-and-hues.jpg" alt="Rhythm and Hues">
         <div class="artwork-info">
           <div class="artwork-title">Rhythm and Hues</div>
           <div class="artwork-meta">2026 - 18 × 24 - acrylic on wood</div>
@@ -120,14 +144,14 @@
     <div class="year-break"><h2>2025</h2></div>
     <div class="grid">
       <div class="artwork">
-        <img src="https://github-steve.github.io/ALP/images/2025-chasing-summer.jpg" alt="Chasing Summer">
+        <img src="/images/2025-chasing-summer.jpg" alt="Chasing Summer">
         <div class="artwork-info">
           <div class="artwork-title">Chasing Summer</div>
           <div class="artwork-meta">2025 - 12 × 16 - acrylic on wood</div>
         </div>
       </div>
       <div class="artwork">
-        <img src="https://github-steve.github.io/ALP/images/2025-going-places.jpg" alt="Going Places">
+        <img src="/images/2025-going-places.jpg" alt="Going Places">
         <div class="artwork-info">
           <div class="artwork-title">Going Places</div>
           <div class="artwork-meta">2025 - 18 × 24 - acrylic on wood</div>
@@ -149,6 +173,6 @@
     All artwork and images copyright &copy; Mandy Budan 2005-2026
   </div>
 </footer>
-<script data-goatcounter="https://budanart.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://budanart.goatcounter.com/count" async src="/gc.zgo.at/count.js"></script>
 </body>
 </html>
