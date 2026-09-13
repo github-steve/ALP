@@ -1,0 +1,29 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor
+*.swp
+*.swo
+*~
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+
+# Build/dist (if you add a build step later)
+dist/
+build/
+html/mandy-budan-abstract-landscape-paintings-6.html
+html/mandy-budan-abstract-landscape-paintings-5.html
+html/mandy-budan-abstract-landscape-paintings-4.html
+html/mandy-budan-abstract-landscape-paintings-3.html
+html/mandy-budan-abstract-landscape-paintings-2.html
+.vscode/settings.json
