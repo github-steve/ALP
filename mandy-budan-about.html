@@ -30,7 +30,7 @@
   .nav-links a:hover, .nav-links a.active { color: #FFDD00; }
 
   /* ABOUT HERO */
-  .about-hero { display: grid; grid-template-columns: 320px 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem; }
+  .about-hero { display: grid; grid-template-columns: 320px 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem; margin-top: 3rem; }
   .about-photo { border-radius: 8px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.12); }
   .about-photo img { width: 100%; height: auto; display: block; }
   .about-intro h1 { font-size: 2.5rem; font-weight: 500; color: #4a3f35; margin-bottom: 1rem; }
@@ -203,7 +203,7 @@
     </div>
   </div>
 
-  <!-- SHOWS: CARD GRID (like awards) -->
+  <!-- SHOWS: FEATURED + EXPANDABLE -->
   <div class="about-section">
     <h2>Selected Exhibitions</h2>
     <div class="awards-grid">
@@ -231,6 +231,9 @@
         <div class="award-year">2015</div>
         <div class="award-title">8th Annual ISAP Signature Members Online Show</div>
       </div>
+    </div>
+    <button class="awards-toggle" onclick="document.getElementById('more-exhibitions').classList.toggle('show')">View All Exhibitions</button>
+    <div id="more-exhibitions" class="awards-hidden awards-grid">
       <div class="award-card">
         <div class="award-year">2015</div>
         <div class="award-title">16th Annual Pine Ridge Arts Show</div>
