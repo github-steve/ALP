@@ -8,15 +8,14 @@
   padding: 0;
 }
 
-html, body {
-  overflow-y: scroll;
-  background: #e9eaec;
-}
+html { background: #e9eaec; }
 body {
+  overflow-y: scroll;
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   color: #fff;
   background: #e9eaec;
+  min-height: 100vh;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
