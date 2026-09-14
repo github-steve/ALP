@@ -274,13 +274,15 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 .store h2 {
     font-size: 1.4rem; font-weight: 500; color: #4a3f35; margin: 2rem 0 0.75rem; }
 
-.store p { color: #5a5048; line-height: 1.8; margin-bottom: 0.75rem; }
+.store p { color: #5a5048; line-height: 1.8; margin-left: 1rem; margin-bottom: 0.75rem; }
 
 .store-links { list-style: none; padding: 0; margin: 1.5rem 0 0; }
 
 .store-links li {
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    color:black;
     border-bottom: 1px solid #e0d8d0;
 }
 
