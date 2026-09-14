@@ -267,25 +267,40 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
     .about-photo { max-width: 280px; margin: 0 auto; }
   }
 
-.store { margin-bottom: 4rem; }
-
+/* STORE PAGE */
 .store h1 {
     font-size: 2.5rem; font-weight: 500; color: #4a3f35; margin-bottom: 1.5rem; }
 
-.store-section { margin-bottom: 2rem; }
+.store h2 {
+    font-size: 1.4rem; font-weight: 500; color: #4a3f35; margin: 2rem 0 0.75rem; }
 
-.store-section h2 {
-    font-size: 1.4rem; font-weight: 500; color: #4a3f35; margin-bottom: 0.75rem; }
+.store p { color: #5a5048; line-height: 1.8; margin-bottom: 0.75rem; }
 
-.store-section p { color: #5a5048; line-height: 1.8; margin-bottom: 0.75rem; }
+.store-links { list-style: none; padding: 0; margin: 1.5rem 0 0; }
 
-.store-links { display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
+.store-links li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e0d8d0;
+}
 
-.store-links a { display: inline-block; color: hsl(211, 29%, 19%); text-decoration: none; font-size: 1rem; padding: 0.5rem 0; border-bottom: 1px solid #e0d8d0; }
+.store-links li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
-.store-links a[href^="http"] img { width: 0.85em; height: 0.85em; margin-left: 0.15em; vertical-align: middle; }
+.store-links a {
+    display: inline-block;
+    color: hsl(211, 29%, 19%);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
 
 .store-links a:hover { text-decoration: underline; }
+
+.store-links p {
+    margin: 0.4rem 0 0;
+    font-size: 0.95rem;
+    color: #7a6e62;
+}
 
 .artist-statement {
     background: #e9eaec;

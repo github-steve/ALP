@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-<!-- ALP Design v2.7.21 | Store Page -->
+<!-- ALP Design v2.7.89 | Store Page -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-<meta name="description" content="Shop original paintings, fine art prints, and merchandise by Mandy Budan. Canadian-made, free shipping, secure checkout.">
+<meta name="description" content="Shop original paintings, fine art prints, and merchandise by Mandy Budan.">
 <meta property="og:title" content="Shop - Mandy Budan">
-<meta property="og:description" content="Shop original paintings, fine art prints, and merchandise by Mandy Budan. Canadian-made, free shipping, secure checkout.">
+<meta property="og:description" content="Shop original paintings, fine art prints, and merchandise by Mandy Budan.">
 <meta property="og:image" content="" data-img="/images/2026-rhythm-and-hues.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="">
 <link rel="canonical" href="">
-
 <title>Shop - Mandy Budan</title>
 <link rel="stylesheet" href="main.css">
-
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Mandy Budan Art",
-  "description": "Abstract landscape paintings by Mandy Budan. Original acrylic works inspired by Georgian Bay, Muskoka, and the Ottawa Valley.",
-  "author": {
-    "@type": "Person",
-    "name": "Mandy Budan"
-  }
+  "description": "Abstract landscape paintings by Mandy Budan.",
+  "author": { "@type": "Person", "name": "Mandy Budan" }
 }
 </script>
-
 <script>
 (function(){
   var loc=window.location;
@@ -40,19 +33,8 @@
   var ogImg=document.querySelector('meta[property="og:image"]');
   var canonical=document.querySelector('link[rel="canonical"]');
   if(ogUrl) ogUrl.setAttribute("content", loc.href);
-  if(ogImg){
-    var p = ogImg.getAttribute("data-img") || "";
-    ogImg.setAttribute("content", loc.origin + p);
-  }
+  if(ogImg){ var p=ogImg.getAttribute("data-img")||""; ogImg.setAttribute("content", loc.origin+p); }
   if(canonical) canonical.setAttribute("href", loc.href);
-  var ld = document.querySelector('script[type="application/ld+json"]');
-  if(ld){
-    try {
-      var d = JSON.parse(ld.textContent);
-      if(d.url) d.url = loc.origin + "/";
-      ld.textContent = JSON.stringify(d, null, 2);
-    } catch(e) {}
-  }
 })();
 </script>
 </head>
@@ -70,51 +52,62 @@
     </ul>
   </div>
 </nav>
+
 <main id="main">
   <div style="height: 4.5rem;"></div>
-<div class="wrap">
-  <div class="store-content">
+  <div class="wrap">
+
+  <div class="store">
     <h1>Paintings, Prints and More</h1>
 
-    <h2>PAINTINGS</h2>
+    <h2>Paintings</h2>
     <p>To see all of my available paintings visit <a href="http://budanart.com/shop-paintings" target="_blank" rel="noopener noreferrer">budanart.com</a></p>
 
-    <h2>FINE ART PRINTS, ORIGINAL PAINTED STUDIES AND ITEMS WITH MY IMAGES</h2>
+    <h2>Fine Art Prints, Original Painted Studies and Items with My Images</h2>
     <p>I offer fine art digital prints (giclee prints) of many of my abstract landscape paintings. I have a variety of fine art prints available including signed prints, canvas prints, note cards, and mounted prints as well as puzzles, journals, textiles and housewares at a number of online locations.</p>
 
-    <ul class="store-list">
-      <li><a href="http://budanart.com" target="_blank" rel="noopener noreferrer">budanart.com</a><br>
-      budanArt is my online store and is where I list my original paintings, as well as signed fine art landscape prints and note cards.</li>
-
-      <li><a href="http://www.dailypaintworks.com/artists/mandy-budan-3048/artwork" target="_blank" rel="noopener noreferrer">dailypaintworks.com</a><br>
-      DailyPaintworks is an online auction and listing site. I auction my small abstract landscape studies here. I usually list my studies Saturday mornings.</li>
-
-      <li><a href="https://fineartamerica.com/profiles/mandy-budan.html" target="_blank" rel="noopener noreferrer">fineartamerica.com</a> and <a href="https://pixels.com/profiles/mandy-budan.html" target="_blank" rel="noopener noreferrer">pixels.com</a><br>
-      Fine Art America is one of the biggest sites for fine art prints on all sorts of materials. I list a variety of landscapes and florals here - prints on wood, metal, canvas and more. I also have abstract landscape note cards and textiles including tote bags, towels and phone cases.</li>
-
-      <li><a href="https://www.stumpcraft.com/products/summer-medley-by-mandy-budan" target="_blank" rel="noopener noreferrer">StumpCraft Puzzles</a><br>
-      Canadian fine art laser-cut puzzles.</li>
-
-      <li><a href="https://www.artandfablepuzzlecompany.com/product-page/along-the-river" target="_blank" rel="noopener noreferrer">Art and Fable Puzzle Company</a><br>
-      Fine art puzzles.</li>
-
-      <li><a href="https://dianochedesigns.com/shopbyartist/mandy-budan" target="_blank" rel="noopener noreferrer">Dia Noche Designs</a><br>
-      Dia Noche carries variety of fine art printed textiles including shower curtains, blankets, pillows and more!</li>
-
-      <li><a href="https://www.etsy.com/shop/budanART" target="_blank" rel="noopener noreferrer">etsy.com</a><br>
-      One of the biggest handmade indie sites around; I have been listing my work here since 2005! :) I offer signed abstract landscape prints and note cards.</li>
+    <ul class="store-links">
+      <li>
+        <a href="http://budanart.com" target="_blank" rel="noopener noreferrer">budanart.com</a>
+        <p>budanArt is my online store and is where I list my original paintings, as well as signed fine art landscape prints and note cards.</p>
+      </li>
+      <li>
+        <a href="http://www.dailypaintworks.com/artists/mandy-budan-3048/artwork" target="_blank" rel="noopener noreferrer">dailypaintworks.com</a>
+        <p>DailyPaintworks is an online auction and listing site. I auction my small abstract landscape studies here. I usually list my studies Saturday mornings.</p>
+      </li>
+      <li>
+        <a href="https://fineartamerica.com/profiles/mandy-budan.html" target="_blank" rel="noopener noreferrer">fineartamerica.com</a> and <a href="https://pixels.com/profiles/mandy-budan.html" target="_blank" rel="noopener noreferrer">pixels.com</a>
+        <p>Fine Art America is one of the biggest sites for fine art prints on all sorts of materials. I list a variety of landscapes and florals here - prints on wood, metal, canvas and more. I also have abstract landscape note cards and textiles including tote bags, towels and phone cases.</p>
+      </li>
+      <li>
+        <a href="https://www.stumpcraft.com/products/summer-medley-by-mandy-budan" target="_blank" rel="noopener noreferrer">StumpCraft Puzzles</a>
+        <p>Canadian fine art laser-cut puzzles.</p>
+      </li>
+      <li>
+        <a href="https://www.artandfablepuzzlecompany.com/product-page/along-the-river" target="_blank" rel="noopener noreferrer">Art and Fable Puzzle Company</a>
+        <p>Fine art puzzles.</p>
+      </li>
+      <li>
+        <a href="https://dianochedesigns.com/shopbyartist/mandy-budan" target="_blank" rel="noopener noreferrer">Dia Noche Designs</a>
+        <p>Dia Noche carries variety of fine art printed textiles including shower curtains, blankets, pillows and more!</p>
+      </li>
+      <li>
+        <a href="https://www.etsy.com/shop/budanART" target="_blank" rel="noopener noreferrer">etsy.com</a>
+        <p>One of the biggest handmade indie sites around; I have been listing my work here since 2005! :) I offer signed abstract landscape prints and note cards.</p>
+      </li>
     </ul>
-  </div>
+
+  </div><!-- /.store -->
 
   <div class="coffee-section">
-    <h3>Enjoying the art?</h3>
-    <p>Buy me a coffee to support my work</p>
-    <a href="#" class="coffee-btn">☕ Buy Me a Coffee</a>
+      <h3>Enjoying the art?</h3>
+      <p>Buy me a coffee to support my work</p>
+      <a href="#" class="coffee-btn">☕ Buy Me a Coffee</a>
+    </div>
+
   </div>
-</div>
-
-
 </main>
+
 <footer><div class="wrap" style="text-align:center;">All artwork and images copyright &copy; Mandy Budan 2005-2026</div></footer>
 <script data-goatcounter="https://budanart.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
