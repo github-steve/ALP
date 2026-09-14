@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/FiraSans-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 500; font-display: swap; src: url('../fonts/FiraSans-Medium.ttf') format('truetype'); }
+@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/FiraSans-Bold.ttf') format('truetype'); }
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -8,7 +10,7 @@
 
 html { background: #e9eaec; }
 
-body {  overflow-y: scroll; font-family: 'Playfair Display', serif; font-weight: 400; color: #fff; background: #e9eaec; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body {  overflow-y: scroll; font-family: 'Fira Sans', sans-serif; font-weight: 400; color: #fff; background: #e9eaec; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 
 a {
   text-decoration: none;
