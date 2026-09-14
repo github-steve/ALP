@@ -96,7 +96,7 @@ nav .wrap { display: flex; justify-content: space-between; align-items: center; 
     max-width: 30%;
     text-align: center;
     padding: 1rem 0; 
-    background: #439ee4;
+    background: #fff;
     border-radius: 12px;
     margin: 1rem 0;
     box-shadow: 0 2px 12px rgba(0,0,0,0.06);
