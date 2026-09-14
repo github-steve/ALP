@@ -326,6 +326,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 2px s
 
 h1 { color: #2c2c2c; }
 
+hr { color: #2c2c2c; }
+
 .artist-statement p {
     color: #5a5048;
     margin-bottom: 0.75rem;
@@ -353,13 +355,13 @@ h1 { color: #2c2c2c; }
     font-style: normal;
   }
 
-.year-break { grid-column: 1 / -1; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e0d8d0; }
+.year-break { grid-column: 1 / -1; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #000000; }
 
 .year-break h2 {
     font-size: 1.8rem; font-weight: 500; color: #4a3f35; }
 
 .latest-year {
-    border-bottom-color: #FFDD00;
+    border-bottom-color: #000000;
   }
 
 .latest-badge {
@@ -367,7 +369,7 @@ h1 { color: #2c2c2c; }
     font-weight: 500;
     background: #FFDD00;
     color: #000;
-    padding: 0.25rem 0.75rem;
+    padding: 0.55rem 1.25rem;
     border-radius: 50px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -375,7 +377,7 @@ h1 { color: #2c2c2c; }
 
 .year-note {
     font-size: 0.85rem;
-    color: #a09080;
+    color: #000000;
     margin-top: 0.5rem;
     font-style: italic;
   }
