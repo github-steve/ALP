@@ -1,6 +1,6 @@
 // ALP version indicator
 (function () {
-  fetch('/version.json')
+  fetch('version.json')
     .then(function (r) { return r.json(); })
     .then(function (data) {
       var v = document.createElement('div');
