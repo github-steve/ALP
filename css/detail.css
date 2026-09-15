@@ -1,15 +1,15 @@
 /* ALP Modern Design System - Detail Pages */
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url('../../fonts/FiraSans-Regular.ttf') format('truetype'); }
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 500; font-display: swap; src: url('../../fonts/FiraSans-Medium.ttf') format('truetype'); }
-@font-face { font-family: 'Fira Sans'; font-style: normal; font-weight: 700; font-display: swap; src: url('../../fonts/FiraSans-Bold.ttf') format('truetype'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('../../fonts/inter/Inter-Regular.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('../../fonts/inter/Inter-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('../../fonts/inter/Inter-Bold.woff2') format('woff2'); }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { background: #e9eaec; }
-body { font-family: 'Fira Sans', sans-serif; font-weight: 400; color: #2c2c2c; line-height: 1.6; min-height: 100vh; background: #e9eaec; }
+body { font-family: 'Inter', sans-serif; font-weight: 400; color: #2c2c2c; line-height: 1.6; min-height: 100vh; background: #e9eaec; }
 
 /* NAV */
 nav { padding: 1.5rem 3rem; position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: hsl(211,29%,19%); }
 nav .wrap { display: flex; justify-content: space-between; align-items: center; }
-.brand { font-family: 'Fira Sans', sans-serif; font-size: 1.2rem; font-weight: 500; color: #fff; text-decoration: none; letter-spacing: 0.05em; position: relative; }
+.brand { font-family: 'Inter', sans-serif; font-size: 1.2rem; font-weight: 500; color: #fff; text-decoration: none; letter-spacing: 0.05em; position: relative; }
 .brand::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #ff6b35; transition: width 0.3s; }
 .brand:hover::after { width: 100%; }
 .brand:hover { color: #ff6b35; }
