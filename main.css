@@ -398,7 +398,7 @@ hr { color: #2c2c2c; }
 .artwork-title {
     font-size: 1.1rem; font-weight: 500; color: #4a3f35; }
 
-.artwork-meta { font-size: 0.78rem; color: #a09080; }
+.artwork-meta { font-size: 0.78rem; color: #000; }
 
 .floating-buttons {
     position: fixed;
