@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
 }
 
-a { text-decoration: none; color: inherit; }
+a { text-decoration: underline; color: inherit; }
 
 img { max-width: 100%; height: auto; display: block; }
 
@@ -63,12 +63,12 @@ nav .wrap { display: flex; justify-content: space-between; align-items: center; 
   position: absolute;
   bottom: -4px; left: 0;
   width: 0; height: 2px;
-  background: #ff6b35;
+  background: #FFDD00;
   transition: width 0.3s;
 }
 
 .brand:hover::after { width: 100%; }
-.brand:hover { color: #ff6b35; }
+.brand:hover { color: #FFDD00; }
 
 .nav-links {
   display: flex;
@@ -88,7 +88,7 @@ nav .wrap { display: flex; justify-content: space-between; align-items: center; 
 }
 
 .nav-links a:hover {
-  color: #ff6b35;
+  color: #FFDD00;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -156,7 +156,7 @@ nav .wrap { display: flex; justify-content: space-between; align-items: center; 
 /* --- Footer --- */
 footer {
   padding: 2rem 0;
-  color: #a09080;
+  color: #000000;
   font-size: 0.8rem;
   white-space: nowrap;
   display: flex;
@@ -169,6 +169,8 @@ footer a { color: #b87a2f; text-decoration: none; }
 footer a:hover { color: #FFDD00; }
 
 footer .wrap { max-width: 100%; padding: 0; width: 100%; text-align: center; }
+
+.footer-copy { margin-top: 1rem; color: #000000; font-size: 0.75rem; }  
 
 .social-links {
   display: flex;
@@ -359,8 +361,8 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 
 .statement-content { max-width: 800px; margin: 0 auto; text-align: center; }
-.artist-statement h2 { font-size: 1.8rem; font-weight: 500; color: #4a3f35; margin-bottom: 1.5rem; }
-.artist-statement p { color: #5a5048; margin-bottom: 0.75rem; line-height: 1.5; font-size: 0.95rem; }
+.artist-statement h2 { font-size: 1.8rem; font-weight: 500; color: #000000; margin-bottom: 1.5rem; }
+.artist-statement p { color: #000000; margin-bottom: 0.75rem; line-height: 1.5; font-size: 0.95rem; }
 
 .page-quote {
   text-align: center;
@@ -370,7 +372,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 
 .page-quote blockquote { font-size: 1.15rem; font-style: italic; color: #4a3f35; margin-bottom: 0.5rem; }
-.page-quote cite { font-size: 0.85rem; color: #a09080; font-style: normal; }
+.page-quote cite { font-size: 0.85rem; color: #000000; font-style: normal; }
 
 /* --- Gallery / Paintings --- */
 .year-break {
