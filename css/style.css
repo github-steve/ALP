@@ -553,3 +553,6 @@ hr { color: #2c2c2c; }
   .about-photo { max-width: 280px; margin: 0 auto; }
   .detail-grid { grid-template-columns: 1fr; }
 }
+
+/* Studies: constrain display to max 7"x5" or 6"x7" */
+.detail-image.study-img img { width: auto; max-width: 694px; max-height: 694px; }
