@@ -746,7 +746,7 @@ html {
   .hero h1 { font-size: clamp(2.5rem, 10vw, 4rem); }
   
   .artwork:hover {
-    transform: translateY(-3px) scale(1.01);
+    transform: scale(1.05);
   }
 }
 
