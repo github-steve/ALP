@@ -32,6 +32,14 @@ Batch 1: 2025–2022 (24 studies)
 - 2022-177 (7 x 5)
 - 2022-176 (5 x 7)
 
+Batch 2: 2012–2014 (51 new studies, numeric IDs)
+- 2012-001 through 2012-015 (15 studies)
+- 2013-016 through 2013-037 (22 studies)
+- 2014-038 through 2014-051 (14 studies)
+- All sold, acrylic on wood, dimensions 5x7 or 7x5 by orientation
+- Added new year breaks and gallery entries in studies page
+- Created all 51 detail pages with prev/next links
+
 ## In Progress
 
 (empty)
