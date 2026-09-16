@@ -441,25 +441,21 @@ hr { color: #2c2c2c; }
 .artwork-meta { font-size: 0.78rem; color: #000; }
 
 /* --- Sold Badge & Circle --- */
-.sold-badge {
-  display: inline-block;
-  background: #fff;
-  color: #ff0000;
-  padding: 0.35rem 0.75rem 0.25rem;
-  border-radius: 50px;
-  border: 2px solid #ff0000;
-  font-size: 0.7rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
 .soldbadge::after{
-  content: " SOLD";
+  content: "This painting is sold.";
   color: #ff0000;
   font-size: 0.88rem;
-  font-weight: 700; 
+  font-weight: 100; 
   padding-left: 0.5rem;
 }
+.soldbadge-study::after{
+  content: "This study is sold.";
+  color: #ff0000;
+  font-size: 0.88rem;
+  font-weight: 100; 
+  padding-left: 0.5rem;
+}
+
 
 .artwork-image { position: relative; display: block; }
 
