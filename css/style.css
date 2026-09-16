@@ -591,7 +591,7 @@ hr { color: #2c2c2c; }
 /* --- Gallery: Scroll-triggered fade in --- */
 .artwork {
   opacity: 0;
-  transition: opacity 0.5s ease-out;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, opacity 0.5s ease-out;
 }
 
 .artwork.visible {
