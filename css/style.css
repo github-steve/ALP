@@ -639,6 +639,22 @@ hr { color: #2c2c2c; }
   box-shadow: 0 12px 32px rgba(0,0,0,0.18);
 }
 
+/* Gallery: Ken Burns slow zoom on image hover (clipped to image area) */
+.artwork-image {
+  overflow: hidden;
+}
+
+.artwork img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 3s ease-out;
+}
+
+.artwork:hover img {
+  transform: scale(1.15);
+}
+
 .artwork:hover::after {
   opacity: 1;
 }
