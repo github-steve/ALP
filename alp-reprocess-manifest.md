@@ -52,6 +52,21 @@ Batch 4: 2017–2019 (10 paintings)
 - 2019-heart-of-gold
 - 2019-the-emperor
 
+Batch 5: 2020–2023 (13 paintings)
+- 2020-birchlight
+- 2020-living-on-the-edge
+- 2020-winter-warmth
+- 2021-forest-tapestry (no sold badge — not sold)
+- 2021-standing-tall
+- 2022-lady-in-red
+- 2022-promenade (no sold badge — not sold)
+- 2022-summer-duet
+- 2022-verdigris
+- 2023-above-the-trees
+- 2023-firefall
+- 2023-out-of-the-blue
+- 2023-summer-dreaming
+
 ## In Progress
 
 (empty)
