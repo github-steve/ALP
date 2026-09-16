@@ -412,13 +412,13 @@ hr { color: #2c2c2c; }
 .artwork {
   background: #fff;
   border-radius: 8px;
-  overflow: hidden;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 }
 
 
@@ -612,10 +612,7 @@ hr { color: #2c2c2c; }
 .artwork:nth-child(n+11) { animation-delay: 0.55s; }
 
 /* --- Gallery: Enhanced Hover --- */
-.artwork {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-}
+
 
 
 
