@@ -421,8 +421,7 @@ hr { color: #2c2c2c; }
   justify-content: space-between;
 }
 
-.artwork:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.1); }
-.artwork img { width: 100%; height: auto; display: block; }
+
 
 .artwork-info {
   padding: 1rem;
