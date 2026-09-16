@@ -589,14 +589,9 @@ hr { color: #2c2c2c; }
 }
 
 /* --- Gallery: Scroll-triggered fade in --- */
-@keyframes artwork-in {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
 .artwork {
   opacity: 0;
-  animation: artwork-in 0.5s ease-out forwards;
+  transition: opacity 0.5s ease-out;
 }
 
 .artwork.visible {
