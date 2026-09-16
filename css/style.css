@@ -554,5 +554,6 @@ hr { color: #2c2c2c; }
   .detail-grid { grid-template-columns: 1fr; }
 }
 
-/* Studies: constrain display to max 7"x5" or 6"x7" */
-.detail-image.study-img img { width: auto !important; height: auto !important; max-width: 694px; max-height: 694px; }
+/* Studies: constrain display to max 7"x5" or 6"x7", scale down on resize */
+.detail-image.study-img { overflow: visible; max-width: 694px; }
+.detail-image.study-img img { width: auto; height: auto; max-width: 100%; max-height: 694px; object-fit: contain; }
