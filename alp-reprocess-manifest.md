@@ -67,6 +67,14 @@ Batch 5: 2020–2023 (13 paintings)
 - 2023-out-of-the-blue
 - 2023-summer-dreaming
 
+Batch 6: 2024–2026 (6 paintings)
+- 2024-running-wild (no sold badge — not sold)
+- 2024-waterloo-fall (no sold badge — not sold)
+- 2024-watershed-moment
+- 2025-chasing-summer (no sold badge — not sold)
+- 2025-going-places
+- 2026-rhythm-and-hues (no sold badge — not sold)
+
 ## In Progress
 
 (empty)
