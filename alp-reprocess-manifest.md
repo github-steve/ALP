@@ -25,13 +25,12 @@ Batch 2: 2013 (6 paintings)
 - 2013-summer-in-the-garden
 - 2013-tangled-shore (source zip filename was 2013-the-tangled-shore.jpg — canonicalized)
 
-Batch 3: 2014–2017 (13 paintings)
+Batch 3: 2014–2017 (12 paintings)
 - 2014-after-the-rain
 - 2014-early-riser
 - 2014-emerald-moments
 - 2014-the-jester
 - 2015-ebb-and-flow
-- 2015-july-progression
 - 2015-last-call
 - 2015-salmon-ridge
 - 2015-summer-medley
