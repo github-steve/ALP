@@ -39,6 +39,19 @@ Batch 3: 2014–2017 (12 paintings)
 - 2016-triumvirate (no sold badge — not sold)
 - 2017-awakening (source zip filename was 2016-awakeing.jpg — canonicalized)
 
+Batch 4: 2017–2019 (10 paintings)
+- 2017-almost-autumn
+- 2017-along-the-river
+- 2017-awakening (reprocessed from zip's 2017-awakening.jpg — proper source)
+- 2017-celadon-morning
+- 2017-the-beacon
+- 2018-beaming
+- 2018-poolside
+- 2018-the-deep
+- 2019-falling
+- 2019-heart-of-gold
+- 2019-the-emperor
+
 ## In Progress
 
 (empty)

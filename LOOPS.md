@@ -6,7 +6,8 @@ Re-optimize all existing ALP paintings for web gallery and detail pages. Process
 
 **Trigger:** zip file of paintings received  
 **Authority:** extract, resize, edit HTML/CSS, commit — never merge  
-**Approval gate:** unknown filename (not in gallery) → pause and ask (may be new painting)  
+**Approval gate:** unknown filename (not in gallery) → pause and ask (may be new painting)
+**Skip rule:** if a painting's source file isn't in the zip, skip it entirely — do not generate from the 400px gallery image  
 **Stop:** no more zips to process
 
 **Steps per image:**
