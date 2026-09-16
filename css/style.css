@@ -95,6 +95,36 @@ nav .wrap { display: flex; justify-content: space-between; align-items: center; 
 
 .nav-links a.active { color: #FFDD00; }
 
+/* Hamburger button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: block; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #2c2c2c;
+    padding: 1rem 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 100;
+  }
+  .nav-links.active { display: flex; }
+  nav .wrap { flex-wrap: wrap; }
+  .nav-links li { padding: 0.5rem 2rem; }
+}
+
 /* --- Hero --- */
 .hero { min-height: 100vh; display: flex; align-items: flex-end; padding: 0 3rem 4rem; position: relative; }
 .hero-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.9; }
