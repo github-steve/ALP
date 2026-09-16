@@ -555,4 +555,5 @@ hr { color: #2c2c2c; }
 }
 
 /* Studies: constrain display to max 7"x5" or 6"x7" */
-.detail-image.study-img img { width: auto; max-width: 694px; max-height: 694px; }
+.detail-image.study-img { max-width: 694px; }
+.detail-image.study-img img { width: 100%; height: auto; max-width: 694px; max-height: 694px; object-fit: contain; }
