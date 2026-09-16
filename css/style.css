@@ -614,7 +614,7 @@ hr { color: #2c2c2c; }
 
 
 .artwork:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   z-index: 10;
 }
@@ -722,7 +722,7 @@ html {
   .hero h1 { font-size: clamp(2.5rem, 10vw, 4rem); }
   
   .artwork:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 }
 
