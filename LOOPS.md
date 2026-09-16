@@ -46,7 +46,8 @@ Re-optimize all existing ALP studies for web gallery and detail pages. Processes
 4. Detect orientation — if width > height: dimensions are `5 x 7`; if height > width: `7 x 5`
 5. Gallery: sold badge (`circle-container`), `loading="lazy"`, `alt` text, link to `html/studies2/NAME.html`, correct dimensions in meta
 6. Detail page: `<img>` with full-resolution image (not `_sm`), prev/next links, Buy Me a Coffee footer, correct dimensions
-7. Sort gallery by year (desc), then study number (desc)
+**Sort gallery by year (desc), then study number (desc)**
+- **Display names:** "Landscape Study 24" (strip leading zeros — `024` → `24`) in both gallery entries and detail page titles/alt text
 8. Verify Buy Me a Coffee link in footer
 9. Append study ID to studies manifest (`/Users/hermesagent/workspace/alp_warm/alp-studies-reprocess-manifest.md`)
 10. Commit each batch: `chore: web-optimize studies batch N (M images) [vX.Y.Z]`
