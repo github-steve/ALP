@@ -635,8 +635,9 @@ hr { color: #2c2c2c; }
 }
 
 .artwork:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  z-index: 10;
 }
 
 /* Gallery: Ken Burns slow zoom on image hover (clipped to image area) */
