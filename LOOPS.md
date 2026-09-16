@@ -34,15 +34,21 @@ Re-optimize all existing ALP studies for web gallery and detail pages. Processes
 **Skip rule:** if a study's source file isn't in the zip, skip it entirely — do not generate from the gallery thumbnail
 **Stop:** no more zips to process
 
+**Study metadata (all studies):**
+- All sold — every entry gets a `circle-container` sold badge
+- All acrylic on wood
+- Dimensions: 5 x 7 (landscape) or 7 x 5 (portrait) — determine from image orientation at resize time
+
 **Steps per study:**
 1. Extract zip to workspace temp dir
 2. Rename to match gallery ID (e.g., `2025-223.jpg`)
 3. Resize: 400px q82 → `images/studies2/NAME_sm.jpg` / 1400px q90 → `images/studies2/NAME.jpg`
-4. Gallery: sold badge (`circle-container`), `loading="lazy"`, `alt` text, link to `html/studies2/NAME.html`
-5. Detail page: `<img>` with full-resolution image (not `_sm`), prev/next links, Buy Me a Coffee footer
-6. Sort gallery by year (desc), then study number (desc)
-7. Verify Buy Me a Coffee link in footer
-8. Append study ID to studies manifest (`/Users/hermesagent/workspace/alp_warm/alp-studies-reprocess-manifest.md`)
-9. Commit each batch: `chore: web-optimize studies batch N (M images) [vX.Y.Z]`
+4. Detect orientation — if width > height: dimensions are `5 x 7`; if height > width: `7 x 5`
+5. Gallery: sold badge (`circle-container`), `loading="lazy"`, `alt` text, link to `html/studies2/NAME.html`, correct dimensions in meta
+6. Detail page: `<img>` with full-resolution image (not `_sm`), prev/next links, Buy Me a Coffee footer, correct dimensions
+7. Sort gallery by year (desc), then study number (desc)
+8. Verify Buy Me a Coffee link in footer
+9. Append study ID to studies manifest (`/Users/hermesagent/workspace/alp_warm/alp-studies-reprocess-manifest.md`)
+10. Commit each batch: `chore: web-optimize studies batch N (M images) [vX.Y.Z]`
 
-**Verify (per batch):** all manifest images exist at correct sizes, prev/next links consistent, gallery sort correct, coffee link present, version bumped in commit
+**Verify (per batch):** all manifest images exist at correct sizes, prev/next links consistent, gallery sort correct, coffee link present, sold badges on all entries, correct dimensions per orientation, version bumped in commit
