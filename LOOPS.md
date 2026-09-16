@@ -23,3 +23,26 @@ Re-optimize all existing ALP paintings for web gallery and detail pages. Process
 10. Commit each batch: `chore: web-optimize batch N (M images) [vX.Y.Z]`
 
 **Verify (per batch):** all manifest images exist at correct sizes, prev/next links consistent, gallery sort correct, coffee link present, SEO tags present and correct, version bumped in commit
+
+## Batch studies reprocess
+
+Re-optimize all existing ALP studies for web gallery and detail pages. Processes zips of studies per batch until all are done. Studies use numeric IDs (e.g., 2025-223), images in `images/studies2/`, with `_sm` suffix for gallery thumbnails.
+
+**Trigger:** zip file of studies received
+**Authority:** extract, resize, edit HTML/CSS, commit — never merge
+**Approval gate:** unknown filename (not in gallery) → pause and ask (may be new study)
+**Skip rule:** if a study's source file isn't in the zip, skip it entirely — do not generate from the gallery thumbnail
+**Stop:** no more zips to process
+
+**Steps per study:**
+1. Extract zip to workspace temp dir
+2. Rename to match gallery ID (e.g., `2025-223.jpg`)
+3. Resize: 400px q82 → `images/studies2/NAME_sm.jpg` / 1400px q90 → `images/studies2/NAME.jpg`
+4. Gallery: sold badge (`circle-container`), `loading="lazy"`, `alt` text, link to `html/studies2/NAME.html`
+5. Detail page: `<img>` with full-resolution image (not `_sm`), prev/next links, Buy Me a Coffee footer
+6. Sort gallery by year (desc), then study number (desc)
+7. Verify Buy Me a Coffee link in footer
+8. Append study ID to studies manifest (`/Users/hermesagent/workspace/alp_warm/alp-studies-reprocess-manifest.md`)
+9. Commit each batch: `chore: web-optimize studies batch N (M images) [vX.Y.Z]`
+
+**Verify (per batch):** all manifest images exist at correct sizes, prev/next links consistent, gallery sort correct, coffee link present, version bumped in commit
