@@ -15,6 +15,13 @@
   document.querySelectorAll('.artwork, .year-break').forEach(el => observer.observe(el));
   const nav = document.querySelector('nav');
   const floatingBtns = document.querySelectorAll('.floating-btn');
+  
+  // Set initial floating button color to match nav (top of page = #222f3e)
+  floatingBtns.forEach(btn => {
+    btn.style.background = 'rgb(34, 47, 62)';
+    btn.style.color = '#000';
+  });
+  
   if (nav) {
     window.addEventListener('scroll', () => {
       const scrollTop = window.scrollY;
