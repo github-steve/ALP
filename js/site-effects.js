@@ -14,6 +14,7 @@
   }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
   document.querySelectorAll('.artwork, .year-break').forEach(el => observer.observe(el));
   const nav = document.querySelector('nav');
+  const floatingBtns = document.querySelectorAll('.floating-btn');
   if (nav) {
     window.addEventListener('scroll', () => {
       const scrollTop = window.scrollY;
@@ -25,7 +26,14 @@
       const g = Math.round(47 + (41 - 47) * progress);
       const b = Math.round(62 + (32 - 62) * progress);
       
-      nav.style.background = `rgb(${r}, ${g}, ${b})`;
+      const color = `rgb(${r}, ${g}, ${b})`;
+      nav.style.background = color;
+      
+      // Sync floating button color with nav bar
+      floatingBtns.forEach(btn => {
+        btn.style.background = color;
+        btn.style.color = progress > 0.5 ? '#fff' : '#000';
+      });
     });
   }
   document.querySelectorAll('.artwork').forEach(el => {
