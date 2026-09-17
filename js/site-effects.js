@@ -16,7 +16,16 @@
   const nav = document.querySelector('nav');
   if (nav) {
     window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 50);
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = docHeight > 0 ? (scrollTop / docHeight) : 0;
+      
+      // Interpolate from #222f3e (34, 47, 62) to #a02920 (160, 41, 32)
+      const r = Math.round(34 + (160 - 34) * progress);
+      const g = Math.round(47 + (41 - 47) * progress);
+      const b = Math.round(62 + (32 - 62) * progress);
+      
+      nav.style.background = `rgb(${r}, ${g}, ${b})`;
     });
   }
   document.querySelectorAll('.artwork').forEach(el => {

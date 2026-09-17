@@ -37,12 +37,13 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* --- Nav --- */
 nav {
-  background: hsl(211, 29%, 19%);
+  background: #222f3e;
   padding: 1.25rem 0;
   margin-bottom: 3rem;
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
+  transition: background 0.1s ease;
 }
 
 nav .wrap { display: flex; justify-content: space-between; align-items: center; }
@@ -657,10 +658,7 @@ hr { color: #2c2c2c; }
 }
 
 /* --- Nav: Active Section Highlight --- */
-nav.scrolled {
-  background: hsl(211, 29%, 15%);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-}
+
 
 .nav-links a.current-section {
   color: #FFDD00;
