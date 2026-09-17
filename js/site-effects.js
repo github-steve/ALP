@@ -19,7 +19,7 @@
   // Set initial floating button color to match nav (top of page = #222f3e)
   floatingBtns.forEach(btn => {
     btn.style.background = 'rgb(34, 47, 62)';
-    btn.style.color = '#000';
+    btn.style.color = '#fff';
   });
   
   if (nav) {
@@ -39,7 +39,7 @@
       // Sync floating button color with nav bar
       floatingBtns.forEach(btn => {
         btn.style.background = color;
-        btn.style.color = progress > 0.5 ? '#fff' : '#000';
+        btn.style.color = '#fff';
       });
     });
   }

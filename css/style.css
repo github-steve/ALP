@@ -513,7 +513,6 @@ hr { color: #2c2c2c; }
 .floating-btn {
   width: 3rem; height: 3rem;
   border-radius: 50%;
-  color: #000;
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
