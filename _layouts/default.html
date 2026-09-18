@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+{% seo %}
+<meta property="og:type" content="website">
+<link rel="canonical" href="{{ page.url | absolute_url }}">
+
+<title>{{ page.title | default: site.title }}</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<!-- Local Inter Font -->
+<style>
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('{{ site.baseurl }}/fonts/Inter-Regular.woff2') format('woff2');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('{{ site.baseurl }}/fonts/Inter-Bold.woff2') format('woff2');
+  font-display: swap;
+}
+</style>
+
+<!-- Custom overrides -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap-override.css">
+<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico">
+
+{% feed_meta %}
+</head>
+<body>
+{% include nav.html %}
+
+<main id="main">
+{{ content }}
+</main>
+
+{% include footer.html %}
+
+<!-- Bootstrap 5 JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
