@@ -1,0 +1,947 @@
+# Paintings data - ALP Jekyll site
+#
+
+- title: "Cloud Shadows"
+  year: 2006
+  slug: 2006-cloud-shadows
+  description: "Clouds make shadows across a summer landscape."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-cloud-shadows.jpg"
+
+- title: "Early Hay"
+  year: 2006
+  slug: 2006-early-hay
+  description: "The warm sun and soft breezes fill the air with the gentle scent of new mown hay."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-early-hay.jpg"
+
+- title: "Forest Winter"
+  year: 2006
+  slug: 2006-forest-winter
+  description: "Snow heavy on the forest. Pines bow beneath the weight. A green cool winter light suffuses everything."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-forest-winter.jpg"
+
+- title: "Muskoka Evening"
+  year: 2006
+  slug: 2006-muskoka-evening
+  description: "Deepening shadows colour the snow blue. The sunset paints a fire of reds and oranges behind the forest."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-muskoka-evening.jpg"
+
+- title: "One Pine"
+  year: 2006
+  slug: 2006-one-pine
+  description: "One pine stands in a field of snow and sun."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-one-pine.jpg"
+
+- title: "Poppies"
+  year: 2006
+  slug: 2006-poppies
+  description: "Poppies by Mandy Budan"
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-poppies.jpg"
+
+- title: "Radishes"
+  year: 2006
+  slug: 2006-radishes
+  description: "Radishes by Mandy Budan"
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-radishes.jpg"
+
+- title: "Rocky Shore"
+  year: 2006
+  slug: 2006-rocky-shore
+  description: "A perfect summer day on a secluded northern lake..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-rocky-shore.jpg"
+
+- title: "September Pattern"
+  year: 2006
+  slug: 2006-september-pattern
+  description: "Looking across the lake, the distant trees catch stray sunbeams as the last days of summer approach. The light dances off th..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-september-pattern.jpg"
+
+- title: "Summer Birches"
+  year: 2006
+  slug: 2006-summer-birches
+  description: "Yellow and green summer sunlight though the leaves of pale birches..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-summer-birches.jpg"
+
+- title: "Summer Tree"
+  year: 2006
+  slug: 2006-summer-tree
+  description: "The sun shines through leaves that are just starting to turn on this late summer day."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-summer-tree.jpg"
+
+- title: "Totem Lake"
+  year: 2006
+  slug: 2006-totem-lake
+  description: "A secluded lake, ancient trees and deep quiet spaces."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2006-totem-lake.jpg"
+
+- title: "Forest Patterns"
+  year: 2007
+  slug: 2007-forest-patterns
+  description: "The sun comes through in little pieces and the trunk leans into the dense forest."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2007-forest-patterns.jpg"
+
+- title: "Maple Lake"
+  year: 2007
+  slug: 2007-maple-lake
+  description: "The autumn maple leave have turned red and burn brightly against the cold steely lake and sky."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2007-maple-lake_detail.jpg"
+
+- title: "November Sun"
+  year: 2007
+  slug: 2007-november-sun
+  description: "The sun of a late fall day lights up the last leaves before winter."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2007-november-sun_detail.jpg"
+
+- title: "October Heights"
+  year: 2007
+  slug: 2007-october-heights
+  description: "The distant hills are a riot of colour on a crisp fall day..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2007-october-heights_detail.jpg"
+
+- title: "Patty's Montana"
+  year: 2007
+  slug: 2007-pattys-montana
+  description: "Evening approaches and the setting sun warms the snowy pines."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2007-pattys-montana_detail.jpg"
+
+- title: "Spring Shadows"
+  year: 2007
+  slug: 2007-spring-shadows
+  description: "The promise of summer to come in shadows and bare branches..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2007-spring-shadows_detail.jpg"
+
+- title: "Storm"
+  year: 2007
+  slug: 2007-storm
+  description: "Clouds seethe and spin as a sudden storm rumbles through a summer afternoon."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2007-storm_detail.jpg"
+
+- title: "Winter Hill"
+  year: 2007
+  slug: 2007-winter-hill
+  description: "Leaves are still visible under a light dusting of snow,and the distant sky shines through bare branches."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2007-winter-hill_detail.jpg"
+
+- title: "Among Friends"
+  year: 2008
+  slug: 2008-among-friends
+  description: "A warm summer day, cool breezes and a impeccable blue sky made perfect by the company of friends."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008/2008-among-friends_detail.jpg"
+
+- title: "Fiesta"
+  year: 2008
+  slug: 2008-fiesta
+  description: "On a late summer afternoon the tree is a fiesta of reds and oranges, winter a distant blue shadow."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008-fiesta_detail.jpg"
+
+- title: "Last Rose of Summer"
+  year: 2008
+  slug: 2008-last-rose-of-summer
+  description: "Among the faded blooms and empty stems, the last rose of summer still blooms."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008/2008-last-rose-of-summer_detail.jpg"
+
+- title: "Old Woman Bay"
+  year: 2008
+  slug: 2008-old-woman-bay
+  description: "Towering 400 feet above the water, the old woman gazes out across Lake Superior."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008-old-woman-bay_detail.jpg"
+
+- title: "Spring Light"
+  year: 2008
+  slug: 2008-spring-light
+  description: "The morning sun turns the early Spring leaves into patterns of light and dark."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008-spring-light.jpg"
+
+- title: "Summer Morning"
+  year: 2008
+  slug: 2008-summer-morning
+  description: "Deep in the forest, the morning sun burns off the mist and brightens the leaves."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008-summer-morning_detail.jpg"
+
+- title: "Tapestry of Poppies"
+  year: 2008
+  slug: 2008-tapestry-of-poppies
+  description: "Orange and yellow poppies grace a backdrop of green and blue shadows."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008-tapestry-of-poppies_detail.jpg"
+
+- title: "Towards Autumn"
+  year: 2008
+  slug: 2008-towards-autumn
+  description: "It's one of those perfect fall days with beautiful colors that stretch forever and dark stormy clouds that move briskly across ..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008/2008-towards-autumn_detail.jpg"
+
+- title: "Winter Light"
+  year: 2008
+  slug: 2008-winter-light
+  description: "The sun sets in the winter forest, the warm orange sky a counterpoint to the cool blue snow."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2008-winter-light.jpg"
+
+- title: "Cleome"
+  year: 2009
+  slug: 2009-cleome
+  description: "Delicate flowers burst forth from the center of the spider plant and provide a soft counterpoint to the angular shapes or the background."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-cleome_detail.jpg"
+
+- title: "Four Sunflowers"
+  year: 2009
+  slug: 2009-four-sunflowers
+  description: "Four sunflowers in a tangle of leaves against the dark earth."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-four-sunflowers_detail.jpg"
+
+- title: "In a Pine Forest"
+  year: 2009
+  slug: 2009-in-a-pine-forest
+  description: "This is one of those forests that completely surrounds and envelopes you. The filtered sunlight creates wonderful patterns of..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-in-a-pine-forest_detail.jpg"
+
+- title: "Kaleidoscope"
+  year: 2009
+  slug: 2009-kaleidoscope
+  description: "A magnificent tree stands wreathed in light that moves and changes with the gentle breezes of a late summer day."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-kaleidoscope_detail.jpg"
+
+- title: "Passing Storm"
+  year: 2009
+  slug: 2009-passing-storm
+  description: "The storm has passed leaving the Maple mostly unscathed. Itâs still windy as the dark clouds move off in the distance, but thi..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-passing-storm_detail.jpg"
+
+- title: "Reflections"
+  year: 2009
+  slug: 2009-reflections
+  description: "It's one of those fall days that still holds some warmth, although the low clouds promise rain."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-reflections_detail.jpg"
+
+- title: "Scarlet Interior"
+  year: 2009
+  slug: 2009-scarlet-interior
+  description: "A poppy bends and whispers gentle secrets that follow the meandering paths of its petals."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-scarlet-interior_detail.jpg"
+
+- title: "Summer, Lake of Bays"
+  year: 2009
+  slug: 2009-summer-lake-of-bays
+  description: "Evocative of perfect summers up in cottage country where the trees jostle each other in a friendly bid for the sun. Sparkl..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-summer-lake-of-bays_detail.jpg"
+
+- title: "Sunrise"
+  year: 2009
+  slug: 2009-sunrise
+  description: "Early morning sun hits the sleeping forest and deepens the shadows against the snow."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-sunrise_detail.jpg"
+
+- title: "Sylvan Interlude"
+  year: 2009
+  slug: 2009-sylvan-interlude
+  description: "Tree trunks like sentinels or gateposts, lean against each other creating pathways that lead deep into the green."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2009-sylvan-interlude_detail.jpg"
+
+- title: "Haliburton Morning"
+  year: 2010
+  slug: 2010-haliburton-morning
+  description: "The muted colours hint at the day to come; the sky is just coming to life as the sun rises behind the hills. An Autumn morn..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2010-haliburton-morning.jpg"
+
+- title: "Incandescence"
+  year: 2010
+  slug: 2010-incandescence
+  description: "Bereft of leaves, stark against the dark slates and rusts of the background foliage, the trees stood softly lit from within..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2010-incandescence_detail.jpg"
+
+- title: "Secrets"
+  year: 2010
+  slug: 2010-secrets
+  description: "Winter in Muskoka - at the edge of the forest where the trees form an impenetrable wall sparing only glimpses of a deep and mysterious..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2010-secrets_detail.jpg"
+
+- title: "Solitaire"
+  year: 2010
+  slug: 2010-solitaire
+  description: "The white flower basks on the dark leaves; the sunlight traces paths along the petals while colour spills from the centre."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2010-solitaire_detail.jpg"
+
+- title: "Stormlight"
+  year: 2010
+  slug: 2010-stormlight
+  description: "The sun limns the distant fields; the tree stands ablaze against the dark tumultuous sky. Everything is movement; the clouds jos..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2010-stormlight_detail.jpg"
+
+- title: "Summer's End"
+  year: 2010
+  slug: 2010-summers-end
+  description: "Summer is winding down. The day is cool, and there is almost a bite to the air; Fall has started to brush the leaves with colour."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2010-summers-end_detail.jpg"
+
+- title: "View From Mazengah"
+  year: 2010
+  slug: 2010-view-from-mazengah
+  description: "Delicate twisty branches reach out over the water, fans of needles catch the breezes and the warm sunshine bounces off the ..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2010-view-from-mazengah_detail.jpg"
+
+- title: "Irises"
+  year: 2011
+  slug: 2011-irises
+  description: "A boisterous tangle of green stems and purple blossoms creates a graceful arc against a tumultuous sky of gold."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2011-irises.jpg"
+
+- title: "Panoply"
+  year: 2011
+  slug: 2011-panoply
+  description: "Girded in Autumnâs glory the forest stands ready. Brightly coloured leaves adorn a blue sky bright with the sunâs promise of warmth."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2011-panoply.jpg"
+
+- title: "Pine Sprites"
+  year: 2011
+  slug: 2011-pine-sprites
+  description: "Sprites dance around their tree on a quiet summer afternoon. Sunlight weaves in and out of the dense foliage in a counterpoint to..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2011/2011-pine-sprites_detail.jpg"
+
+- title: "The River"
+  year: 2011
+  slug: 2011-the-river
+  description: "Placidly implacable, the river meanders through an autumn day."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2011/2011-the-river_detail.jpg"
+
+- title: "Cascade"
+  year: 2012
+  slug: 2012-cascade
+  description: "Delicate white flowers tumble down their branch seeking infrequent pools of sunlight."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2012-cascade_detail.jpg"
+
+- title: "Hide and Seek"
+  year: 2012
+  slug: 2012-hide-and-seek
+  description: "A warm summer day amongst the birches; the trunks are fading in and out of the leaves and light, intent on their game."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2012-hide-and-seek_detail.jpg"
+
+- title: "Hockley Valley"
+  year: 2012
+  slug: 2012-hockley-valley
+  description: "Clouds rise from the dead treeâs branches as smoke from a factory and laze about in the endless blue sky. Early fall brings t..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2012-hockley-valley_detail.jpg"
+
+- title: "Ribbons and Pearls"
+  year: 2012
+  slug: 2012-ribbons-and-pearls
+  description: "Juxtaposed with dark and cool undulating shapes, the red flower glows like an ember against the night."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2012-ribbons-and-pearls.jpg"
+
+- title: "Standing Room Only"
+  year: 2012
+  slug: 2012-standing-room-only
+  description: "Several trees stand in awe of the exuberant display of colour and light that only an autumn forest can provide."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2012-standing-room-only_detail.jpg"
+
+- title: "Thaw"
+  year: 2012
+  slug: 2012-thaw
+  description: "A quiet winter day where the sky is grey and the pond is still, just beginning to thaw as winter warms to spring."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2012-thaw_detail.jpg"
+
+- title: "The Buddha Tree"
+  year: 2012
+  slug: 2012-the-buddha-tree
+  description: "The Buddha Tree sits contemplatively in the field, the sun weaving in out and of its branches. Sky, land and tree are inextric..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2012-the-buddha-tree_detail.jpg"
+
+- title: "Carnelian Morning"
+  year: 2013
+  slug: 2013-carnelian-morning
+  description: "The morning sun warms the forest floor, turning the ground into pools of red. As the early sky lightens, the dark trunks are..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2013-carnelian-morning_detail.jpg"
+
+- title: "Crescendo"
+  year: 2013
+  slug: 2013-crescendo
+  description: "As the sun sinks behind dark trees standing like sentinels, the blue of the coming night mingles with the last bright colours of the..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2013-crescendo_detail.jpg"
+
+- title: "Iris Squared"
+  year: 2013
+  slug: 2013-iris-squared
+  description: "A troop of irises rests on a field of summer yellow."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2013-iris-squared.jpg"
+
+- title: "October Gold"
+  year: 2013
+  slug: 2013-october-gold
+  description: "A single tree stands resplendent in the sun of an October afternoon. The gold of its leaves a counterpoint to the muted blues beh..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2013-october-gold_detail.jpg"
+
+- title: "Summer in the Garden"
+  year: 2013
+  slug: 2013-summer-in-the-garden
+  description: "Nestled in the greens and blues of the summer garden, the sunflowers glow with joyful exuberance."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2013-summer-in-the-garden_detail.jpg"
+
+- title: "The Tangled Shore"
+  year: 2013
+  slug: 2013-tangled-shore
+  description: "A fall day full of colour and exuberance, duly reflected by the placid lake."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2013-tangled-shore.jpg"
+
+- title: "After the Rain"
+  year: 2014
+  slug: 2014-after-the-rain
+  description: "The colours are richer, the light more intense after the spring rain sweeps through the forest. The new-found sun pulls jewel t..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2014-after-the-rain_detail.jpg"
+
+- title: "Early Riser"
+  year: 2014
+  slug: 2014-early-riser
+  description: "A quiet winter forest welcomes the morning sun. Dark trees play amongst the snow shadows of purple and blue."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2014-early-riser_detail.jpg"
+
+- title: "Emerald Moments"
+  year: 2014
+  slug: 2014-emerald-moments
+  description: "Greens and blues tumble together down the mountain while clouds jostle with the blue sky above."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2014-emerald-moments_detail.jpg"
+
+- title: "The Jester"
+  year: 2014
+  slug: 2014-the-jester
+  description: "Autumn's jester playfully drenched in red and gold mocks the coming cold even as night begins to fall."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2014-the-jester_detail.jpg"
+
+- title: "Ebb and Flow"
+  year: 2015
+  slug: 2015-ebb-and-flow
+  description: "The rising sun hasn't reached the weland grasses yet; dark greens and blues hold their secrets close."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2015-ebb-and-flow_detail.jpg"
+
+- title: "July Progression"
+  year: 2015
+  slug: 2015-july-progression
+  description: "In the height of Summer the many greens and blues of the forest collide gently on their inexorable march to the fiery reds an..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2015-july-progression.jpg"
+
+- title: "Last Call"
+  year: 2015
+  slug: 2015-last-call
+  description: "The setting sun paints the clouds deep oranges and pinks and pins them to a darkening indigo sky. Pierced below by the dark treeline..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2015-last-call_detail.jpg"
+
+- title: "Salmon Ridge"
+  year: 2015
+  slug: 2015-salmon-ridge
+  description: "A fall day high above a placid river. The muted colours on the far shore provide a gentle contrast to the trees on the ridge."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2015-salmon-ridge.jpg"
+
+- title: "Summer Medley"
+  year: 2015
+  slug: 2015-summer-medley
+  description: "A perfect day - soft warm sunlight, cool blue breezes, the steadfast reds in the trunk and the playful greens in the leaves come..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2015-summer-medley_detail.jpg"
+
+- title: "Lakeside"
+  year: 2016
+  slug: 2016-lakeside
+  description: "A lazy fall day with birches, autumn shores and a blue, blue lake."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2016-lakeside_detail.jpg"
+
+- title: "One Fine Day"
+  year: 2016
+  slug: 2016-one-fine-day
+  description: "One of those days where there's a taste of frost in the air, leaves crackle underfoot and the sun bounces off the many colours of..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2016-one-fine-day_detail.jpg"
+
+- title: "Triumvirate"
+  year: 2016
+  slug: 2016-triumvirate
+  description: "Moving in and out of the shadows, three flowers jostle for position in the dark pool."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: false
+  image: "/images/2016-triumvirate_detail.jpg"
+
+- title: "Almost Autumn"
+  year: 2017
+  slug: 2017-almost-autumn
+  description: "The trees and grasses are starting to turn gold and orange, but the warm sun proves summer still spends her days here."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2017-almost-autumn_detail.jpg"
+
+- title: "Along the River"
+  year: 2017
+  slug: 2017-along-the-river
+  description: "A lively tree sits by the river on a quiet summer day."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2017-along-the-river_detail.jpg"
+
+- title: "Awakening"
+  year: 2017
+  slug: 2017-awakening
+  description: "The morning sun rises over the lake chasing the deep blues with peaches and pinks, reaching with warm tendrils into the corners of l..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2017-awakening.jpg"
+
+- title: "Celadon Morning"
+  year: 2017
+  slug: 2017-celadon-morning
+  description: "A quiet morning walk with ribbons of pale green and blue falling amongst the flowers on the forest floor."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2017-celadon-morning_detail.jpg"
+
+- title: "The Beacon"
+  year: 2017
+  slug: 2017-the-beacon
+  description: "A fall maple burns brightly against the dark forest."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2017-the-beacon_detail.jpg"
+
+- title: "Beaming"
+  year: 2018
+  slug: 2018-beaming
+  description: "Shards of sunbeams intertwine with bright and dark leaves in a fall forest."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2018-beaming_detail.jpg"
+
+- title: "Poolside"
+  year: 2018
+  slug: 2018-poolside
+  description: "A quiet forest pool playing hide and seek with the spring morning."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2018-poolside_detail.jpg"
+
+- title: "The Deep"
+  year: 2018
+  slug: 2018-the-deep
+  description: "The sun tries to reach the depths of the forest - impossibly far away."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2018-the-deep_detail.jpg"
+
+- title: "Falling"
+  year: 2019
+  slug: 2019-falling
+  description: "An idyllic fall day - boisterous clouds and colorful trees are reflected in the September lake."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2019-falling_detail.jpg"
+
+- title: "Heart of Gold"
+  year: 2019
+  slug: 2019-heart-of-gold
+  description: "The summer forest contains pockets where the light dances in secret."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2019-heart-of-gold_detail.jpg"
+
+- title: "The Emperor"
+  year: 2019
+  slug: 2019-the-emperor
+  description: "The Emperor stands resplendent - his courtiers a heady mix of bronzes, vermilions, magentas and golds."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2019-the-emperor_detail.jpg"
+
+- title: "Birch Light"
+  year: 2020
+  slug: 2020-birchlight
+  description: "The blues and greens and greys of the birches play with dappled sunlight on a summer afternoon."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2020-birchlight_detail.jpg"
+
+- title: "Living on the Edge"
+  year: 2020
+  slug: 2020-living-on-the-edge
+  description: "The forest crowds the edge jostling for the best view across the summer lake."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2020-living-on-the-edge_detail.jpg"
+
+- title: "Winter Warmth"
+  year: 2020
+  slug: 2020-winter-warmth
+  description: "The trees gather together by the waterâs edge bringing warmth to a Winter day."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2020-winter-warmth_detail.jpg"
+
+- title: "Forest Tapestry"
+  year: 2021
+  slug: 2021-forest-tapestry
+  description: "The forest is a tapestry of pinks, blues and greens. The sun weaves shapes of light and shadow amidst the trees and other wood..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: false
+  image: "/images/2021-forest-tapestry_detail.jpg"
+
+- title: "Standing Tall"
+  year: 2021
+  slug: 2021-standing-tall
+  description: "A summer afternoon of poppies, field and sky."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2021-standing-tall_detail.jpg"
+
+- title: "Lady in Red"
+  year: 2022
+  slug: 2022-lady-in-red
+  description: "A single tree stands by the river; boisterous clouds scamper by and she know her reds will soon fall."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2022-lady-in-red_detail.jpg"
+
+- title: "Promenade"
+  year: 2022
+  slug: 2022-promenade
+  description: "Original abstract landscape painting by Mandy Budan. Acrylic on wood, ."
+  medium: "Acrylic"
+  size: ""
+  sold: true
+  image: "/images/2022-promenade_detail.jpg"
+
+- title: "Summer Duet"
+  year: 2022
+  slug: 2022-summer-duet
+  description: "As a perfect summer day winds down, reflections dance across the water."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2022-summer-duet_detail.jpg"
+
+- title: "Verdigris"
+  year: 2022
+  slug: 2022-verdigris
+  description: "As fall comes to a close the forest becomes a slightly menacing tangle of dark coppers and reds with only a patina of green to remem..."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2022-verdigris_detail.jpg"
+
+- title: "Above the Trees"
+  year: 2023
+  slug: 2023-above-the-trees
+  description: "Original abstract landscape painting by Mandy Budan. Acrylic on wood, ."
+  medium: "Acrylic"
+  size: ""
+  sold: true
+  image: "/images/2023-above-the-trees_detail.jpg"
+
+- title: "Firefall"
+  year: 2023
+  slug: 2023-firefall
+  description: "The sun drops from the sky sending showers of colours up into the coming night."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2023-firefall_detail.jpg"
+
+- title: "Out of the Blue"
+  year: 2023
+  slug: 2023-out-of-the-blue
+  description: "The sun hits a forest meadow just right way to bring the warmth of colour to a winterâs day."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2023-out-of-the-blue_detail.jpg"
+
+- title: "Summer Dreaming"
+  year: 2023
+  slug: 2023-summer-dreaming
+  description: "A summer day by the lake inspires quiet daydreams."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2023-summer-dreaming_detail.jpg"
+
+- title: "Running Wild"
+  year: 2024
+  slug: 2024-running-wild
+  description: "The colours of the forest tumble over each other in an effort to be the first in the race for fall."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: false
+  image: "/images/2024-running-wild_detail.jpg"
+
+- title: "Waterloo Fall"
+  year: 2024
+  slug: 2024-waterloo-fall
+  description: "A quiet day in early fall; the oranges and reds are slowly usurping the complacent court of the greens."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: false
+  image: "/images/2024-waterloo-fall_detail.jpg"
+
+- title: "Watershed Moment"
+  year: 2024
+  slug: 2024-watershed-moment
+  description: "Original abstract landscape painting by Mandy Budan. Acrylic on wood, ."
+  medium: "Acrylic"
+  size: ""
+  sold: true
+  image: "/images/2024-watershed-moment_detail.jpg"
+
+- title: "Chasing Summer"
+  year: 2025
+  slug: 2025-chasing-summer
+  description: "A boisterous sky folics above a late summer lake."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2025-chasing-summer_detail.jpg"
+
+- title: "Going Places"
+  year: 2025
+  slug: 2025-going-places
+  description: "A dappled forest in early fall and a road winding through it."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: true
+  image: "/images/2025-going-places_detail.jpg"
+
+- title: "Rhythm and Hues"
+  year: 2026
+  slug: 2026-rhythm-and-hues
+  description: "The quiet pines provide a muted backdrop against which the more boisterous display their plumage."
+  medium: "Acrylic on canvas"
+  size: ""
+  sold: false
+  image: "/images/2026-rhythm-and-hues_detail.jpg"
