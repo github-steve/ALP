@@ -1,7 +1,0 @@
-#!/bin/bash
-# Pre-commit hook: minify CSS+JS and stage results
-# Auto-installed by hooks/install.sh
-
-bash minify.sh
-git add css/style.min.css js/site-effects.min.js
-git add -u html/ *.html
