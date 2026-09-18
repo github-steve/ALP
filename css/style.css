@@ -63,11 +63,33 @@ img { max-width: 100%; height: auto; display: block; }
   justify-content: flex-end;
 }
 
-/* Year section */
+.year-section {
+  margin: 3rem 0 1rem;
+}
+
+/* Animated year underline — slides in from left */
 .year-section h2 {
+  position: relative;
+  padding-bottom: 0.75rem;
   font-size: 1.8rem;
   font-weight: 500;
   color: #222f3e !important;
+}
+
+.year-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #222f3e;
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: scaleX(0); transform-origin: left; }
+  to { transform: scaleX(1); transform-origin: left; }
 }
 
 /* Artist statement */

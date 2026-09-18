@@ -89,7 +89,7 @@ def generate_gallery(paintings):
         
         cards_html += f'''    <!-- {year} -->
     <div class="year-section mb-4">
-      <h2 class="border-bottom pb-2 mb-3">{year}{latest_badge}</h2>
+      <h2>{year}{latest_badge}</h2>
       <div class="d-flex flex-wrap gap-3">
 '''
         for p in year_paintings:
