@@ -20,12 +20,12 @@ minify js/site-effects.js > js/site-effects.min.js
 
 # Update all HTML references
 echo "Updating HTML references..."
-find . -name "*.html" -exec sed -i '' 's/href="css\/style\.css"/href="css\/style.min.css"/g' {} \;
-find . -name "*.html" -exec sed -i '' 's/href="..\/css\/style\.css"/href="..\/css\/style.min.css"/g' {} \;
-find . -name "*.html" -exec sed -i '' 's/href="..\/..\/css\/style\.css"/href="..\/..\/css\/style.min.css"/g' {} \;
-find . -name "*.html" -exec sed -i '' 's/src="js\/site-effects\.js"/src="js\/site-effects.min.js"/g' {} \;
-find . -name "*.html" -exec sed -i '' 's/src="..\/js\/site-effects\.js"/src="..\/js\/site-effects.min.js"/g' {} \;
-find . -name "*.html" -exec sed -i '' 's/src="..\/..\/js\/site-effects\.js"/src="..\/..\/js\/site-effects.min.js"/g' {} \;
+find . -name "*.html" -exec perl -pi -e 's/href="css\/style\.css"/href="css\/style.min.css"/g' {} +
+find . -name "*.html" -exec perl -pi -e 's/href="..\/css\/style\.css"/href="..\/css\/style.min.css"/g' {} +
+find . -name "*.html" -exec perl -pi -e 's/href="..\/..\/css\/style\.css"/href="..\/..\/css\/style.min.css"/g' {} +
+find . -name "*.html" -exec perl -pi -e 's/src="js\/site-effects\.js"/src="js\/site-effects.min.js"/g' {} +
+find . -name "*.html" -exec perl -pi -e 's/src="..\/js\/site-effects\.js"/src="..\/js\/site-effects.min.js"/g' {} +
+find . -name "*.html" -exec perl -pi -e 's/src="..\/..\/js\/site-effects\.js"/src="..\/..\/js\/site-effects.min.js"/g' {} +
 
 # Report
 echo ""
