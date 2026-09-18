@@ -98,8 +98,8 @@ img { max-width: 100%; height: auto; display: block; }
   position: absolute;
   bottom: 8px;
   right: 8px;
-  width: 12px;
-  height: 12px;
+  width: 24px;
+  height: 24px;
   background: #fff;
   border-radius: 50%;
   display: flex;
@@ -111,8 +111,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 .sold-indicator::after {
   content: "";
-  width: 6px;
-  height: 6px;
+  width: 16px;
+  height: 16px;
   background: #c0392b;
   border-radius: 50%;
 }
