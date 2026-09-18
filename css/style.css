@@ -57,7 +57,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 .artwork-card .card-body {
   padding: 1rem 0.75rem 0.25rem 0.75rem;
-  min-height: 80px;
+  min-height: 95px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
