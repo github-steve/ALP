@@ -48,11 +48,11 @@ img { max-width: 100%; height: auto; display: block; }
 .artwork-card .card-img-top {
   height: 200px;
   object-fit: cover;
-  transition: transform 0.2s ease;
+  transition: transform 3s ease-out;
 }
 
 .artwork-card:hover .card-img-top {
-  transform: scale(1.05);
+  transform: scale(1.25);
 }
 
 .artwork-card .card-body {
