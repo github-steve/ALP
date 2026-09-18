@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-<meta name="description" content="Abstract landscape paintings by Mandy Budan. Original acrylic works inspired by Georgian Bay, Muskoka, and the Ottawa Valley. Free shipping across Canada.">
+<meta name="description" content="Abstract landscape paintings by Mandy Budan. Original acrylic works inspired by Georgian Bay, Muskoka, and the Ottawa Valley.">
 <meta property="og:title" content="Mandy Budan Art — Abstract Landscape Paintings">
-<meta property="og:description" content="Abstract landscape paintings by Mandy Budan. Original acrylic works inspired by Georgian Bay, Muskoka, and the Ottawa Valley. Free shipping across Canada.">
+<meta property="og:description" content="Abstract landscape paintings by Mandy Budan. Original acrylic works inspired by Georgian Bay, Muskoka, and the Ottawa Valley.">
 <meta property="og:image" content="" data-img="/ALP/images/2026-rhythm-and-hues.jpg">
 <meta property="og:type" content="website">
 <meta property="og:url" content="">
 <link rel="canonical" href="">
 
 <title>Mandy Budan Art — Abstract Landscape Paintings</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="/ALP/css/style.css">
 <link rel="icon" type="image/x-icon" href="/ALP/favicon.ico">
 
@@ -22,35 +22,18 @@
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "Mandy Budan Art",
-  "description": "Abstract landscape paintings by Mandy Budan. Original acrylic works inspired by Georgian Bay, Muskoka, and the Ottawa Valley.",
-  "author": {
-    "@type": "Person",
-    "name": "Mandy Budan"
-  }
+  "description": "Abstract landscape paintings by Mandy Budan.",
+  "author": { "@type": "Person", "name": "Mandy Budan" }
 }
 </script>
 
 <script>
 (function(){
   var loc=window.location;
-  var path=loc.pathname.replace(/\/[^\/]*$/,"/");
-  var base=loc.origin+path;
-  var ogUrl=document.querySelector('meta[property="og:url"]');
   var ogImg=document.querySelector('meta[property="og:image"]');
-  var canonical=document.querySelector('link[rel="canonical"]');
-  if(ogUrl) ogUrl.setAttribute("content", loc.href);
   if(ogImg){
     var p = ogImg.getAttribute("data-img") || "";
     ogImg.setAttribute("content", loc.origin + p);
-  }
-  if(canonical) canonical.setAttribute("href", loc.href);
-  var ld = document.querySelector('script[type="application/ld+json"]');
-  if(ld){
-    try {
-      var d = JSON.parse(ld.textContent);
-      if(d.url) d.url = loc.origin + "/";
-      ld.textContent = JSON.stringify(d, null, 2);
-    } catch(e) {}
   }
 })();
 </script>
@@ -58,6 +41,30 @@
 <body>
 <div class="scroll-progress"></div>
 <a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- Bootstrap 5 Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top bg-dark" data-bs-theme="dark" style="background-color: #222f3e !important; padding: 1.25rem 0;">
+  <div class="container-fluid px-3">
+    <a class="navbar-brand" href="/ALP/index.html" style="font-size: 1.6rem; letter-spacing: 0.05em;">
+      <strong>MANDY BUDAN</strong> <span class="fw-normal">Abstract Landscapes</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#alpNav" aria-controls="alpNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="alpNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/ALP/index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/ALP/mandy-budan-paintings.html">Paintings</a></li>
+        <li class="nav-item"><a class="nav-link" href="/ALP/mandy-budan-small-original-paintings.html">Studies</a></li>
+        <li class="nav-item"><a class="nav-link" href="/ALP/mandy-budan-about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/ALP/mandy-budan-store.html">SHOP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Spacer for fixed navbar -->
+<div style="height: 80px;"></div>
 
 <main id="main">
 
@@ -101,9 +108,7 @@
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-<script src="/ALP/js/nav.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script data-goatcounter="https://budanart.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 <script src="/ALP/js/site-effects.min.js"></script>
 </body>

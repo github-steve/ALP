@@ -35,66 +35,50 @@ img { max-width: 100%; height: auto; display: block; }
 /* --- Layout --- */
 .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
-/* --- Nav --- */
-nav {
-  background: #222f3e;
-  padding: 1.25rem 0;
-  margin-bottom: 3rem;
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  transition: background 0.1s ease;
+/* --- Bootstrap Navbar Custom Styles --- */
+.navbar {
+  font-family: 'Inter', sans-serif;
 }
 
-nav .wrap { display: flex; justify-content: space-between; align-items: center; }
-
-.brand {
-  font-family: 'Inter', sans-serif;
+.navbar-brand {
   font-size: 1.6rem;
   font-weight: 500;
-  color: #fff;
-  text-decoration: none;
+  color: #fff !important;
   letter-spacing: 0.05em;
-  position: relative;
-  transition: color 0.2s;
 }
 
-.brand::after {
-  content: '';
-  position: absolute;
-  bottom: -4px; left: 0;
-  width: 0; height: 2px;
-  background: #FFDD00;
-  transition: width 0.3s;
+.navbar-brand:hover {
+  color: #FFDD00 !important;
 }
 
-.brand:hover::after { width: 100%; }
-.brand:hover { color: #FFDD00; }
-
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 2rem;
-}
-
-.nav-links a {
-  color: rgba(255,255,255,0.8);
-  text-decoration: none;
+.navbar-nav .nav-link {
   font-size: 0.85rem;
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.5rem 0;
+  color: rgba(255, 255, 255, 0.8) !important;
   transition: color 0.2s;
 }
 
-.nav-links a:hover {
-  color: #FFDD00;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #FFDD00 !important;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.nav-links a.active { color: #FFDD00; }
+.navbar-nav .nav-link.active {
+  color: #FFDD00 !important;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Remove margin-top from main since navbar is fixed */
+main {
+  margin-top: 0;
+}
 
 /* --- Hero --- */
 .hero { min-height: 100vh; display: flex; align-items: flex-end; padding: 0 3rem 4rem; position: relative; }
