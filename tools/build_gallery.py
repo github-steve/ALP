@@ -1,133 +1,113 @@
 #!/usr/bin/env python3
 """
-Generate the paintings gallery page with FAA-style flexbox layout.
-Reads existing paintings and outputs clean, paginated HTML.
+Build paintings gallery using Bootstrap classes.
+Parses original gallery page and generates clean Bootstrap markup.
+Usage: python tools/build_gallery.py
 """
 import os
 import re
-import json
+import subprocess
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-EXISTING_PAGE = os.path.join(REPO_ROOT, "mandy-budan-paintings.html")
-OUTPUT_DIR = os.path.join(REPO_ROOT, "html", "generated")
-PAGINATION = 16  # images per page
+OUTPUT = os.path.join(REPO_ROOT, "mandy-budan-paintings.html")
 
-def parse_existing_paintings():
-    """Extract painting data from the existing gallery page."""
-    with open(EXISTING_PAGE, 'r') as f:
-        content = f.read()
-    
+def get_original_content():
+    """Get the original 1365-line gallery page from git history."""
+    result = subprocess.run(
+        ["git", "show", "HEAD~2:mandy-budan-paintings.html"],
+        capture_output=True, text=True, cwd=REPO_ROOT
+    )
+    if result.returncode != 0:
+        print(f"Error: {result.stderr}")
+        exit(1)
+    return result.stdout
+
+def parse_original(content):
+    """Extract painting data from the original gallery page."""
     paintings = []
     
-    # Find all artwork divs
-    pattern = r'<div class="artwork" id="([^"]+)" itemscope[^>]*>.*?<div class="artwork-image"><a href="([^"]+)"><img[^>]*src="([^"]+)" alt="([^"]+)"[^>]*>.*?<div class="artwork-title"[^>]*>([^<]+)</div>.*?<span itemprop="dateCreated">([^<]+)</span>.*?<span itemprop="size">([^<]+)</span>.*?<span itemprop="artMedium">([^<]+)</span>(.*?)</div>\s*</div>'
+    # Match artwork blocks
+    pattern = r'<div class="artwork" id="([^"]+)"[^>]*>.*?<div class="artwork-image"><a href="[^"]+"><img[^>]*src="[^"]+" alt="([^"]+)".*?<div class="artwork-title[^"]*"[^>]*>([^<]+)</div>.*?<span itemprop="dateCreated">([^<]+)</span>.*?<span itemprop="size">([^<]+)</span>.*?<span itemprop="artMedium">([^<]+)</span>(.*?)</div>\s*</div>'
     
-    matches = re.findall(pattern, content, re.DOTALL)
-    
-    for match in matches:
-        slug, link, img_src, alt, title, year, size, medium, extra = match
-        
-        # Check for sold badge
+    for match in re.findall(pattern, content, re.DOTALL):
+        slug, alt, title, year, size, medium, extra = match
         sold = 'circle-container' in extra
         
-        # Fix image path: images/slug.jpg -> /ALP/images/paintings/year/slug.jpg
-        # Extract year from slug (first 4 chars)
-        year_prefix = slug[:4]
-        img_filename = os.path.basename(img_src)
-        fixed_img_src = f"/ALP/images/paintings/{year_prefix}/{img_filename}"
-        
-        # Fix detail link: html/slug.html -> /ALP/html/paintings/year/slug.html
-        fixed_link = f"/ALP/html/paintings/{year_prefix}/{slug}.html"
+        # Build correct paths
+        year_dir = slug[:4]
+        img_src = f"/ALP/images/paintings/{year_dir}/{slug}.jpg"
+        link = f"/ALP/html/paintings/{year_dir}/{slug}.html"
         
         paintings.append({
             'slug': slug,
-            'link': fixed_link,
-            'img_src': fixed_img_src,
             'alt': alt,
             'title': title.strip(),
             'year': year.strip(),
             'size': size.strip(),
             'medium': medium.strip(),
-            'sold': sold
+            'sold': sold,
+            'img_src': img_src,
+            'link': link
         })
     
     return paintings
 
-def parse_year_breaks():
-    """Extract year-break markers from existing page."""
-    with open(EXISTING_PAGE, 'r') as f:
-        content = f.read()
+def generate_gallery(paintings):
+    """Generate Bootstrap gallery HTML."""
     
-    years = []
-    pattern = r'<div class="year-break[^"]*"><h2>(\d{4})'
-    matches = re.findall(pattern, content)
-    
-    for year in matches:
-        latest = 'latest-year' in content.split(f'year-break')[1].split('</div>')[0] if 'latest-year' in content else False
-        years.append({'year': year, 'latest': latest})
-    
-    return years
-
-def generate_page(paintings, page_num, total_pages, output_path):
-    """Generate a single gallery page."""
-    
-    # Group paintings by year for year-break display
-    years_order = sorted(set(p['year'] for p in paintings), reverse=True)
-    paintings_by_year = {y: [] for y in years_order}
+    # Group by year (newest first)
+    years = sorted(set(p['year'] for p in paintings), reverse=True)
+    by_year = {y: [] for y in years}
     for p in paintings:
-        paintings_by_year[p['year']].append(p)
+        by_year[p['year']].append(p)
     
-    # Build gallery HTML
-    gallery_html = ""
+    # Build gallery cards HTML
+    cards_html = ""
     
-    for year in years_order:
-        year_paintings = paintings_by_year[year]
+    for year in years:
+        year_paintings = by_year[year]
         if not year_paintings:
             continue
         
-        is_latest = year == max(years_order)
-        latest_class = " latest-year" if is_latest else ""
-        latest_badge = ' <span class="latest-badge">Latest</span>' if is_latest else ""
-        year_note = '<p class="year-note">My most recent work. More coming soon…</p>' if is_latest else ""
+        is_latest = year == max(years)
+        latest_badge = ' <span class="badge text-bg-warning ms-2">Latest</span>' if is_latest else ""
         
-        gallery_html += f'    <div class="year-break{latest_class}"><h2>{year}{latest_badge}</h2>{year_note}</div>\n'
+        cards_html += f'''    <!-- {year} -->
+    <div class="year-section mb-4">
+      <h2 class="border-bottom pb-2 mb-3">{year}{latest_badge}</h2>
+      <div class="d-flex flex-wrap gap-3">
+'''
         
         for p in year_paintings:
             sold_badge = ""
             if p['sold']:
-                sold_badge = '<div class="circle-container"><div class="circle-inner"></div><span class="tooltip">Sold</span></div>'
+                sold_badge = '<span class="position-absolute top-0 end-0 badge text-bg-danger m-2">SOLD</span>'
             
-            gallery_html += f'''    <div class="artwork" id="{p['slug']}" itemscope itemtype="https://schema.org/VisualArtwork">
-      <span itemprop="artist" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="Mandy Budan"></span>
-      <div class="artwork-image"><a href="{p['link']}"><img loading="lazy" itemprop="image" src="{p['img_src']}" alt="{p['alt']}"></a>{sold_badge}</div>
-      <div class="artwork-info">
-        <div class="artwork-title" itemprop="name">{p['title']}</div>
-        <div class="artwork-meta">
-          <span itemprop="dateCreated">{p['year']}</span>
-          <span itemprop="size">{p['size']}</span>
-          <span itemprop="artMedium">{p['medium']}</span>
+            cards_html += f'''        <div class="card artwork-card">
+          <div class="position-relative">
+            <a href="{p['link']}">
+              <img src="{p['img_src']}" class="card-img-top" alt="{p['alt']}" loading="lazy">
+            </a>
+            {sold_badge}
+          </div>
+          <div class="card-body">
+            <h3 class="card-title h6 mb-1">{p['title']}</h3>
+            <p class="card-text text-body-secondary small">
+              {p['year']} &middot; {p['size']} &middot; {p['medium']}
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
 '''
+        
+        cards_html += "      </div>\n    </div>\n\n"
     
-    # Pagination HTML
-    pagination_html = ""
-    if total_pages > 1:
-        pagination_html += '    <nav aria-label="Gallery pagination" class="mt-4"><ul class="pagination justify-content-center">\n'
-        for i in range(1, total_pages + 1):
-            active = " active" if i == page_num else ""
-            page_file = f"mandy-budan-paintings-page{i}.html" if i > 1 else "mandy-budan-paintings.html"
-            pagination_html += f'      <li class="page-item{active}"><a class="page-link" href="/ALP/{page_file}">{i}</a></li>\n'
-        pagination_html += '    </ul></nav>\n'
-    
-    full_html = f'''<!DOCTYPE html>
+    html = f'''<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <meta name="description" content="Browse original abstract landscape paintings by Mandy Budan. Acrylic on wood, created in Toronto.">
+  <meta name="description" content="Browse 100+ original abstract landscape paintings by Mandy Budan. Each work is acrylic on wood, created in Toronto.">
   <meta property="og:title" content="Paintings - Mandy Budan Art">
   <meta property="og:description" content="Browse original abstract landscape paintings by Mandy Budan.">
   <meta property="og:image" content="/ALP/images/paintings/2026/2026-rhythm-and-hues.jpg">
@@ -141,13 +121,9 @@ def generate_page(paintings, page_num, total_pages, output_path):
 </head>
 <body>
 
-<!-- Scroll progress bar (position:fixed top gradient) -->
 <div class="scroll-progress"></div>
-
-<!-- Skip link for keyboard users -->
 <a href="#main" class="skip-link">Skip to main content</a>
 
-<!-- Bootstrap 5 Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top alp-nav" data-bs-theme="dark">
   <div class="container-fluid px-3">
     <a class="navbar-brand" href="/ALP/index.html"><strong>MANDY BUDAN</strong> <span class="fw-normal">Abstract Landscapes</span></a>
@@ -166,30 +142,22 @@ def generate_page(paintings, page_num, total_pages, output_path):
   </div>
 </nav>
 
-<!-- Spacer for fixed navbar -->
 <div style="height: 4.5rem;"></div>
 
 <main id="main">
   <div class="container py-4">
 
-    <!-- Artist Statement -->
     <section class="artist-statement text-center mb-4">
       <h1>The Paintings</h1>
     </section>
 
-    <!-- Pull Quote -->
     <div class="pull-quote mb-4">
       <p>"Normality is a paved road - it's comfortable to walk, but no flowers grow on it."<br>- Vincent Van Gogh</p>
     </div>
 
-    <!-- Gallery -->
-    <div class="gallery">
-{gallery_html}    </div>
-
-{pagination_html}  </div>
+{cards_html}  </div>
 </main>
 
-<!-- Footer -->
 <footer class="text-center py-3 mt-4">
   All artwork and images copyright &copy; Mandy Budan 2025
 </footer>
@@ -201,17 +169,9 @@ def generate_page(paintings, page_num, total_pages, output_path):
 <script>
 (function(){{
   var loc=window.location;
-  var path=loc.pathname.replace(/\\/[^\\/]*$/,"/");
-  var base=loc.origin+path;
   var ogUrl=document.querySelector('meta[property="og:url"]');
-  var ogImg=document.querySelector('meta[property="og:image"]');
   var canonical=document.querySelector('link[rel="canonical"]');
   if(ogUrl) ogUrl.setAttribute("content", loc.href);
-  if(ogImg){{
-    var p = ogImg.getAttribute("data-img") || "";
-    if(p && p.indexOf("/")!==0) p = "/ALP/" + p;
-    ogImg.setAttribute("content", loc.origin + p);
-  }}
   if(canonical) canonical.setAttribute("href", loc.href);
 }})();
 </script>
@@ -219,32 +179,15 @@ def generate_page(paintings, page_num, total_pages, output_path):
 </body>
 </html>'''
     
-    with open(output_path, 'w') as f:
-        f.write(full_html)
+    with open(OUTPUT, 'w') as f:
+        f.write(html)
     
-    return len(full_html)
+    return len(paintings)
 
 if __name__ == "__main__":
-    print("Parsing existing paintings page...")
-    paintings = parse_existing_paintings()
-    print(f"Found {len(paintings)} paintings")
+    content = get_original_content()
+    paintings = parse_original(content)
+    print(f"Parsed {len(paintings)} paintings")
     
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    
-    total_pages = (len(paintings) + PAGINATION - 1) // PAGINATION
-    
-    for page_num in range(1, total_pages + 1):
-        start = (page_num - 1) * PAGINATION
-        end = start + PAGINATION
-        page_paintings = paintings[start:end]
-        
-        if page_num == 1:
-            filename = "mandy-budan-paintings.html"
-        else:
-            filename = f"mandy-budan-paintings-page{page_num}.html"
-        
-        output_path = os.path.join(REPO_ROOT, filename)
-        size = generate_page(page_paintings, page_num, total_pages, output_path)
-        print(f"Generated {filename} ({size} bytes) with {len(page_paintings)} paintings")
-    
-    print(f"\nTotal: {len(paintings)} paintings across {total_pages} pages")
+    count = generate_gallery(paintings)
+    print(f"Generated mandy-budan-paintings.html with {count} paintings")
