@@ -78,12 +78,23 @@ bash hooks/install.sh
 2. Upload to `public_html/` via cPanel or FTP
 3. Files are static — no server-side processing needed
 
+## Batch Image Processing
+
+See [LOOPS.md](LOOPS.md) for the detailed workflow for processing new painting/study batches.
+
+Summary:
+- **Paintings:** Extract zip → resize (400px gallery / 1400px detail) → watermark → commit
+- **Studies:** Extract zip → resize (400px `_sm` / 694px detail) → watermark → commit
+- Watermark script: `batch_watermark_visible.py` (© Mandy Budan, 40% opacity)
+
 ## Maintenance
 
 - **Bump version** in `index.html` (e.g., `<!-- ALP Design v2.7.121 -->`) when making visual changes
 - **Watermark new images** with `batch_watermark_visible.py` before adding
 - **New paintings/studies**: follow the existing naming convention (`YYYY-slug.html`)
 - **GoatCounter**: included on every page via `<script data-goatcounter="...">`
+
+
 
 ## Planned / TODO
 

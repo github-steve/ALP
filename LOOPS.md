@@ -1,5 +1,7 @@
 # Project loops
 
+> See [SITE.md](SITE.md) for project overview.
+
 ## Batch image reprocess
 
 Re-optimize all existing ALP paintings for web gallery and detail pages. Processes zips of 15-20 images per batch until all 100+ are done.
