@@ -56,8 +56,11 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .artwork-card .card-body {
-  padding: 0.75rem 0.75rem 1.5rem 0.75rem;
-  min-height: 90px;
+  padding: 1rem 0.75rem 0.25rem 0.75rem;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /* Year section */
@@ -93,7 +96,7 @@ img { max-width: 100%; height: auto; display: block; }
 /* Sold indicator — white circle with red circle centered */
 .sold-indicator {
   position: absolute;
-  top: 8px;
+  bottom: 8px;
   right: 8px;
   width: 36px;
   height: 36px;
@@ -108,8 +111,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 .sold-indicator::after {
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 28px;
+  height: 28px;
   background: #c0392b;
   border-radius: 50%;
 }
