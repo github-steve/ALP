@@ -12,9 +12,9 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT = os.path.join(REPO_ROOT, "mandy-budan-paintings.html")
 
 def get_original_content():
-    """Get the original 1365-line gallery page from git history."""
+    """Get the original 1365-line gallery page from git history (fixed commit)."""
     result = subprocess.run(
-        ["git", "show", "HEAD~3:mandy-budan-paintings.html"],
+        ["git", "show", "cace63cf:mandy-budan-paintings.html"],
         capture_output=True, text=True, cwd=REPO_ROOT
     )
     if result.returncode != 0:
@@ -27,27 +27,22 @@ def parse_original(content):
     paintings = []
     
     # Split by artwork divs
-    blocks = content.split('<div class="artwork"')[1:]  # Skip first empty/header split
+    blocks = content.split('<div class="artwork"')[1:]
     
     for block in blocks:
-        # Extract slug
         slug_match = re.search(r'id="([^"]+)"', block)
         if not slug_match:
             continue
         slug = slug_match.group(1)
         
-        # Check if sold (circle-container present)
         sold = 'circle-container' in block
         
-        # Extract alt
         alt_match = re.search(r'alt="([^"]+)"', block)
         alt = alt_match.group(1) if alt_match else slug
         
-        # Extract title
         title_match = re.search(r'artwork-title[^"]*"[^>]*>([^<]+)</div>', block)
         title = title_match.group(1).strip() if title_match else slug
         
-        # Extract year, size, medium
         year_match = re.search(r'dateCreated">([^<]+)</span>', block)
         size_match = re.search(r'"size">([^<]+)</span>', block)
         medium_match = re.search(r'artMedium">([^<]+)</span>', block)
