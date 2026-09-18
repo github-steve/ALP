@@ -53,10 +53,28 @@ body {
   font-weight: 500;
   color: #fff !important;
   letter-spacing: 0.05em;
+  position: relative;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.alp-nav .navbar-brand::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FFDD00;
+  transition: width 0.3s ease;
 }
 
 .alp-nav .navbar-brand:hover {
   color: #FFDD00 !important;
+}
+
+.alp-nav .navbar-brand:hover::after {
+  width: 100%;
 }
 
 .alp-nav .navbar-nav .nav-link {
