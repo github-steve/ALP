@@ -74,9 +74,15 @@ bash hooks/install.sh
 | Production | inMotion shared hosting | `www.abstractlandscapepainting.com/` |
 
 ### Deploy to inMotion
-1. Zip the repo (exclude `.git/`, `node_modules/`, `.vscode/`, `batch_watermark_visible.py`)
-2. Upload to `public_html/` via cPanel or FTP
-3. Files are static — no server-side processing needed
+
+**Initial deploy (one-time):**
+1. Upload full zip to `public_html/` via cPanel or FTP
+2. Extract — all HTML, CSS, JS, and images deploy together
+
+**Subsequent deploys (incremental):**
+- Only new/changed images + modified HTML files need re-uploading
+- Existing images stay in place — no need to re-upload the full 214 MB
+- Keep the same directory structure (`images/`, `html/`, `css/`, `js/`)
 
 ## Batch Image Processing
 
