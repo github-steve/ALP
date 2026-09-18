@@ -96,10 +96,10 @@ img { max-width: 100%; height: auto; display: block; }
 /* Sold indicator — white circle with red circle centered */
 .sold-indicator {
   position: absolute;
-  bottom: 8px;
-  right: 8px;
-  width: 10px;
-  height: 10px;
+  bottom: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
   background: #fff;
   border-radius: 50%;
   display: flex;
