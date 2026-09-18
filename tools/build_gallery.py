@@ -92,11 +92,10 @@ def generate_gallery(paintings):
       <h2 class="border-bottom pb-2 mb-3">{year}{latest_badge}</h2>
       <div class="d-flex flex-wrap gap-3">
 '''
-        
         for p in year_paintings:
             sold_badge = ""
             if p['sold']:
-                sold_badge = '<span class="position-absolute top-0 end-0 badge text-bg-danger m-2">SOLD</span>'
+                sold_badge = '<span class="sold-indicator"></span>'
             
             cards_html += f'''        <div class="card artwork-card">
           <div class="position-relative">
