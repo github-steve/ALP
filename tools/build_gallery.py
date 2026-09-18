@@ -30,10 +30,19 @@ def parse_existing_paintings():
         # Check for sold badge
         sold = 'circle-container' in extra
         
+        # Fix image path: images/slug.jpg -> /ALP/images/paintings/year/slug.jpg
+        # Extract year from slug (first 4 chars)
+        year_prefix = slug[:4]
+        img_filename = os.path.basename(img_src)
+        fixed_img_src = f"/ALP/images/paintings/{year_prefix}/{img_filename}"
+        
+        # Fix detail link: html/slug.html -> /ALP/html/paintings/year/slug.html
+        fixed_link = f"/ALP/html/paintings/{year_prefix}/{slug}.html"
+        
         paintings.append({
             'slug': slug,
-            'link': link.replace('../', '/ALP/'),
-            'img_src': img_src.replace('../', '/ALP/'),
+            'link': fixed_link,
+            'img_src': fixed_img_src,
             'alt': alt,
             'title': title.strip(),
             'year': year.strip(),
@@ -129,7 +138,6 @@ def generate_page(paintings, page_num, total_pages, output_path):
   <link rel="icon" type="image/x-icon" href="/ALP/favicon.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="/ALP/css/style.css">
-  <link rel="stylesheet" href="/ALP/css/fonts.css">
 </head>
 <body>
 
