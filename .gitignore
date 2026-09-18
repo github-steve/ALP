@@ -27,3 +27,15 @@ html/mandy-budan-abstract-landscape-paintings-4.html
 html/mandy-budan-abstract-landscape-paintings-3.html
 html/mandy-budan-abstract-landscape-paintings-2.html
 .vscode/settings.json
+
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ruby
+.bundle/
+vendor/
+
+# macOS
+.DS_Store
