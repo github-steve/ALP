@@ -14,7 +14,7 @@ OUTPUT = os.path.join(REPO_ROOT, "mandy-budan-paintings.html")
 def get_original_content():
     """Get the original 1365-line gallery page from git history."""
     result = subprocess.run(
-        ["git", "show", "HEAD~2:mandy-budan-paintings.html"],
+        ["git", "show", "HEAD~3:mandy-budan-paintings.html"],
         capture_output=True, text=True, cwd=REPO_ROOT
     )
     if result.returncode != 0:
@@ -26,28 +26,48 @@ def parse_original(content):
     """Extract painting data from the original gallery page."""
     paintings = []
     
-    # Match artwork blocks
-    pattern = r'<div class="artwork" id="([^"]+)"[^>]*>.*?<div class="artwork-image"><a href="[^"]+"><img[^>]*src="[^"]+" alt="([^"]+)".*?<div class="artwork-title[^"]*"[^>]*>([^<]+)</div>.*?<span itemprop="dateCreated">([^<]+)</span>.*?<span itemprop="size">([^<]+)</span>.*?<span itemprop="artMedium">([^<]+)</span>(.*?)</div>\s*</div>'
+    # Split by artwork divs
+    blocks = content.split('<div class="artwork"')[1:]  # Skip first empty/header split
     
-    for match in re.findall(pattern, content, re.DOTALL):
-        slug, alt, title, year, size, medium, extra = match
-        sold = 'circle-container' in extra
+    for block in blocks:
+        # Extract slug
+        slug_match = re.search(r'id="([^"]+)"', block)
+        if not slug_match:
+            continue
+        slug = slug_match.group(1)
         
-        # Build correct paths
+        # Check if sold (circle-container present)
+        sold = 'circle-container' in block
+        
+        # Extract alt
+        alt_match = re.search(r'alt="([^"]+)"', block)
+        alt = alt_match.group(1) if alt_match else slug
+        
+        # Extract title
+        title_match = re.search(r'artwork-title[^"]*"[^>]*>([^<]+)</div>', block)
+        title = title_match.group(1).strip() if title_match else slug
+        
+        # Extract year, size, medium
+        year_match = re.search(r'dateCreated">([^<]+)</span>', block)
+        size_match = re.search(r'"size">([^<]+)</span>', block)
+        medium_match = re.search(r'artMedium">([^<]+)</span>', block)
+        
+        year = year_match.group(1).strip() if year_match else slug[:4]
+        size = size_match.group(1).strip() if size_match else ""
+        medium = medium_match.group(1).strip() if medium_match else ""
+        
         year_dir = slug[:4]
-        img_src = f"/ALP/images/paintings/{year_dir}/{slug}.jpg"
-        link = f"/ALP/html/paintings/{year_dir}/{slug}.html"
         
         paintings.append({
             'slug': slug,
             'alt': alt,
-            'title': title.strip(),
-            'year': year.strip(),
-            'size': size.strip(),
-            'medium': medium.strip(),
+            'title': title,
+            'year': year,
+            'size': size,
+            'medium': medium,
             'sold': sold,
-            'img_src': img_src,
-            'link': link
+            'img_src': f"/ALP/images/paintings/{year_dir}/{slug}.jpg",
+            'link': f"/ALP/html/paintings/{year_dir}/{slug}.html"
         })
     
     return paintings

@@ -35,10 +35,6 @@ img { max-width: 100%; height: auto; display: block; }
 /* --- Layout --- */
 .wrap { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
-/* ============================================
-   GALLERY — Bootstrap Flexbox (minimal custom)
-   ============================================ */
-
 .artwork-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
