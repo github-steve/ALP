@@ -308,6 +308,7 @@ body {
   background-color: #222f3e !important;
   padding: 1.25rem 0;
   border: none;
+  border-bottom: 2px solid rgba(255, 221, 0, 0.7);
   border-radius: 0;
   box-shadow: none;
 }
