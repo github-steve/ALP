@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var b = Math.round(62 + (32 - 62) * scrollPercent);
     var color = `rgb(${r}, ${g}, ${b})`;
 
-    nav.style.background = color;
+    nav.style.setProperty('background-color', color, 'important');
   });
 });
