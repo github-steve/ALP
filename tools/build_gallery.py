@@ -138,9 +138,9 @@ def generate_gallery(paintings):
 <div class="scroll-progress"></div>
 <a href="#main" class="skip-link">Skip to main content</a>
 
-<nav class="navbar navbar-expand-md fixed-top alp-nav" data-bs-theme="dark">
+<nav class="navbar navbar-expand-sm fixed-top alp-nav" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/ALP/index.html"><strong>MANDY BUDAN</strong> <span class="fw-normal d-none d-md-inline">Abstract Landscapes</span></a>
+    <a class="navbar-brand" href="/ALP/index.html"><strong>MANDY BUDAN</strong> <span class="fw-normal d-none d-sm-inline">Abstract Landscapes</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
