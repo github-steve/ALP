@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var nav = document.querySelector('.alp-nav');
   if (!nav) return;
 
-  window.addEventListener('scroll', function() {
+  function updateNavbar() {
     var scrollY = window.scrollY;
     var docHeight = document.documentElement.scrollHeight - window.innerHeight;
     var scrollPercent = docHeight > 0 ? (scrollY / docHeight) : 0;
@@ -25,5 +25,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     var color = 'rgb(' + r + ', ' + g + ', ' + b + ')';
     nav.style.setProperty('background-color', color, 'important');
-  });
+  }
+
+  // Update on scroll
+  window.addEventListener('scroll', updateNavbar);
+  
+  // Update immediately on page load
+  updateNavbar();
 });
