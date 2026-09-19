@@ -156,7 +156,7 @@ def generate_gallery(paintings):
   </div>
 </nav>
 
-<div style="height: 1rem;"></div>
+<div style="height: 0.75rem;"></div>
 
 <main id="main">
   <div class="container py-4">
