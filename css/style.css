@@ -162,6 +162,11 @@ body {
   box-shadow: none;
 }
 
+.alp-nav .container-fluid {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .alp-nav .navbar-brand {
   font-size: 1.6rem;
   font-weight: 500;

@@ -139,7 +139,7 @@ def generate_gallery(paintings):
 <a href="#main" class="skip-link">Skip to main content</a>
 
 <nav class="navbar navbar-expand-lg fixed-top alp-nav" data-bs-theme="dark">
-  <div class="container-fluid px-3">
+  <div class="container-fluid">
     <a class="navbar-brand" href="/ALP/index.html"><strong>MANDY BUDAN</strong> <span class="fw-normal">Abstract Landscapes</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
