@@ -287,19 +287,9 @@ body {
   background-color: #222f3e !important;
   padding: 1.25rem 0;
   border: none;
+  border-bottom: 2px solid #FFDD00;
   border-radius: 0;
   box-shadow: none;
-  position: relative;
-}
-
-.alp-nav::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #FFDD00;
 }
 
 .alp-nav .container-fluid {
