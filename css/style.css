@@ -410,7 +410,7 @@ main {
 /* --- Intro --- */
 .intro { padding: 4rem 0; text-align: center; }
 .intro h2 { font-size: 2rem; font-weight: 500; color: #4a3f35; margin-bottom: 1rem; }
-.intro p { color: #5a5048; max-width: 700px; margin: 0 auto 1.5rem; line-height: 1.8; }
+.intro p { color: #5a5048; max-width: 700px; margin: 0 auto 1.5rem; line-height: 1.8; font-size: 1.17rem; }
 
 /* --- Easle Section --- */
 .easle { padding: 4rem 0; text-align: center; }
