@@ -20,7 +20,7 @@ html { background: #e9eaec; }
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  color: #fff;
+  color: #222f3e;
   background: #e9eaec;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -102,7 +102,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 [data-bs-theme=dark] body {
   background: #222f3e !important;
-  color: #ddd;
+  color: #ddd !important;
 }
 
 [data-bs-theme=dark] h1,
@@ -112,7 +112,7 @@ img { max-width: 100%; height: auto; display: block; }
 [data-bs-theme=dark] .text-body-secondary,
 [data-bs-theme=dark] .card-text,
 [data-bs-theme=dark] .card-title {
-  color: #ddd !important;
+  color: var(--bs-body-color) !important;
 }
 
 [data-bs-theme=dark] .pull-quote {
@@ -120,7 +120,7 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 [data-bs-theme=dark] .pull-quote p {
-  color: #ddd;
+  color: var(--bs-body-color);
 }
 
 [data-bs-theme=dark] .artist-statement h1,
@@ -184,7 +184,7 @@ img { max-width: 100%; height: auto; display: block; }
 [data-bs-theme=dark] .easle h2,
 [data-bs-theme=dark] .easle p,
 [data-bs-theme=dark] footer .wrap p {
-  color: #ddd;
+  color: var(--bs-body-color);
 }
 
 [data-bs-theme=dark] .card {
@@ -195,7 +195,7 @@ img { max-width: 100%; height: auto; display: block; }
 [data-bs-theme=dark] .card-body h3,
 [data-bs-theme=dark] .card-body h3 a,
 [data-bs-theme=dark] .card-body p {
-  color: #ddd !important;
+  color: var(--bs-body-color) !important;
 }
 
 .artwork-card {
