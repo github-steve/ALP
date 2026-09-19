@@ -48,6 +48,13 @@ def parse_original(content):
 
         year_dir = slug[:4]
 
+        # Build image path - try _sm first, then fall back to regular
+        img_base = f"images/studies/{year_dir}/{slug}"
+        if os.path.exists(os.path.join(REPO_ROOT, f"{img_base}_sm.jpg")):
+            img_src = f"/ALP/{img_base}_sm.jpg"
+        else:
+            img_src = f"/ALP/{img_base}.jpg"
+
         studies.append({
             'slug': slug,
             'alt': alt,
@@ -56,7 +63,7 @@ def parse_original(content):
             'size': size,
             'medium': medium,
             'sold': sold,
-            'img_src': f"/ALP/images/studies/{year_dir}/{slug}_sm.jpg",
+            'img_src': img_src,
             'link': f"/ALP/html/studies/{year_dir}/{slug}.html"
         })
 
