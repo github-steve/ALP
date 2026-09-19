@@ -186,6 +186,7 @@ def generate_gallery(paintings):
 <button id="scrollBottomBtn" class="scroll-btn" aria-label="Scroll to bottom">↓</button>
 
 <script src="/ALP/js/scroll-buttons.js"></script>
+<script src="/ALP/js/nav-scroll.js"></script>
 
 <script>
 (function(){{
