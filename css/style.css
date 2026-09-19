@@ -66,8 +66,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /* Dark mode styles */
-html.dark-mode body {
+html.dark-mode {
   background: #222f3e;
+}
+
+html.dark-mode body {
+  background: #222f3e !important;
 }
 
 html.dark-mode .pull-quote {
