@@ -96,83 +96,83 @@ img { max-width: 100%; height: auto; display: block; }
 #scrollBottomBtn {
   bottom: 6rem;
 }
-html.dark-mode {
+[data-bs-theme=dark] {
   background: #222f3e;
 }
 
-html.dark-mode body {
+[data-bs-theme=dark] body {
   background: #222f3e !important;
 }
 
-html.dark-mode .pull-quote {
+[data-bs-theme=dark] .pull-quote {
   background: #333;
 }
 
-html.dark-mode .pull-quote p {
+[data-bs-theme=dark] .pull-quote p {
   color: #ddd;
 }
 
-html.dark-mode .artist-statement h1,
-html.dark-mode .year-section h2 {
+[data-bs-theme=dark] .artist-statement h1,
+[data-bs-theme=dark] .year-section h2 {
   color: #fff !important;
 }
 
-html.dark-mode .artist-statement {
+[data-bs-theme=dark] .artist-statement {
   background: #222f3e;
 }
 
-html.dark-mode main {
+[data-bs-theme=dark] main {
   background: #222f3e;
 }
 
-html.dark-mode .container {
+[data-bs-theme=dark] .container {
   background: #222f3e;
 }
 
-html.dark-mode .year-section h2::after {
+[data-bs-theme=dark] .year-section h2::after {
   background: #fff;
 }
 
-html.dark-mode .card-body {
+[data-bs-theme=dark] .card-body {
   background: #333;
 }
 
-html.dark-mode .card-title {
+[data-bs-theme=dark] .card-title {
   color: #fff;
 }
 
-html.dark-mode .card-text {
+[data-bs-theme=dark] .card-text {
   color: #aaa !important;
 }
 
-html.dark-mode footer {
+[data-bs-theme=dark] footer {
   color: #aaa;
   border-top-color: #444;
 }
 
-html.dark-mode .artwork-card {
+[data-bs-theme=dark] .artwork-card {
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
-html.dark-mode .scroll-btn {
+[data-bs-theme=dark] .scroll-btn {
   background: #e9eaec;
   color: #222f3e;
 }
 
-html.dark-mode .bg-toggle {
+[data-bs-theme=dark] .bg-toggle {
   background: #e9eaec;
   color: #222f3e;
 }
 
-html.dark-mode .hero-content {
+[data-bs-theme=dark] .hero-content {
   background: rgba(34,47,62,0.8);
 }
 
-html.dark-mode .intro p,
-html.dark-mode .intro h2,
-html.dark-mode .easle h2,
-html.dark-mode .easle p,
-html.dark-mode footer .wrap p {
+[data-bs-theme=dark] .intro p,
+[data-bs-theme=dark] .intro h2,
+[data-bs-theme=dark] .easle h2,
+[data-bs-theme=dark] .easle p,
+[data-bs-theme=dark] footer .wrap p {
   color: #ddd;
 }
 
