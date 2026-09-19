@@ -164,6 +164,18 @@ html.dark-mode .bg-toggle {
   color: #222f3e;
 }
 
+html.dark-mode .hero-content {
+  background: rgba(34,47,62,0.8);
+}
+
+html.dark-mode .intro p,
+html.dark-mode .intro h2,
+html.dark-mode .easle h2,
+html.dark-mode .easle p,
+html.dark-mode footer .wrap p {
+  color: #ddd;
+}
+
 .artwork-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
