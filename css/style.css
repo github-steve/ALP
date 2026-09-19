@@ -222,7 +222,7 @@ html.dark-mode .bg-toggle {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #222f3e;
+  background: var(--underline-color, #222f3e);
   animation: slideIn 0.8s ease-out;
 }
 
