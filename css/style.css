@@ -175,36 +175,9 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--bs-body-color);
 }
 
-.about-section .card,
-.store .card {
-  filter: brightness(1.15);
-}
-
-[data-bs-theme=dark] .card {
-  background: #FFD700;
-  border-color: #8a949e;
-}
-
-[data-bs-theme=dark] {
-  --bs-card-bg: #222f3e;
-  --bs-card-border-color: #444;
-  --bs-card-color: #ddd;
-}
-
-[data-bs-theme=dark] .about-section .card,
-[data-bs-theme=dark] .store .card {
-  --bs-card-bg: #6b7c8f;
-  --bs-card-border-color: #ff6b35;
-  --bs-card-color: #222f3e;
-  background: var(--bs-card-bg) !important;
-  border-color: var(--bs-card-border-color) !important;
-  color: var(--bs-card-color) !important;
-}
-
-[data-bs-theme=dark] .card-body h3,
-[data-bs-theme=dark] .card-body h3 a,
-[data-bs-theme=dark] .card-body p {
-  color: var(--bs-body-color) !important;
+[data-bs-theme=dark] footer {
+  color: #aaa;
+  border-top-color: #444;
 }
 
 .artwork-card {
@@ -592,57 +565,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 
 .pull-quote p { font-size: 1.3rem; color: #4a3f35; font-style: italic; line-height: 1.6; margin: 0; }
 
-.bio-section { margin-bottom: 2rem; }
-.bio-section h2 { font-size: 1.4rem; font-weight: 500; color: #4a3f35; margin-bottom: 0.75rem; }
-.bio-section p { color: #5a5048; line-height: 1.8; margin-bottom: 0.75rem; }
 
-.about-section { margin-bottom: 2rem; }
-.about-section h2 { font-size: 1.4rem; font-weight: 500; color: hsl(211, 29%, 19%); margin-bottom: 0.75rem; }
-.about-section p { color: #5a5048; line-height: 1.8; margin-bottom: 0.75rem; }
-
-.awards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.award-card {
-  background: #fff;
-  padding: 1.25rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  border-left: 3px solid #FFDD00;
-}
-
-.award-card .award-year {
-  font-size: 0.8rem;
-  color: #a09080;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.25rem;
-}
-
-.award-card .award-title { font-size: 0.95rem; color: #4a3f35; font-weight: 500; line-height: 1.4; }
-.award-card.featured { background: linear-gradient(135deg, #fff 0%, #fffef5 100%); }
-.award-card.featured .award-title { font-size: 1rem; }
-
-.awards-toggle {
-  background: none;
-  border: 2px solid #4a3f35;
-  color: #4a3f35;
-  padding: 0.6rem 1.5rem;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 500;
-  transition: all 0.2s;
-}
-
-.awards-toggle:hover { background: #4a3f35; color: #fff; }
-.awards-hidden { display: none; margin-top: 1rem; }
-.awards-hidden.show { display: grid; }
 
 .shows-timeline { margin-bottom: 2rem; }
 .show-year { margin-bottom: 1.5rem; }
@@ -672,98 +595,6 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
 }
 
 /* --- Store Page --- */
-.store h1 { font-size: 2.5rem; font-weight: 500; color: #4a3f35; margin-bottom: 1.5rem; }
-.store h2 { font-size: 1.4rem; font-weight: 500; color: #4a3f35; margin: 2rem 0 0.75rem; }
-.store p { color: #5a5048; line-height: 1.8; margin-left: 1rem; margin-bottom: 0.75rem; }
-
-.store-links { list-style: none; padding: 0; margin: 1.5rem 0 0; }
-.store-links li {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  margin-left: 1.5rem;
-  color: black;
-  border-bottom: 1px solid #e0d8d0;
-}
-
-.store-links li:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
-.store-links a {
-  display: inline-block;
-  color: hsl(211, 29%, 19%);
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.store-links a:hover { text-decoration: underline; }
-
-.store-links p { margin: 0.4rem 0 0; font-size: 0.95rem; color: #7a6e62; }
-
-.artist-statement {
-  background: #e9eaec;
-  padding: 1.5rem 0;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid #e0d8d0;
-}
-
-.statement-content { max-width: 800px; margin: 0 auto; text-align: center; }
-.artist-statement h2 { font-size: 1.8rem; font-weight: 500; color: #000000; margin-bottom: 1.5rem; }
-.artist-statement p { color: #000000; margin-bottom: 0.75rem; line-height: 1.5; font-size: 0.95rem; }
-
-.page-quote {
-  text-align: center;
-  padding: 1rem 0 2rem;
-  border-bottom: 1px solid #e0d8d0;
-  margin-bottom: 2rem;
-}
-
-.page-quote blockquote { font-size: 1.15rem; font-style: italic; color: #4a3f35; margin-bottom: 0.5rem; }
-.page-quote cite { font-size: 0.85rem; color: #000000; font-style: normal; }
-
-/* --- Gallery / Paintings --- */
-.year-break {
-  grid-column: 1 / -1;
-  margin: 2rem 0 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #000000;
-}
-
-.year-break h2 { font-size: 1.8rem; font-weight: 500; color: #4a3f35; }
-
-.latest-year { border-bottom-color: #000000; }
-
-.latest-badge {
-  font-size: 0.7rem;
-  font-weight: 500;
-  background: #FFDD00;
-  color: #000;
-  padding: 0.55rem 1.25rem;
-  border-radius: 50px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.year-note { font-size: 0.85rem; color: #000000; margin-top: 0.5rem; font-style: italic; }
-
-h1 { color: #2c2c2c; }
-hr { color: #2c2c2c; }
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
-.artwork {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, opacity 0.5s ease-out;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: relative;
   opacity: 0;
   scroll-margin-top: 95px;
