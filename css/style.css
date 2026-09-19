@@ -193,8 +193,8 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 [data-bs-theme=dark] .card {
-  background: #333;
-  border-color: #444;
+  background: #6f7882;
+  border-color: #8a949e;
 }
 
 [data-bs-theme=dark] {
