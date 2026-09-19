@@ -90,14 +90,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 #scrollTopBtn {
-  bottom: 6rem;
+  bottom: 10rem;
 }
 
 #scrollBottomBtn {
-  bottom: 2rem;
+  bottom: 6rem;
 }
-
-/* Dark mode styles */
 html.dark-mode {
   background: #222f3e;
 }
