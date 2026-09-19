@@ -144,18 +144,6 @@ img { max-width: 100%; height: auto; display: block; }
   background: #fff;
 }
 
-[data-bs-theme=dark] .card-body {
-  background: #333;
-}
-
-[data-bs-theme=dark] .card-title {
-  color: #fff;
-}
-
-[data-bs-theme=dark] .card-text {
-  color: #aaa !important;
-}
-
 [data-bs-theme=dark] footer {
   color: #aaa;
   border-top-color: #444;
