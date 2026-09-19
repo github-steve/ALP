@@ -102,6 +102,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 [data-bs-theme=dark] body {
   background: #222f3e !important;
+  color: #ddd;
 }
 
 [data-bs-theme=dark] .pull-quote {
