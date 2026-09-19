@@ -199,8 +199,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 [data-bs-theme=dark] .about-section .card,
 [data-bs-theme=dark] .store .card {
-  background: #6b7c8f;
-  border-color: #7d8c9d;
+  background: #b0bec5;
+  border-color: #90a4ae;
 }
 
 [data-bs-theme=dark] .card-body h3,
