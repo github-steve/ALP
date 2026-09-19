@@ -182,6 +182,10 @@ def generate_gallery(paintings):
 <script src="/ALP/js/dark-mode.js"></script>
 
 <button id="bgToggle" class="bg-toggle" aria-label="Toggle background color">☾</button>
+<button id="scrollTopBtn" class="scroll-btn" aria-label="Scroll to top">↑</button>
+<button id="scrollBottomBtn" class="scroll-btn" aria-label="Scroll to bottom">↓</button>
+
+<script src="/ALP/js/scroll-buttons.js"></script>
 
 <script>
 (function(){{
