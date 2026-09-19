@@ -187,6 +187,11 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--bs-body-color);
 }
 
+.about-section .card,
+.store .card {
+  filter: brightness(1.15);
+}
+
 [data-bs-theme=dark] .card {
   background: #333;
   border-color: #444;
