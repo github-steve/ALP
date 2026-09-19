@@ -22,5 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     localStorage.setItem('dark-mode', !isDark);
+    
+    // Trigger scroll event to update navbar gradient immediately
+    window.dispatchEvent(new Event('scroll'));
   });
 });
