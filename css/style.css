@@ -87,6 +87,18 @@ html.dark-mode .year-section h2 {
   color: #fff !important;
 }
 
+html.dark-mode .artist-statement {
+  background: #222f3e;
+}
+
+html.dark-mode main {
+  background: #222f3e;
+}
+
+html.dark-mode .container {
+  background: #222f3e;
+}
+
 html.dark-mode .year-section h2::after {
   background: #fff;
 }
