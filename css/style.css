@@ -154,6 +154,16 @@ html.dark-mode .artwork-card {
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 
+html.dark-mode .scroll-btn {
+  background: #e9eaec;
+  color: #222f3e;
+}
+
+html.dark-mode .bg-toggle {
+  background: #e9eaec;
+  color: #222f3e;
+}
+
 .artwork-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
