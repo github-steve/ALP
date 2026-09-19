@@ -176,6 +176,17 @@ img { max-width: 100%; height: auto; display: block; }
   color: #ddd;
 }
 
+[data-bs-theme=dark] .card {
+  background: #333;
+  border-color: #444;
+}
+
+[data-bs-theme=dark] .card-body h3,
+[data-bs-theme=dark] .card-body h3 a,
+[data-bs-theme=dark] .card-body p {
+  color: #ddd !important;
+}
+
 .artwork-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
